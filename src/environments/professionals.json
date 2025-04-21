@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "67ad922e5a7bd954812e1a07"
+  },
+  "name": "Carlos Ramírez",
+  "profession": "Abogado",
+  "experience": 3,
+  "score": 7,
+  "categoria": "Social"
+},
+{
+  "_id": {
+    "$oid": "67ad93db5a7bd954812e1a08"
+  },
+  "name": "Ana García",
+  "profession": "Diseñadora",
+  "experience": 2,
+  "score": 8,
+  "categorie": "Tecnologia"
+},
+{
+  "_id": {
+    "$oid": "67ad93db5a7bd954812e1a09"
+  },
+  "name": "Pedro López",
+  "profession": "Científico de Datos",
+  "experience": 5,
+  "score": 9,
+  "categorie": "Tecnologia"
+}]

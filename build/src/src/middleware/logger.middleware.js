@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.requestLogger = void 0;
+const requestLogger = (req, res, next) => {
+    const start = Date.now();
+    // Registrar la entrada de la solicitud
+    console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
+    // Guardar el tiempo de inicio para calcular la duración
+    res.locals.startTime = start;
+    // Cuando la respuesta se complete
+    res.on('finish', () => {
+        const duration = Date.now() - start;
+        console.log(`[${new Date().toISOString()}] ${req.method} ${req.url} ${res.statusCode} - ${duration}ms`);
+    });
+    next();
+};
+exports.requestLogger = requestLogger;

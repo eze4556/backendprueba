@@ -1,0 +1,20 @@
+[{
+  "_id": {
+    "$oid": "67ad96b849642a52d9bd51ac"
+  },
+  "name": "Juan Pérez",
+  "profession": "Ingeniero de Software",
+  "experience": 10,
+  "score": 95,
+  "categorie": "Deportes"
+},
+{
+  "_id": {
+    "$oid": "67ad975166f043c3b3f8eec0"
+  },
+  "name": "Ana Gómez",
+  "profession": "Diseñadora Gráfica",
+  "experience": 7,
+  "score": 90,
+  "categorie": "Tecnologia"
+}]

@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "67ad980387719ef62b6077a9"
+  },
+  "name": "Sistema Autónomo A",
+  "description": "Descripción del sistema autónomo A",
+  "score": 85,
+  "categorie": "Social"
+},
+{
+  "_id": {
+    "$oid": "67ad985087719ef62b6077aa"
+  },
+  "name": "Sistema Autónomo B",
+  "description": "Descripción del sistema autónomo B",
+  "score": 75,
+  "categorie": "Tecnologia"
+},
+{
+  "_id": {
+    "$oid": "67b58e168380c93010c296e9"
+  },
+  "name": "Autónomo Ejemplo",
+  "description": "Descripción del autónomo",
+  "score": 10,
+  "categorie": "Categoría Ejemplo",
+  "__v": 0
+}]

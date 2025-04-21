@@ -1,0 +1,134 @@
+[{
+  "_id": {
+    "$oid": "67ad9ba387dc34972435548b"
+  },
+  "primary_data": {
+    "name": "Carlos",
+    "last_name": "González",
+    "phone": "123456789",
+    "email": "carlos.gonzalez@example.com",
+    "nickname": "carlosg",
+    "type": "admin",
+    "description": "Administrador del sistema"
+  },
+  "billing_data": {
+    "doc_number": 12345678,
+    "cuit_cuil": 20123456789,
+    "taxpayer_type": "Responsable Inscripto",
+    "bussiness_name": "Empresa S.A.",
+    "city_name": "Buenos Aires",
+    "street_name": "Calle Falsa",
+    "street_number": 123,
+    "state_name": "Buenos Aires",
+    "zip_code": 1000,
+    "comment": "Sin comentarios"
+  },
+  "auth_data": {
+    "password": "password123"
+  },
+  "permissions": {
+    "active": true,
+    "allow_password_change": true
+  },
+  "createdAt": 1739430819853,
+  "updatedAt": 1739430819853
+},
+{
+  "_id": {
+    "$oid": "67ad9c1687dc34972435548c"
+  },
+  "primary_data": {
+    "name": "María",
+    "last_name": "López",
+    "phone": "987654321",
+    "email": "maria.lopez@example.com",
+    "nickname": "marial",
+    "type": "user",
+    "description": "Usuario regular del sistema"
+  },
+  "billing_data": {
+    "doc_number": 87654321,
+    "cuit_cuil": 27123456789,
+    "taxpayer_type": "Monotributista",
+    "bussiness_name": "Negocio S.R.L.",
+    "city_name": "Córdoba",
+    "street_name": "Avenida Siempre Viva",
+    "street_number": 742,
+    "state_name": "Córdoba",
+    "zip_code": 5000,
+    "comment": "Cliente frecuente"
+  },
+  "auth_data": {
+    "password": "securepassword456"
+  },
+  "permissions": {
+    "active": true,
+    "allow_password_change": false
+  },
+  "createdAt": 1739430934515,
+  "updatedAt": 1739430934515
+},
+{
+  "_id": {
+    "$oid": "67ad9c5387dc34972435548d"
+  },
+  "primary_data": {
+    "name": "Luis",
+    "last_name": "Martínez",
+    "phone": "555123456",
+    "email": "luis.martinez@example.com",
+    "nickname": "luism",
+    "type": "moderator",
+    "description": "Moderador del foro"
+  },
+  "billing_data": {
+    "doc_number": 45678901,
+    "cuit_cuil": 23123456789,
+    "taxpayer_type": "Exento",
+    "bussiness_name": "Servicios Martínez",
+    "city_name": "Rosario",
+    "street_name": "Boulevard Oroño",
+    "street_number": 1234,
+    "state_name": "Santa Fe",
+    "zip_code": 2000,
+    "comment": "Sin observaciones"
+  },
+  "auth_data": {
+    "password": "mypassword789"
+  },
+  "permissions": {
+    "active": true,
+    "allow_password_change": true
+  },
+  "createdAt": 1739430995507,
+  "updatedAt": 1739430995507
+},
+{
+  "_id": {
+    "$oid": "67b57c82b12e5f235c54f52c"
+  },
+  "primary_data": {
+    "name": "John",
+    "last_name": "Doe",
+    "phone": "123456789",
+    "email": "john.doe@example.com",
+    "nickname": "johndoe",
+    "type": "user",
+    "description": "New user"
+  },
+  "billing_data": {
+    "doc_number": 12345678,
+    "cuit_cuil": 20123456789,
+    "taxpayer_type": "Monotributista",
+    "bussiness_name": "John Doe",
+    "city_name": "Buenos Aires",
+    "street_name": "Main St",
+    "street_number": 123,
+    "state_name": "Buenos Aires",
+    "zip_code": 1000,
+    "comment": "No comments"
+  },
+  "auth_data": {
+    "password": "Password123!"
+  }
+}]

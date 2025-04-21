@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "67ad98e635d395bd7316d4f1"
+  },
+  "categorie": "Tecnología",
+  "createdAt": 1739430118980
+},
+{
+  "_id": {
+    "$oid": "67ad995335d395bd7316d4f2"
+  },
+  "categorie": "Deportes",
+  "createdAt": 1739430227739
+},
+{
+  "_id": {
+    "$oid": "67ad99db35d395bd7316d4f3"
+  },
+  "categorie": "Electronica",
+  "createdAt": 1739430363732
+}]

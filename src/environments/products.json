@@ -1,0 +1,86 @@
+[{
+  "_id": {
+    "$oid": "67ad94453bf331b55acac052"
+  },
+  "user": {
+    "$oid": "63f281792b832742e4f7ec1d"
+  },
+  "categorie": {
+    "$oid": "63f281792b832742e4f7ec1e"
+  },
+  "product_info": {
+    "name": "Producto A",
+    "description": "Descripción del producto",
+    "stock": 20,
+    "price": 500
+  },
+  "product_status": {
+    "status": "En stock",
+    "payment": [
+      "Tarjeta",
+      "Efectivo"
+    ],
+    "delivery": true
+  },
+  "product_access": {
+    "link": "https://ejemplo.com/productoA",
+    "access": true
+  },
+  "tags": [
+    "oferta",
+    "nuevo"
+  ],
+  "associate": [
+    {
+      "_id": {
+        "$oid": "63f281792b832742e4f7ec1f"
+      },
+      "createdAt": 1676275190
+    }
+  ],
+  "createdAt": 1676275190,
+  "updatedAt": 1676275190
+},
+{
+  "_id": {
+    "$oid": "67ad962f3bf331b55acac053"
+  },
+  "user": {
+    "$oid": "63f281792b832742e4f7ec1d"
+  },
+  "categorie": {
+    "$oid": "63f281792b832742e4f7ec1e"
+  },
+  "product_info": {
+    "name": "Producto B",
+    "description": "Descripción del producto B",
+    "stock": 30,
+    "price": 300
+  },
+  "product_status": {
+    "status": "Disponible",
+    "payment": [
+      "Tarjeta",
+      "PayPal"
+    ],
+    "delivery": false
+  },
+  "product_access": {
+    "link": "https://ejemplo.com/productoB",
+    "access": true
+  },
+  "tags": [
+    "descuento",
+    "popular"
+  ],
+  "associate": [
+    {
+      "_id": {
+        "$oid": "63f281792b832742e4f7ec1f"
+      },
+      "createdAt": 1676275190
+    }
+  ],
+  "createdAt": 1676275190,
+  "updatedAt": 1676275190
+}]
