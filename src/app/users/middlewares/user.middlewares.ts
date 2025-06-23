@@ -89,4 +89,3 @@ export function checkActive(req: Request, res: Response, next: NextFunction): Pr
 export function checkCredentials(arg0: string, checkActive: (req: Request, res: Response, next: NextFunction) => Promise<Response | void>, passwordComplexity: (req: Request, res: Response, next: NextFunction) => Promise<Response | void>, checkCredentials: any, arg4: (req: Request, res: Response, next: NextFunction) => Promise<Response | void>, generateToken: (req: Request, res: Response) => Promise<Response>) {
   throw new Error('Function not implemented.');
 }
-
