@@ -6,7 +6,7 @@ import bodyParser from 'body-parser';
 import path from 'path';
 
 // Routes
-import userRoutes from './app/users/routes/user.routes';
+import usersRoutes from './app/users/routes/users.routes';
 import codesRoutes from './app/codes/routes/code.routes';
 import loginRoutes from './app/users/routes/login.routes';
 import passwordRoutes from './app/users/routes/password.routes';
@@ -28,12 +28,14 @@ import './database/database';
 
 // Settings
 const app = express();
+app.use(express.json());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
 app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
-app.use('/user', userRoutes);
 app.use(morgan('dev'));
 app.set('port', process.env.PORT || 3000);
-app.use(bodyParser.json()); // Asegúrate de usar body-parser para solicitudes JSON
-app.use(bodyParser.urlencoded({ extended: false })); // Asegúrate de usar body-parser para solicitudes URL-encoded
+
 app.use((req: Request, res: Response, next: NextFunction) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
@@ -42,7 +44,7 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 
 // Routes usage
 app.use('/api/code', codesRoutes);
-app.use('/api/user', userRoutes);
+app.use('/api/users', usersRoutes);
 app.use('/api/login', loginRoutes);
 app.use('/api/password', passwordRoutes);
 app.use('/api/categorie', categoriesRoutes);

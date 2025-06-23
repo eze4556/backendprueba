@@ -45,60 +45,52 @@ class CodeMiddleware {
    * @returns
    */
   public async sendCode(req: Request, res: Response, next: NextFunction): Promise<Response | void> {
-    try {
-      const { email } = req; // Extract email from body or token;
-      // Find previous codes and check expiration
-      const codeResult = await CodeModel.findOne({
-        $and: [{ email }, { expiration: { $gte: new Date().getTime() } }],
-      });
-      if (codeResult) {
-        // Prevent another request before the expiration time is reached
-        return HttpHandler.response(res, BAD_REQUEST, {
-          message: 'Bad request error',
-          data: { error: 'Previous unvalidated code' },
-        });
-      }
-      const randomCode = codeTool.generateCode(); // generate random code;
-      // save the code on mongo and set expiration time
-      const code: CodeInterface = new CodeModel({
-        email,
-        code: randomCode,
-        expiration: moment().add(5, 'minutes'), // Expiration time in 5min,
-      });
-      await code.save();
-      req.expiresIn = '5m';
-      next();
-    } catch (e) {
-      return HttpHandler.response(res, INTERNAL_ERROR, {
-        message: 'Internal Error',
-        data: { error: (e as Error).message },
+  try {
+    const { email } = req.body; // <-- Corrección aquí
+    // Find previous codes and check expiration
+    const codeResult = await CodeModel.findOne({
+      $and: [{ email }, { expiration: { $gte: new Date().getTime() } }],
+    });
+    if (codeResult) {
+      // Prevent another request before the expiration time is reached
+      return HttpHandler.response(res, BAD_REQUEST, {
+        message: 'Bad request error',
+        data: { error: 'Previous unvalidated code' },
       });
     }
+    const randomCode = codeTool.generateCode(); // generate random code;
+    // save the code on mongo and set expiration time
+    const code: CodeInterface = new CodeModel({
+      email,
+      code: randomCode,
+      expiration: moment().add(5, 'minutes'), // Expiration time in 5min,
+    });
+    await code.save();
+    req.expiresIn = '5m';
+    next();
+  } catch (e) {
+    return HttpHandler.response(res, INTERNAL_ERROR, {
+      message: 'Internal Error',
+      data: { error: (e as Error).message },
+    });
   }
-
-  /**
-   * Check a code not exist
-   * @param req
-   * @param res
-   * @param next
-   * @returns
-   */
-  public async checkCode(req: Request, res: Response, next: NextFunction): Promise<Response | void> {
-    try {
-      const { email } = req; // Extract email from token
-      const codeExist = await CodeModel.findOne({ email });
-      if (codeExist) {
-        return HttpHandler.response(res, BAD_REQUEST, {
-          message: 'Bad request error',
-          data: { error: 'Previous unvalidated code' },
-        });
-      }
-      next();
-    } catch (e) {
-      return HttpHandler.response(res, INTERNAL_ERROR, {
-        message: 'Internal Error',
-        data: { error: (e as Error).message },
+}
+public async checkCode(req: Request, res: Response, next: NextFunction): Promise<Response | void> {
+  try {
+    const { email } = req.body; // <-- Corrección aquí
+    const codeExist = await CodeModel.findOne({ email });
+    if (codeExist) {
+      return HttpHandler.response(res, BAD_REQUEST, {
+        message: 'Bad request error',
+        data: { error: 'Previous unvalidated code' },
       });
+    }
+    next();
+  } catch (e) {
+    return HttpHandler.response(res, INTERNAL_ERROR, {
+      message: 'Internal Error',
+      data: { error: (e as Error).message },
+    });
     }
   }
 }
