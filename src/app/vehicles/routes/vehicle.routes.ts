@@ -6,7 +6,8 @@ import {
   createVehicle,
   getVehicleById,
   updateVehicleById,
-  deleteVehicleById
+  deleteVehicleById,
+  setDriverStatus // Importa la función
 } from '../controllers/vehicle.controller';
 
 const router = express.Router();
@@ -34,5 +35,8 @@ router.put('/vehicles/:id', upload.array('images', 3), updateVehicleById);
 
 // Eliminar un vehículo por ID
 router.delete('/vehicles/:id', deleteVehicleById);
+
+// Nueva ruta para actualizar el estado del conductor
+router.patch('/vehicles/:id/driver-status', setDriverStatus);
 
 export default router;

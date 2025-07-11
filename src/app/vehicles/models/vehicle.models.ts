@@ -10,6 +10,7 @@ export interface IVehicle extends mongoose.Document {
   kilometers: number;
   blueCard: string;
   images: string[];
+  driverStatus?: boolean; // Añadido para el estado del conductor
 }
 
 const vehicleSchema = new Schema({
@@ -21,7 +22,8 @@ const vehicleSchema = new Schema({
   blueCard: { type: String, required: true },
   type: { type: String, required: true },
   year: { type: Number, required: true },
-  images: { type: [String], required: false } // Asegúrate de que este campo esté definido si estás subiendo imágenes
+  images: { type: [String], required: false },
+  driverStatus: { type: Boolean, default: false }, // Añadido aquí
 });
 
 const Vehicle = mongoose.model<IVehicle>('Vehicle', vehicleSchema);
@@ -34,6 +36,6 @@ export const getVehiclesByType = async (type: string) => {
     const vehicles = await Vehicle.find({ type });
     return vehicles;
   } catch (error: any) {
-    throw new Error(`Error al obtener vehículos: ${(error as Error).message}`);
+      throw new Error(`Error al obtener vehículos: ${(error as Error).message}`);
+    }
   }
-};
