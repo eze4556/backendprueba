@@ -8,7 +8,7 @@ const morgan_1 = __importDefault(require("morgan"));
 const body_parser_1 = __importDefault(require("body-parser"));
 const path_1 = __importDefault(require("path"));
 // Routes
-const user_routes_1 = __importDefault(require("./app/users/routes/user.routes"));
+const users_routes_1 = __importDefault(require("./app/users/routes/users.routes"));
 const code_routes_1 = __importDefault(require("./app/codes/routes/code.routes"));
 const login_routes_1 = __importDefault(require("./app/users/routes/login.routes"));
 const password_routes_1 = __importDefault(require("./app/users/routes/password.routes"));
@@ -28,12 +28,12 @@ const provider_routes_1 = __importDefault(require("./app/proveedores/routes/prov
 require("./database/database");
 // Settings
 const app = (0, express_1.default)();
+app.use(express_1.default.json());
+app.use(body_parser_1.default.json());
+app.use(body_parser_1.default.urlencoded({ extended: false }));
 app.use('/uploads', express_1.default.static(path_1.default.join(__dirname, '../uploads')));
-app.use('/user', user_routes_1.default);
 app.use((0, morgan_1.default)('dev'));
 app.set('port', process.env.PORT || 3000);
-app.use(body_parser_1.default.json()); // Asegúrate de usar body-parser para solicitudes JSON
-app.use(body_parser_1.default.urlencoded({ extended: false })); // Asegúrate de usar body-parser para solicitudes URL-encoded
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
@@ -41,7 +41,7 @@ app.use((req, res, next) => {
 });
 // Routes usage
 app.use('/api/code', code_routes_1.default);
-app.use('/api/user', user_routes_1.default);
+app.use('/api/users', users_routes_1.default);
 app.use('/api/login', login_routes_1.default);
 app.use('/api/password', password_routes_1.default);
 app.use('/api/categorie', categorie_routes_1.default);

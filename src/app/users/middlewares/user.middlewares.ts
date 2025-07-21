@@ -37,9 +37,15 @@ export async function checkEmail(req: Request, res: Response, next: NextFunction
   if (!email) {
     return res.status(400).json({ message: 'Email is required' });
   }
-  const user = await UserModel.findOne({ email });
-  if (user) {
-    return res.status(409).json({ message: 'Email already exists' });
+  try {
+    // Buscar en la estructura anidada primary_data.email
+    const user = await UserModel.findOne({ 'primary_data.email': email.toLowerCase() });
+    if (user) {
+      return res.status(409).json({ message: 'Email already exists' });
+    }
+    next();
+  } catch (error) {
+    console.error('Error in checkEmail middleware:', error);
+    return res.status(500).json({ message: 'Server error', error });
   }
-  next();
 }

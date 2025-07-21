@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.deleteVehicleById = exports.updateVehicleById = exports.getVehicleById = exports.createVehicle = exports.getAllVehicles = void 0;
+exports.setDriverStatus = exports.deleteVehicleById = exports.updateVehicleById = exports.getVehicleById = exports.createVehicle = exports.getAllVehicles = void 0;
 const vehicle_models_1 = __importDefault(require("../models/vehicle.models"));
 const multer_1 = __importDefault(require("multer"));
 // Configurar Multer
@@ -76,3 +76,19 @@ const deleteVehicleById = async (req, res) => {
     }
 };
 exports.deleteVehicleById = deleteVehicleById;
+// Nueva función para actualizar el estado del conductor
+const setDriverStatus = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const { isActive } = req.body;
+        const vehicle = await vehicle_models_1.default.findByIdAndUpdate(id, { driverStatus: isActive }, { new: true });
+        if (!vehicle) {
+            return res.status(404).json({ message: 'Vehículo no encontrado' });
+        }
+        res.json({ message: 'Estado del conductor actualizado', vehicle });
+    }
+    catch (error) {
+        res.status(500).json({ message: 'Error al actualizar el estado', error });
+    }
+};
+exports.setDriverStatus = setDriverStatus;

@@ -76,3 +76,25 @@ export const deleteVehicleById = async (req: Request, res: Response) => {
     res.status(500).json({ error: (err as Error).message });
   }
 };
+
+// Nueva función para actualizar el estado del conductor
+export const setDriverStatus = async (req: Request, res: Response) => {
+  try {
+    const { id } = req.params;
+    const { isActive } = req.body;
+
+    const vehicle = await Vehicle.findByIdAndUpdate(
+      id,
+      { driverStatus: isActive },
+      { new: true }
+    );
+
+    if (!vehicle) {
+      return res.status(404).json({ message: 'Vehículo no encontrado' });
+    }
+
+    res.json({ message: 'Estado del conductor actualizado', vehicle });
+  } catch (error) {
+    res.status(500).json({ message: 'Error al actualizar el estado', error });
+  }
+};

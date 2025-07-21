@@ -22,31 +22,29 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.getVehiclesByType = void 0;
-const mongoose_1 = __importStar(require("mongoose"));
-const vehicleSchema = new mongoose_1.Schema({
-    vehicleModel: { type: String, required: true },
-    brand: { type: String, required: true },
-    licensePlate: { type: String, required: true },
-    color: { type: String, required: true },
-    kilometers: { type: Number, required: true },
-    blueCard: { type: String, required: true },
-    type: { type: String, required: true },
-    year: { type: Number, required: true },
-    images: { type: [String], required: false },
-    driverStatus: { type: Boolean, default: false }, // Añadido aquí
-});
-const Vehicle = mongoose_1.default.model('Vehicle', vehicleSchema);
-exports.default = Vehicle;
-// Función para consultar vehículos por tipo
-const getVehiclesByType = async (type) => {
-    try {
-        const vehicles = await Vehicle.find({ type });
-        return vehicles;
-    }
-    catch (error) {
-        throw new Error(`Error al obtener vehículos: ${error.message}`);
-    }
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-exports.getVehiclesByType = getVehiclesByType;
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const AWS = __importStar(require("aws-sdk"));
+const app = (0, express_1.default)();
+AWS.config.update({ region: 'us-east-1' });
+const medialive = new AWS.MediaLive();
+// Middleware opcional para parsear JSON
+app.use(express_1.default.json());
+// Endpoint para iniciar una transmisión
+app.post('/start-stream', async (req, res) => {
+    // Definir parámetros. Reemplazar 'CHANNEL_ID' por el ID real del canal.
+    const params = { ChannelId: 'CHANNEL_ID' };
+    try {
+        // Iniciar el canal mediante AWS MediaLive
+        const data = await medialive.startChannel(params).promise();
+        // Responder con la URL de salida (adaptar según la estructura del objeto data devuelto)
+        res.json({ url: data.Channel.Outputs[0].Url });
+    }
+    catch (err) {
+        // Manejo básico de errores
+        res.status(500).json({ error: err.message });
+    }
+});

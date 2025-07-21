@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import chalk from 'chalk';
+const chalk = require('chalk');
 import { environment } from '../environments/environments';
 
 const { MONGO_DB_URI } = environment();

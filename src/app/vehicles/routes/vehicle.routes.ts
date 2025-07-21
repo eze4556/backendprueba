@@ -1,12 +1,14 @@
 import express from 'express';
 import cors from 'cors';
 import multer from 'multer';
+import Token from '../../../auth/token/token';
 import {
   getAllVehicles,
   createVehicle,
   getVehicleById,
   updateVehicleById,
-  deleteVehicleById
+  deleteVehicleById,
+  setDriverStatus // Importa la función
 } from '../controllers/vehicle.controller';
 
 const router = express.Router();
@@ -24,15 +26,18 @@ const upload = multer({ dest: 'uploads/' });
 router.get('/vehicles', getAllVehicles);
 
 // Crear un nuevo vehículo
-router.post('/vehicles', upload.array('images', 3), createVehicle);
+router.post('/vehicles', Token.verifyToken, upload.array('images', 3), createVehicle);
 
 // Obtener un vehículo por ID
-router.get('/vehicles/:id', getVehicleById);
+router.get('/vehicles/:id', Token.verifyToken, getVehicleById);
 
 // Actualizar un vehículo por ID
-router.put('/vehicles/:id', upload.array('images', 3), updateVehicleById);
+router.put('/vehicles/:id', Token.verifyToken, upload.array('images', 3), updateVehicleById);
 
 // Eliminar un vehículo por ID
-router.delete('/vehicles/:id', deleteVehicleById);
+router.delete('/vehicles/:id', Token.verifyToken, deleteVehicleById);
+
+// Nueva ruta para actualizar el estado del conductor
+router.patch('/vehicles/:id/driver-status', Token.verifyToken, setDriverStatus);
 
 export default router;

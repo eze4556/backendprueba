@@ -1,5 +1,5 @@
 import app from './app';
-import chalk from 'chalk';
+const chalk = require('chalk');
 
 app.listen(app.get('port'), () => {
   console.log(`Server on port ${chalk.greenBright(app.get('port'))} ✔`);

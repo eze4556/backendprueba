@@ -7,18 +7,19 @@ const user_models_1 = __importDefault(require("../models/user.models"));
 const handler_helper_1 = __importDefault(require("../../../helpers/handler.helper"));
 const bcrypt_1 = __importDefault(require("bcrypt"));
 const codes_constanst_1 = require("../../../constants/codes.constanst");
-class UserController {
-    /**
-     * Register a single user
-     * @param req
-     * @param res
-     * @returns
-     */
+class UserControllers {
     async registerUser(req, res) {
         try {
             // Destructure data
             const { primary_data, billing_data, auth_data } = req.body;
-            const { email, password } = req; // Extract email and hashedPassword from request
+            const { email, password } = req; // Extract email and password from request
+            // Validar que email y password existan
+            if (!email || !password) {
+                return handler_helper_1.default.response(res, codes_constanst_1.BAD_REQUEST, {
+                    message: 'Bad request error',
+                    data: { error: 'Email and password are required' },
+                });
+            }
             primary_data.email = email; // Set email in object primary_data
             auth_data.password = await bcrypt_1.default.hash(password, 10); // Hash and set the password in auth_data
             const user = new user_models_1.default({
@@ -39,58 +40,34 @@ class UserController {
             });
         }
     }
-    /**
-     * Edit user
-     * @param req
-     * @param res
-     * @returns
-     */
     async editUser(req, res) {
-        try {
-            const { _id } = req; // Extract _id from token
-            const { primary_data, billing_data } = req.body; // Extract all data from body
-            await user_models_1.default.findById({ _id }).then(async (user) => {
-                delete primary_data.email; // Delete email from body
-                const new_primary_data = { ...user === null || user === void 0 ? void 0 : user.primary_data, ...primary_data }; // Merge new primary_data with old primary_data
-                const new_billing_data = { ...user === null || user === void 0 ? void 0 : user.billing_data, ...billing_data }; // Merge new billing_data with old billing_data
-                await user_models_1.default.findByIdAndUpdate({ _id }, { $set: { primary_data: new_primary_data, billing_data: new_billing_data } });
-            });
-            return handler_helper_1.default.response(res, codes_constanst_1.SUCCESS, { message: 'User edited successfully', data: { _id } });
-        }
-        catch (e) {
-            return handler_helper_1.default.response(res, codes_constanst_1.INTERNAL_ERROR, {
-                message: 'Internal Error',
-                data: { error: e.message },
-            });
-        }
+        const { email, name } = req.body;
+        const user = await user_models_1.default.findOneAndUpdate({ email }, { name }, { new: true });
+        if (!user)
+            return res.status(404).json({ message: 'User not found' });
+        res.json({ message: 'User updated', user });
     }
-    /**
-     * Get user data
-     * @param req
-     * @param res
-     * @returns
-     */
+    async deleteUser(req, res) {
+        const { email } = req.body;
+        const user = await user_models_1.default.findOneAndDelete({ email });
+        if (!user)
+            return res.status(404).json({ message: 'User not found' });
+        res.json({ message: 'User deleted' });
+    }
     async getUser(req, res) {
-        try {
-            const { _id } = req;
-            const user = await user_models_1.default.findById({ _id });
-            if (!user) {
-                return handler_helper_1.default.response(res, codes_constanst_1.FORBIDDEN, {
-                    message: 'Forbidden',
-                    data: { error: 'User not found' },
-                });
-            }
-            return handler_helper_1.default.response(res, codes_constanst_1.SUCCESS, {
-                message: 'Response successfully',
-                data: { primary_data: user === null || user === void 0 ? void 0 : user.primary_data, billing_data: user === null || user === void 0 ? void 0 : user.billing_data },
-            });
+        let email;
+        if (typeof req.user === 'string') {
+            email = req.user;
         }
-        catch (e) {
-            return handler_helper_1.default.response(res, codes_constanst_1.INTERNAL_ERROR, {
-                message: 'Internal Error',
-                data: { error: e.message },
-            });
+        else if (req.user && typeof req.user === 'object' && 'email' in req.user) {
+            email = req.user.email;
         }
+        if (!email)
+            return res.status(400).json({ message: 'Email not provided in token' });
+        const user = await user_models_1.default.findOne({ email });
+        if (!user)
+            return res.status(404).json({ message: 'User not found' });
+        res.json({ user });
     }
 }
-exports.default = new UserController();
+exports.default = new UserControllers();

@@ -49,10 +49,17 @@ class CodeMiddleware {
      */
     async sendCode(req, res, next) {
         try {
-            const { email } = req; // Extract email from body or token;
+            const { email } = req.body;
+            console.log('sendCode middleware - email received:', email);
+            if (!email) {
+                return handler_helper_1.default.response(res, codes_constanst_1.BAD_REQUEST, {
+                    message: 'Bad request error',
+                    data: { error: 'Email is required' },
+                });
+            }
             // Find previous codes and check expiration
             const codeResult = await code_models_1.default.findOne({
-                $and: [{ email }, { expiration: { $gte: new Date().getTime() } }],
+                $and: [{ email }, { expiration: { $gte: new Date() } }],
             });
             if (codeResult) {
                 // Prevent another request before the expiration time is reached
@@ -62,40 +69,48 @@ class CodeMiddleware {
                 });
             }
             const randomCode = code_tools_1.default.generateCode(); // generate random code;
+            console.log('sendCode middleware - generated code:', randomCode);
             // save the code on mongo and set expiration time
             const code = new code_models_1.default({
                 email,
                 code: randomCode,
-                expiration: (0, moment_1.default)().add(5, 'minutes'), // Expiration time in 5min,
+                expiration: (0, moment_1.default)().add(5, 'minutes').toDate(), // Expiration time in 5min,
             });
             await code.save();
+            console.log('sendCode middleware - code saved successfully');
             req.expiresIn = '5m';
             next();
         }
         catch (e) {
+            console.error('sendCode middleware - error:', e);
             return handler_helper_1.default.response(res, codes_constanst_1.INTERNAL_ERROR, {
                 message: 'Internal Error',
                 data: { error: e.message },
             });
         }
     }
-    /**
-     * Check a code not exist
-     * @param req
-     * @param res
-     * @param next
-     * @returns
-     */
     async checkCode(req, res, next) {
+        var _a;
         try {
-            const { email } = req; // Extract email from token
-            const codeExist = await code_models_1.default.findOne({ email });
-            if (codeExist) {
+            const { code } = req.body;
+            const { email } = req;
+            // Check if code exists and is not expired
+            const codeResult = await code_models_1.default.findOneAndDelete({
+                $and: [
+                    { email },
+                    { code },
+                    { expiration: { $gte: new Date() } }
+                ],
+            });
+            if (!codeResult) {
                 return handler_helper_1.default.response(res, codes_constanst_1.BAD_REQUEST, {
                     message: 'Bad request error',
-                    data: { error: 'Previous unvalidated code' },
+                    data: { error: 'Invalid code, expired code or user not exist' },
                 });
             }
+            // Set email and password in request for the controller
+            req.email = email;
+            req.password = (_a = req.body.auth_data) === null || _a === void 0 ? void 0 : _a.password;
             next();
         }
         catch (e) {

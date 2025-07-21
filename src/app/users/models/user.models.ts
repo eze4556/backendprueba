@@ -4,7 +4,7 @@ export interface UserInterface extends mongoose.Document {
   primary_data: {
     name: string;
     last_name: string;
-    phone: string;
+    phone?: string;
     email: string;
     nickname: string;
     type: string;
@@ -25,10 +25,19 @@ export interface UserInterface extends mongoose.Document {
   auth_data: {
     password: string;
   };
+  personal_info?: {
+    dni: string;
+    areaCode: string;
+    phone: string;
+    location: string;
+    birthDate: string;
+    receiveNews: boolean;
+  };
   permissions: {
     active: boolean;
     allow_password_change: boolean;
   };
+  profile_image?: string;
   createdAt?: number;
   updatedAt?: number;
 }
@@ -38,7 +47,7 @@ const UserSchema = new Schema<UserInterface>(
     primary_data: {
       name: { type: String, required: true },
       last_name: { type: String, required: true },
-      phone: { type: String, required: true },
+      phone: { type: String, required: false },
       email: {
         type: String,
         lowercase: true,
@@ -64,10 +73,19 @@ const UserSchema = new Schema<UserInterface>(
     auth_data: {
       password: { type: String, required: true },
     },
+    personal_info: {
+      dni: { type: String, required: false },
+      areaCode: { type: String, required: false },
+      phone: { type: String, required: false },
+      location: { type: String, required: false },
+      birthDate: { type: String, required: false },
+      receiveNews: { type: Boolean, default: false }
+    },
     permissions: {
       active: { type: Boolean, default: true, required: true },
       allow_password_change: { type: Boolean, default: false, required: true },
     },
+    profile_image: { type: String, required: false },
     createdAt: { type: Number, immutable: true },
     updatedAt: { type: Number },
   },

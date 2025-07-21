@@ -25,4 +25,6 @@ router.get('/vehicles/:id', vehicle_controller_1.getVehicleById);
 router.put('/vehicles/:id', upload.array('images', 3), vehicle_controller_1.updateVehicleById);
 // Eliminar un vehículo por ID
 router.delete('/vehicles/:id', vehicle_controller_1.deleteVehicleById);
+// Nueva ruta para actualizar el estado del conductor
+router.patch('/vehicles/:id/driver-status', vehicle_controller_1.setDriverStatus);
 exports.default = router;
