@@ -40,4 +40,7 @@ router.delete('/vehicles/:id', Token.verifyToken, deleteVehicleById);
 // Nueva ruta para actualizar el estado del conductor
 router.patch('/vehicles/:id/driver-status', Token.verifyToken, setDriverStatus);
 
+// Nueva ruta para actualizar el estado del conductor
+router.patch('/vehicles/:id/driver-status', setDriverStatus);
+
 export default router;
