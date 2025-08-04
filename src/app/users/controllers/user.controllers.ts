@@ -11,18 +11,22 @@ const env = load({
   JWT_KEY: String,
 });
 
-// Extender la interfaz Request para incluir email y password
+// Importa los módulos y utilidades necesarios
+// Carga de variables de entorno
+// Extiende la interfaz Request para incluir email y password
 interface AuthRequest extends Request {
   email?: string;
   password?: string;
 }
 
+// Controlador principal de usuarios
 class UserControllers {
+  // Registra un nuevo usuario en la base de datos
   async registerUser(req: AuthRequest, res: Response) {
     try {
       console.log('registerUser - starting registration process');
       
-      // Destructure data
+      // Desestructura los datos del cuerpo de la petición
       const { primary_data, billing_data, auth_data } = req.body;
       const { email, password } = req; // Extract email and password from request
       
@@ -31,7 +35,7 @@ class UserControllers {
       console.log('registerUser - primary_data:', primary_data);
       console.log('registerUser - auth_data:', auth_data);
       
-      // Validar que email y password existan
+      // Valida que email y password existan
       if (!email || !password) {
         console.log('registerUser - missing email or password');
         return res.status(BAD_REQUEST).json({
@@ -59,7 +63,7 @@ class UserControllers {
       
       console.log('registerUser - user saved successfully, id:', data._id);
       
-      // Generar token JWT
+      // Genera un token JWT para el usuario registrado
       const token = jwt.sign(
         { 
           email: data.primary_data.email, 
@@ -70,6 +74,7 @@ class UserControllers {
         { expiresIn: '60d' }
       );
       
+      // Devuelve la respuesta con el usuario creado y el token
       return res.status(CREATED).json({
         success: true,
         message: 'User created successfully',
@@ -83,6 +88,7 @@ class UserControllers {
       });
     } catch (e) {
       console.error('registerUser - error:', e);
+      // Maneja errores internos
       return res.status(INTERNAL_ERROR).json({
         success: false,
         message: 'Internal Error',
@@ -91,6 +97,7 @@ class UserControllers {
     }
   }
 
+  // Edita los datos de un usuario existente
   async editUser(req: Request, res: Response) {
     const { email, name } = req.body;
     const user = await UserModel.findOneAndUpdate({ email }, { name }, { new: true });
@@ -98,6 +105,7 @@ class UserControllers {
     res.json({ message: 'User updated', user });
   }
 
+  // Obtiene la información de un usuario
   async deleteUser(req: Request, res: Response) {
     const { email } = req.body;
     const user = await UserModel.findOneAndDelete({ email });
@@ -105,6 +113,7 @@ class UserControllers {
     res.json({ message: 'User deleted' });
   }
 
+  // Obtiene la información de un usuario
   async getUser(req: Request, res: Response) {
     try {
       const userToken = req.user as { email: string };
@@ -139,7 +148,7 @@ class UserControllers {
     }
   }
 
-  // Guardar información personal
+  // Guarda información personal del usuario
   async savePersonalInfo(req: Request, res: Response) {
     try {
       const { name, lastName, dni, areaCode, phone, location, birthDate, receiveNews } = req.body;
@@ -190,7 +199,7 @@ class UserControllers {
     }
   }
 
-  // Actualizar rol del usuario
+  // Actualiza el rol de un usuario
   async updateUserRole(req: Request, res: Response) {
     try {
       const { role } = req.body;
@@ -230,7 +239,7 @@ class UserControllers {
     }
   }
 
-  // Guardar información del perfil de emprendedor
+  // Guarda información de perfil del usuario
   async saveProfileInfo(req: Request, res: Response) {
     try {
       const { username, accountName, description } = req.body;
@@ -277,7 +286,7 @@ class UserControllers {
     }
   }
 
-  // Actualizar información de cuenta (teléfono)
+  // Actualiza información de la cuenta del usuario
   async updateAccountInfo(req: Request, res: Response) {
     try {
       const { phone } = req.body;
@@ -317,7 +326,7 @@ class UserControllers {
     }
   }
 
-  // Obtener información del perfil del usuario actual
+  // Obtiene el perfil del usuario autenticado
   async getCurrentUserProfile(req: Request, res: Response) {
     try {
       const userToken = req.user as { email: string };
@@ -352,7 +361,7 @@ class UserControllers {
     }
   }
 
-  // Método para login de usuario
+  // Inicia sesión de usuario
   async loginUser(req: Request, res: Response) {
     try {
       console.log('loginUser - iniciando proceso de login');

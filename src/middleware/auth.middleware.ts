@@ -1,7 +1,8 @@
+// Importa los tipos necesarios de Express y la librería JWT
 import { Request, Response, NextFunction } from 'express';
 import jwt, { JwtPayload } from 'jsonwebtoken';
 
-// Extender la interfaz Request para incluir el usuario autenticado
+// Extiende la interfaz Request para incluir el usuario autenticado
 export interface AuthRequest extends Request {
   user?: {
       id: string;

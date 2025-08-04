@@ -12,7 +12,7 @@ export class ApiError extends Error {
   }
 }
 
-// Middleware para manejar errores
+// Middleware para manejar errores globales de la aplicación
 export const errorHandler = (
   err: Error | ApiError,
   req: Request,
