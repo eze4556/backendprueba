@@ -11,6 +11,7 @@ export interface IVehicle extends mongoose.Document {
   blueCard: string;
   images: string[];
   driverStatus?: boolean; // Añadido para el estado del conductor
+  assignedDriver?: mongoose.Types.ObjectId; // Añadido para la referencia del conductor
 }
 
 const vehicleSchema = new Schema({
@@ -24,6 +25,7 @@ const vehicleSchema = new Schema({
   year: { type: Number, required: true },
   images: { type: [String], required: false },
   driverStatus: { type: Boolean, default: false }, // Añadido aquí
+  assignedDriver: { type: Schema.Types.ObjectId, ref: 'User', required: false }, // Añadido para la referencia del conductor
 });
 
 const Vehicle = mongoose.model<IVehicle>('Vehicle', vehicleSchema);

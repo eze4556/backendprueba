@@ -20,9 +20,9 @@ class HistoryMiddleware {
         await historySession.save(); // Save new log in history
         next(); // next to generate token
       } catch (e) {
-        return HttpHandler.response(res, INTERNAL_ERROR, {
-          message: 'Internal Error',
-          data: { error: (e as Error).message },
+        return HttpHandler.error(res, {
+          code: INTERNAL_ERROR,
+          message: (e as Error).message
         });
       }
     };

@@ -7,6 +7,13 @@ import Token from '../../../auth/token/token';
 import { ParsedQs } from 'qs';
 import User from '../models/user.models';
 import upload from '../../../config/multer.config';
+import { 
+  extractRoleInfo,
+  requireSensitiveOperation,
+  requirePermissions,
+  adminOnly
+} from '../../../middleware/role-validation.middleware';
+import { Permission } from '../../../interfaces/roles.interface';
 
 const router = Router();
 
@@ -43,12 +50,17 @@ export const checkEmail = async (
   }
 };
 
+import { validateUserRegistration } from '../../../middleware/validators/user.validator';
+
+// ... (código existente)
+
 // Solicitud de registro (envía código)
 router.post(
   '/register_request',
+  validateUserRegistration, // <-- Añadido validador
   checkEmail, // Verifica que el email no exista
   CodeMiddleware.sendCode,   // Envía código de verificación
-  (req, res) => {
+  (req: Request, res: Response) => {
     console.log('register_request - sending success response');
     res.status(200).json({ 
       success: true, 
@@ -57,6 +69,8 @@ router.post(
   }
 );
 
+// ... (código existente)
+
 // Registro de usuario (con código)
 router.post(
   '/register_user',
@@ -64,60 +78,70 @@ router.post(
   UserControllers.registerUser // Registra usuario
 );
 
-// Editar usuario (requiere token)
+// Editar usuario (requiere token y permisos)
 router.put(
   '/edit_user',
-  Token.verifyToken,
+  extractRoleInfo,
+  requirePermissions(Permission.EDIT_USER),
   UserControllers.editUser
 );
 
-// Eliminar usuario (requiere token)
+// Eliminar usuario (solo administradores)
 router.delete(
   '/delete_user',
-  Token.verifyToken,
+  extractRoleInfo,
+  requireSensitiveOperation('USER_MANAGEMENT'),
+  requirePermissions(Permission.DELETE_USER),
   UserControllers.deleteUser
 );
 
-// Obtener datos de usuario (requiere token)
+// Obtener datos de usuario (requiere autenticación)
 router.get(
   '/get_data',
-  Token.verifyToken,
+  extractRoleInfo,
+  requirePermissions(Permission.VIEW_USER),
   UserControllers.getUser
 );
 
-// Guardar información personal (requiere token)
+// Guardar información personal (usuarios pueden editar su propio perfil)
 router.post(
   '/personal-info',
-  Token.verifyToken,
+  extractRoleInfo,
+  requirePermissions(Permission.EDIT_USER),
   UserControllers.savePersonalInfo
 );
 
-// Actualizar rol del usuario (requiere token)
+// Actualizar rol del usuario (solo administradores)
 router.put(
   '/update-role',
-  Token.verifyToken,
+  extractRoleInfo,
+  requireSensitiveOperation('USER_MANAGEMENT'),
+  adminOnly,
   UserControllers.updateUserRole
 );
 
 // Guardar información del perfil de emprendedor (requiere token y multer para archivos)
 router.post(
   '/profile/update',
-  Token.verifyToken,
+  extractRoleInfo,
+  requirePermissions(Permission.EDIT_USER),
   upload.single('profileImage'),
   UserControllers.saveProfileInfo
 );
 
-// Actualizar información de cuenta (requiere token)
+// Actualizar información de cuenta (usuarios pueden actualizar su cuenta)
 router.put(
   '/account-info',
-  Token.verifyToken,
+  extractRoleInfo,
+  requirePermissions(Permission.EDIT_USER),
   UserControllers.updateAccountInfo
 );
 
-// Obtener información del perfil del usuario actual (requiere token)
+// Obtener información del perfil del usuario actual (requiere autenticación)
 router.get(
   '/profile',
-  Token.verifyToken,
+  extractRoleInfo,
+  requirePermissions(Permission.VIEW_USER),
   UserControllers.getCurrentUserProfile
 );
 

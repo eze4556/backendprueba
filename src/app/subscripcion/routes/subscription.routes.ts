@@ -1,6 +1,6 @@
 import { Router, Request, Response, NextFunction } from 'express';
 import SubscriptionController from '../controller/subscription.controller';
-import { authMiddleware, AuthRequest } from '../../../middleware/auth.middleware';
+import { authMiddleware } from '../../../middleware/auth.middleware';
 import providerAuthMiddleware from '../../proveedores/middleware/providerauth.middleware';
 
 const router = Router();
@@ -22,16 +22,19 @@ declare global {
 
 const isSubscriptionOwnerMiddleware = (req: Request, res: Response, next: NextFunction) => {
     const providerId: string | undefined = req.params.providerId || req.body.providerId;
-
-    if (!req.user) {
+    const user = req.user as { id?: string; role?: string } | undefined;
+    if (!user) {
         return res.status(403).json({ error: 'No tiene permisos para realizar esta acción' });
     }
-
-    // Check if user is a provider and if the providerId matches the user's ID
-    if ((req as AuthRequest).user?.role === 'provider' && (req as AuthRequest).user?.id === providerId) {
+    
+    // Permitir acceso a super_admin y admin sin restricciones
+    if (user.role === 'super_admin' || user.role === 'admin') {
         return next();
     }
-
+    
+    if (user.role === 'provider' && user.id === providerId) {
+        return next();
+    }
     return res.status(403).json({ error: 'No tiene permisos para realizar esta acción' });
 };
 

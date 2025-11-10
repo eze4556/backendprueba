@@ -1,0 +1,73 @@
+"use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ConversationStatus = void 0;
+const mongoose_1 = __importStar(require("mongoose"));
+var ConversationStatus;
+(function (ConversationStatus) {
+    ConversationStatus["ACTIVE"] = "active";
+    ConversationStatus["ARCHIVED"] = "archived";
+    ConversationStatus["BLOCKED"] = "blocked";
+})(ConversationStatus || (exports.ConversationStatus = ConversationStatus = {}));
+const ConversationSchema = new mongoose_1.Schema({
+    participants: [{
+            type: mongoose_1.Schema.Types.ObjectId,
+            ref: 'User',
+            required: true
+        }],
+    lastMessage: {
+        text: { type: String },
+        senderId: { type: mongoose_1.Schema.Types.ObjectId, ref: 'User' },
+        timestamp: { type: Date }
+    },
+    unreadCount: {
+        type: Map,
+        of: Number,
+        default: {}
+    },
+    status: {
+        type: String,
+        enum: Object.values(ConversationStatus),
+        default: ConversationStatus.ACTIVE
+    }
+}, {
+    timestamps: true
+});
+// Índices para búsquedas eficientes
+ConversationSchema.index({ participants: 1, status: 1 });
+ConversationSchema.index({ 'lastMessage.timestamp': -1 });
+// Método para incrementar contador de no leídos
+ConversationSchema.methods.incrementUnread = function (userId) {
+    const current = this.unreadCount.get(userId) || 0;
+    this.unreadCount.set(userId, current + 1);
+    return this.save();
+};
+// Método para resetear contador de no leídos
+ConversationSchema.methods.resetUnread = function (userId) {
+    this.unreadCount.set(userId, 0);
+    return this.save();
+};
+exports.default = mongoose_1.default.model('Conversation', ConversationSchema);
+//# sourceMappingURL=conversation.models.js.map

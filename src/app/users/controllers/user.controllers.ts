@@ -6,6 +6,7 @@ import { CREATED, INTERNAL_ERROR, BAD_REQUEST, UNAUTHORIZED } from '../../../con
 import Token from '../../../auth/token/token';
 import * as jwt from 'jsonwebtoken';
 import { load } from 'ts-dotenv';
+import { UserRole } from '../../../interfaces/roles.interface';
 
 const env = load({
   JWT_KEY: String,
@@ -63,12 +64,43 @@ class UserControllers {
       
       console.log('registerUser - user saved successfully, id:', data._id);
       
-      // Genera un token JWT para el usuario registrado
+      // Mapear el tipo de usuario a un rol del sistema
+      const getUserRole = (userType: string): UserRole => {
+        switch (userType?.toLowerCase()) {
+          case 'admin':
+          case 'administrador':
+            return UserRole.ADMIN;
+          case 'professional':
+          case 'profesional':
+            return UserRole.PROFESSIONAL;
+          case 'autonomous':
+          case 'autonomo':
+          case 'autónomo':
+            return UserRole.AUTONOMOUS;
+          case 'dedicated':
+          case 'dedicado':
+            return UserRole.DEDICATED;
+          case 'provider':
+          case 'proveedor':
+            return UserRole.PROVIDER;
+          case 'moderator':
+          case 'moderador':
+            return UserRole.MODERATOR;
+          default:
+            return UserRole.USER;
+        }
+      };
+
+      const userRole = getUserRole(data.primary_data.type);
+      
+      // Genera un token JWT para el usuario registrado con información de roles
       const token = jwt.sign(
         { 
           email: data.primary_data.email, 
           _id: data._id,
-          name: data.primary_data.name 
+          name: data.primary_data.name,
+          role: userRole,
+          isActive: true
         }, 
         env.JWT_KEY, 
         { expiresIn: '60d' }
@@ -116,7 +148,7 @@ class UserControllers {
   // Obtiene la información de un usuario
   async getUser(req: Request, res: Response) {
     try {
-      const userToken = req.user as { email: string };
+      const userToken = (req as any).roleUser || req.user as { email: string };
 
       if (!userToken || !userToken.email) {
         return res.status(400).json({
@@ -152,7 +184,7 @@ class UserControllers {
   async savePersonalInfo(req: Request, res: Response) {
     try {
       const { name, lastName, dni, areaCode, phone, location, birthDate, receiveNews } = req.body;
-      const userToken = req.user as { email: string };
+      const userToken = (req as any).roleUser || req.user as { email: string };
 
       if (!userToken || !userToken.email) {
         return res.status(400).json({
@@ -203,7 +235,7 @@ class UserControllers {
   async updateUserRole(req: Request, res: Response) {
     try {
       const { role } = req.body;
-      const userToken = req.user as { email: string };
+      const userToken = (req as any).roleUser || req.user as { email: string };
 
       if (!userToken || !userToken.email) {
         return res.status(400).json({
@@ -243,7 +275,7 @@ class UserControllers {
   async saveProfileInfo(req: Request, res: Response) {
     try {
       const { username, accountName, description } = req.body;
-      const userToken = req.user as { email: string };
+      const userToken = (req as any).roleUser || req.user as { email: string };
 
       if (!userToken || !userToken.email) {
         return res.status(400).json({
@@ -290,7 +322,7 @@ class UserControllers {
   async updateAccountInfo(req: Request, res: Response) {
     try {
       const { phone } = req.body;
-      const userToken = req.user as { email: string };
+      const userToken = (req as any).roleUser || req.user as { email: string };
 
       if (!userToken || !userToken.email) {
         return res.status(400).json({
@@ -329,7 +361,7 @@ class UserControllers {
   // Obtiene el perfil del usuario autenticado
   async getCurrentUserProfile(req: Request, res: Response) {
     try {
-      const userToken = req.user as { email: string };
+      const userToken = (req as any).roleUser || req.user as { email: string };
 
       if (!userToken || !userToken.email) {
         return res.status(400).json({
@@ -364,11 +396,11 @@ class UserControllers {
   // Inicia sesión de usuario
   async loginUser(req: Request, res: Response) {
     try {
+      console.log('loginUser - req.body:', JSON.stringify(req.body, null, 2));
+
       console.log('loginUser - iniciando proceso de login');
-      
-      const { email, contraseña } = req.body;
-      
-      console.log('loginUser - email recibido:', email);
+
+      const { email, contraseña } = req.body;      console.log('loginUser - email recibido:', email);
       console.log('loginUser - contraseña recibida:', contraseña ? 'EXISTS' : 'MISSING');
       
       // Validar que se proporcionen email y contraseña
@@ -380,11 +412,15 @@ class UserControllers {
         });
       }
       
-      // Buscar usuario en la base de datos
-      console.log('loginUser - buscando usuario en BD...');
-      const user = await UserModel.findOne({ 'primary_data.email': email.toLowerCase() });
-      
-      if (!user) {
+        // Buscar usuario en la base de datos
+        console.log('loginUser - buscando usuario en BD con email:', email.toLowerCase());
+        const user = await UserModel.findOne({ 'primary_data.email': email.toLowerCase() });
+
+        console.log('loginUser - resultado de búsqueda:', user ? 'ENCONTRADO' : 'NO ENCONTRADO');
+        if (user) {
+          console.log('loginUser - user._id:', user._id);
+          console.log('loginUser - user.primary_data.email:', user.primary_data.email);
+        }      if (!user) {
         console.log('loginUser - usuario no encontrado');
         return res.status(UNAUTHORIZED).json({
           success: false,
@@ -393,11 +429,11 @@ class UserControllers {
       }
       
       console.log('loginUser - usuario encontrado, verificando contraseña...');
-      
+
       // Verificar contraseña usando bcrypt
+      console.log('loginUser - verificando contraseña...');
       const isValidPassword = await bcrypt.compare(contraseña, user.auth_data.password);
-      
-      if (!isValidPassword) {
+      console.log('loginUser - isValidPassword:', isValidPassword);      if (!isValidPassword) {
         console.log('loginUser - contraseña incorrecta');
         return res.status(UNAUTHORIZED).json({
           success: false,
@@ -418,12 +454,54 @@ class UserControllers {
       
       console.log('loginUser - autenticación exitosa, generando token...');
       
-      // Generar token JWT
+      // Mapear el tipo de usuario a un rol del sistema
+      const getUserRole = (userType: string): UserRole => {
+        switch (userType?.toLowerCase()) {
+          case 'super_admin':
+          case 'superadmin':
+            return UserRole.ADMIN; // Super admin tiene permisos de admin
+          case 'admin':
+          case 'administrador':
+            return UserRole.ADMIN;
+          case 'professional':
+          case 'profesional':
+            return UserRole.PROFESSIONAL;
+          case 'autonomous':
+          case 'autonomo':
+          case 'autónomo':
+            return UserRole.AUTONOMOUS;
+          case 'dedicated':
+          case 'dedicado':
+            return UserRole.DEDICATED;
+          case 'provider':
+          case 'proveedor':
+            return UserRole.PROVIDER;
+          case 'moderator':
+          case 'moderador':
+            return UserRole.MODERATOR;
+          default:
+            return UserRole.USER;
+        }
+      };
+
+      const userRole = getUserRole(user.primary_data.type);
+      
+      // Generar flags basados en el rol del usuario
+      const flags = {
+        isProvider: userRole === UserRole.PROVIDER,
+        isProfessional: userRole === UserRole.PROFESSIONAL
+      };
+      
+      // Generar token JWT con información de roles
       const token = jwt.sign(
         { 
+          id: String(user._id),
           email: user.primary_data.email, 
           _id: user._id,
-          name: user.primary_data.name 
+          name: user.primary_data.name,
+          role: userRole,
+          isActive: user.permissions.active,
+          flags: flags
         }, 
         env.JWT_KEY, 
         { expiresIn: '60d' }
@@ -439,6 +517,7 @@ class UserControllers {
         last_name: user.primary_data.last_name,
         nickname: user.primary_data.nickname,
         type: user.primary_data.type,
+        role: userRole, // Incluir el rol mapeado
         description: user.primary_data.description,
         permissions: user.permissions,
         profile_image: user.profile_image

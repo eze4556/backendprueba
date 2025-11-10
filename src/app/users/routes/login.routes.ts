@@ -12,7 +12,7 @@ import userController from '../controllers/user.controllers';
 const router: Router = Router();
 
 // Middleware para verificar credenciales contra la base de datos
-async function checkCredentials(req: Request, res: Response, next: NextFunction): Promise<void> {
+async function checkCredentials(req: Request, res: Response, next: NextFunction): Promise<Response | void> {
   try {
     const { email, contraseña } = req.body;
     
@@ -22,11 +22,10 @@ async function checkCredentials(req: Request, res: Response, next: NextFunction)
     // Validar que se proporcionen email y contraseña
     if (!email || !contraseña) {
       console.log('checkCredentials - faltan email o contraseña');
-      HttpHandler.response(res, BAD_REQUEST, {
-        message: 'Bad request error',
-        data: { error: 'Email y contraseña son requeridos' }
+      return HttpHandler.error(res, {
+        code: BAD_REQUEST,
+        message: 'Email y contraseña son requeridos'
       });
-      return;
     }
     
     // Buscar usuario en la base de datos
@@ -35,11 +34,10 @@ async function checkCredentials(req: Request, res: Response, next: NextFunction)
     
     if (!user) {
       console.log('checkCredentials - usuario no encontrado');
-      HttpHandler.response(res, UNAUTHORIZED, {
-        message: 'Unauthorized',
-        data: { error: 'Credenciales incorrectas' }
+      return HttpHandler.error(res, {
+        code: UNAUTHORIZED,
+        message: 'Credenciales incorrectas'
       });
-      return;
     }
     
     console.log('checkCredentials - usuario encontrado, verificando contraseña...');
@@ -49,11 +47,10 @@ async function checkCredentials(req: Request, res: Response, next: NextFunction)
     
     if (!isValidPassword) {
       console.log('checkCredentials - contraseña incorrecta');
-      HttpHandler.response(res, UNAUTHORIZED, {
-        message: 'Unauthorized',
-        data: { error: 'Credenciales incorrectas' }
+      return HttpHandler.error(res, {
+        code: UNAUTHORIZED,
+        message: 'Credenciales incorrectas'
       });
-      return;
     }
     
     console.log('checkCredentials - contraseña válida, verificando estado activo...');
@@ -61,11 +58,10 @@ async function checkCredentials(req: Request, res: Response, next: NextFunction)
     // Verificar que el usuario esté activo
     if (!user.permissions.active) {
       console.log('checkCredentials - usuario inactivo');
-      HttpHandler.response(res, UNAUTHORIZED, {
-        message: 'Unauthorized',
-        data: { error: 'Usuario inactivo. Contacta al administrador.' }
+      return HttpHandler.error(res, {
+        code: UNAUTHORIZED,
+        message: 'Usuario inactivo. Contacta al administrador.'
       });
-      return;
     }
     
     console.log('checkCredentials - autenticación exitosa, configurando request...');
@@ -84,11 +80,10 @@ async function checkCredentials(req: Request, res: Response, next: NextFunction)
     next();
   } catch (error) {
     console.error('checkCredentials - error:', error);
-    HttpHandler.response(res, INTERNAL_ERROR, {
-      message: 'Internal Error',
-      data: { error: 'Error interno del servidor' }
+    return HttpHandler.error(res, {
+      code: INTERNAL_ERROR,
+      message: 'Error interno del servidor'
     });
-    return;
   }
 }
 

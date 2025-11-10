@@ -27,13 +27,16 @@ const providerAuthMiddleware = (req: Request, res: Response, next: NextFunction)
     try {
         const decoded = jwt.verify(token, JWT_SECRET) as { id: string; isProvider: boolean; email?: string; role?: string };
 
-        if (!decoded.isProvider) {
-            return res.status(403).json({ error: 'Unauthorized: Provider role required' });
+        // Permitir acceso a providers y super_admin
+        const isAllowed = decoded.isProvider || decoded.role === 'super_admin' || decoded.role === 'admin';
+        
+        if (!isAllowed) {
+            return res.status(403).json({ error: 'Unauthorized: Provider or admin role required' });
         }
 
         req.user = {
             id: decoded.id,
-            isProvider: decoded.isProvider,
+            isProvider: decoded.isProvider || false,
             email: decoded.email || '',
             role: decoded.role || '',
         };

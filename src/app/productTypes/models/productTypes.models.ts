@@ -8,6 +8,7 @@ export interface ProductInterface extends mongoose.Document {
     description: string;
     stock: number;
     price: number;
+    imageUrl?: string;
   };
   product_status: {
     status: string;
@@ -31,6 +32,7 @@ const ProductSchema = new Schema(
       description: { type: String, required: true },
       stock: { type: Number, required: true },
       price: { type: Number, required: true },
+      imageUrl: { type: String, required: false },
     },
     product_status: {
       status: { type: String, required: true },

@@ -1,12 +1,21 @@
-// Importación de módulos principales de Express y utilidades
+﻿// ImportaciÃ³n de mÃ³dulos principales de Express y utilidades
 import express from 'express';
 import { Request, Response, NextFunction } from 'express';
 import morgan from 'morgan';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser'; 
 import path from 'path';
+import cors from 'cors';
 
-// Importación de rutas de los diferentes módulos de la aplicación
+// ConfiguraciÃ³n de producciÃ³n
+import { productionConfig, validateProductionConfig } from './config/production.config';
+
+// Validar configuraciÃ³n en producciÃ³n
+if (process.env.NODE_ENV === 'production') {
+  validateProductionConfig();
+}
+
+// ImportaciÃ³n de rutas de los diferentes mÃ³dulos de la aplicaciÃ³n
 import usersRoutes from './app/users/routes/users.routes';
 import codesRoutes from './app/codes/routes/code.routes';
 import loginRoutes from './app/users/routes/login.routes';
@@ -19,58 +28,166 @@ import productTypeRoutes from './app/productTypes/routes/productType.routes';
 import autonomousRoutes from './app/autonomous/routes/autonomous.routes';
 import dedicatedRoutes from './app/dedicated/routes/dedicated.routes';
 import rankingRoutes from './app/ranking/routes/ranking.routes';
-import paymentRoutes from './app/payment/payment.controller';
+import paymentRoutes from './app/payment/routes/payment.routes';
+import { paymentWebhookRoutes } from './app/payment/controllers/payment-webhook.controller';
 import setCalculatorRoutes from './app/calculator/routes/calculatorRoutes';
 import subscriptionRoutes from './app/subscripcion/routes/subscription.routes'; 
 import providerRoutes from './app/proveedores/routes/provider.routes';
 import streamRoutes from './live/stream';
+import ubicacionesRoutes from './routes/ubicaciones.routes';
+import orderRoutes from "./app/orders/routes/order.routes";
+import billingRoutes from './app/billing/routes/billing.routes';
+import tokenRoutes from './routes/token.routes';
+import cartRoutes from './app/orders/routes/cart.routes';
+import notificationRoutes from './app/users/routes/notification.routes';
+import reviewRoutes from './app/productTypes/routes/review.routes';
+import wishlistRoutes from './app/users/routes/wishlist.routes';
+import searchRoutes from './app/search/routes/search.routes';
+import reservationRoutes from './app/professional/routes/reservation.routes';
+import mediaUploadRoutes from './app/media/routes/media-upload.routes';
+import messagingRoutes from './app/users/routes/messaging.routes';
+import { healthCheck, livenessProbe, readinessProbe, productionHealthCheck, metricsEndpoint } from './routes/health.routes';
+import { testEndpoint } from './controllers/test.controller';
+import { BotDetectionMiddleware } from './middleware/bot-detection.middleware';
+import streamingPreferencesRoutes from './live/routes/streamingPreferences.routes';
+import { 
+  auditLogMiddleware, 
+  rateLimitMiddleware, 
+  botDetectionMiddleware,
+  noSQLSanitizeMiddleware,
+  xssSanitizeMiddleware,
+  geoBlockingMiddleware,
+  securityHeadersMiddleware,
+  inputValidationMiddleware
+} from './middleware/security-advanced.middleware';
+import { authMiddleware } from './middleware/auth.middleware';
+import { AuthRequest } from './interfaces/auth.interface';
 
-// Importación y conexión a la base de datos
+// ImportaciÃ³n y conexiÃ³n a la base de datos
 import './database/database';
 
-// Inicialización de la aplicación Express
+// InicializaciÃ³n de la aplicaciÃ³n Express
 const app = express();
-app.use(express.json());
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
 
-// Configuración para aceptar peticiones en formato JSON
-app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
-app.use(morgan('dev'));
-app.set('port', process.env.PORT || 3000);
-// Middleware para habilitar CORS y permitir peticiones desde cualquier origen
-app.use((req: Request, res: Response, next: NextFunction) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
-  
-  // Responde a las peticiones preflight de CORS
-  if (req.method === 'OPTIONS') {
-    res.sendStatus(200);
-  } else {
-    next();
-  }
-});
+// ConfiguraciÃ³n del puerto
+app.set('port', productionConfig.port);
 
-// Registro de las rutas principales de la API
+// ---------- CORS CONFIGURADO POR ENTORNO ----------
+const corsOptions = {
+  origin: process.env.NODE_ENV === 'production' 
+    ? productionConfig.security.corsOrigin 
+    : true, // Permitir todos los orÃ­genes en desarrollo
+  credentials: productionConfig.security.corsCredentials,
+  methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept', 'Origin']
+};
+
+app.use(cors(corsOptions));
+
+// Preflight para todas las rutas
+app.options('*', cors());
+
+// ---------- MIDDLEWARE BÃSICO ----------
+app.use(morgan(process.env.NODE_ENV === 'production' ? 'combined' : 'dev'));
+app.use(bodyParser.json({ limit: '50mb' }));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
+
+// ---------- MIDDLEWARE DE SEGURIDAD (ORDEN IMPORTANTE) ----------
+// 1. Headers de seguridad primero
+app.use(securityHeadersMiddleware);
+
+// 2. Rate limiting para prevenir ataques de fuerza bruta
+app.use(rateLimitMiddleware({
+  windowMs: productionConfig.security.rateLimitWindowMs,
+  maxRequests: productionConfig.security.rateLimitMaxRequests
+}));
+
+// 3. SanitizaciÃ³n de entrada antes de procesamiento
+app.use(noSQLSanitizeMiddleware);
+app.use(xssSanitizeMiddleware);
+app.use(inputValidationMiddleware());
+
+// 4. DetecciÃ³n de bots (mÃºltiples implementaciones)
+if (productionConfig.security.botDetectionEnabled) {
+  app.use(BotDetectionMiddleware.detectBot);
+  app.use(botDetectionMiddleware);
+}
+
+// 5. Geo-blocking si estÃ¡ habilitado
+if (productionConfig.security.geoBlockingEnabled) {
+  app.use(geoBlockingMiddleware(productionConfig.security.blockedCountries));
+}
+
+// 6. AuditorÃ­a de todas las requests
+app.use(auditLogMiddleware);
+
+// ---------- RUTAS BÃSICAS ----------
+app.get('/', (_req: Request, res: Response) => res.status(200).send('API OK'));
+app.get('/favicon.ico', (_req: Request, res: Response) => res.status(204).end());
+
+// Health check endpoints
+if (process.env.NODE_ENV === 'production') {
+  // Health checks completos para producciÃ³n
+  app.get('/health', productionHealthCheck);
+  app.get('/health/live', livenessProbe);
+  app.get('/health/ready', readinessProbe);
+  app.get('/metrics', metricsEndpoint);
+  app.get('/status', (_req: Request, res: Response) => {
+    res.status(200).json({
+      status: 'ok',
+      timestamp: new Date().toISOString(),
+      environment: 'production'
+    });
+  });
+} else {
+  // Health checks bÃ¡sicos para desarrollo
+  app.get('/health', healthCheck);
+  app.get('/health/live', livenessProbe);
+  app.get('/health/ready', readinessProbe);
+}
+app.get('/test', testEndpoint);
+
+// ---------- RUTAS DE LA API ----------
 app.use('/api/code', codesRoutes);
 app.use('/api/users', usersRoutes);
 app.use('/api/login', loginRoutes);
 app.use('/api/password', passwordRoutes);
-app.use('/api/categorie', categoriesRoutes);
+app.use('/api/auth', tokenRoutes); // Rutas de refresh token y logout
+app.use('/api/categorie', categoriesRoutes); // Ahora pÃºblico
+app.use('/api/cart', cartRoutes); // Carrito de compras
+app.use('/api/wishlist', wishlistRoutes); // Lista de deseos con alertas de precio
+app.use('/api/search', searchRoutes); // Búsqueda global avanzada
+app.use('/api/ubicaciones', ubicacionesRoutes); // API de búsqueda de ubicaciones (Georef AR)
+app.use('/api/reservation', reservationRoutes); // Sistema de reservas con disponibilidad
+app.use('/api/notifications', notificationRoutes); // Sistema de notificaciones
+app.use('/api/messages', messagingRoutes); // Sistema de mensajerÃ­a con Socket.IO
+app.use('/api/reviews', reviewRoutes); // Sistema de reviews y calificaciones
 app.use('/api/media', mediaRoutes);
-app.use("/api/vehicle", vehicleRoutes);
+app.use('/api/media-upload', mediaUploadRoutes); // Upload con optimizaciÃ³n Sharp
+app.use('/api/vehicle', vehicleRoutes);
 app.use('/api/professional', professionalRoutes);
 app.use('/api/productType', productTypeRoutes);
 app.use('/api/autonomous', autonomousRoutes);
 app.use('/api/dedicated', dedicatedRoutes);
 app.use('/api/ranking', rankingRoutes);
 app.use('/api/payment', paymentRoutes);
+app.use('/api/payment/webhooks', paymentWebhookRoutes);
 app.use('/api/calculator', setCalculatorRoutes);
 app.use('/api/subscription', subscriptionRoutes);
 app.use('/api/providers', providerRoutes);
-// Importación de las rutas de streaming
+app.use('/api/order', orderRoutes); // Sistema de Ã³rdenes completo
+app.use('/api/billing', billingRoutes);
 app.use('/api/stream', streamRoutes);
+app.use('/api/streaming-preferences', streamingPreferencesRoutes);
 
-// Exportación de la aplicación para ser utilizada en el servidor principal
+app.get('/api/public-endpoint', (req: Request, res: Response) => {
+  res.json({ message: 'Endpoint pÃºblico accedido' });
+});
+
+app.get('/api/rate-limit-test', (req: Request, res: Response) => {
+  res.json({ message: 'Endpoint especÃ­fico para test de rate limiting' });
+});
+
 export default app;
+

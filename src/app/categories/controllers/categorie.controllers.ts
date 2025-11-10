@@ -13,11 +13,11 @@ class CategorieController {
   public async getData(req: Request, res: Response): Promise<Response> {
     try {
       const categories = await CategorieModel.find({});
-      return HttpHandler.response(res, SUCCESS, { message: 'Response successfully', data: { categories } });
+      return HttpHandler.success(res, { message: 'Response successfully', data: { categories } });
     } catch (e) {
-      return HttpHandler.response(res, INTERNAL_ERROR, {
-        message: 'Internal Error',
-        data: { error: (e as Error).message },
+      return HttpHandler.error(res, {
+        code: INTERNAL_ERROR,
+        message: (e as Error).message
       });
     }
   }

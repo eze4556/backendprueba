@@ -1,6 +1,5 @@
 import { Request, Response } from 'express';
 import providerService, { ProviderCategory } from '../servicio/provider.service';
-import { AuthRequest } from '../../../middleware/auth.middleware';
 
 export default class ProviderController {
   private providerService = providerService;

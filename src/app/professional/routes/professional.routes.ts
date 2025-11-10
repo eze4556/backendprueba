@@ -4,18 +4,16 @@ import Token from '../../../auth/token/token';
 
 const router = Router();
 
-// Ruta para manejar solicitudes POST
-router.post('/', (req, res) => {
-    const { name, profession } = req.body;
-    // Lógica para manejar los datos recibidos
-    res.status(201).json({ message: 'Profesional creado', data: { name, profession } });
-  });
+// Obtener todos los profesionales (debe estar ANTES de /:id)
+router.get('/', obtenerProfesionales);
 
-// Crear nuevo profesional
+// Crear nuevo profesional - Ruta principal
+router.post('/', Token.verifyToken, crearProfesional);
+
+// Crear nuevo profesional - Ruta alternativa para compatibilidad
 router.post('/crear', Token.verifyToken, crearProfesional);
 
-// Obtener todos los profesionales
-router.get('/', obtenerProfesionales);
+// Obtener un profesional por ID
 router.get('/:id', getProfessionalById);
 
 // Actualizar un profesional

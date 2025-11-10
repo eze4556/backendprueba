@@ -17,30 +17,67 @@ import { Item } from '../../ranking/ranking.types';
 export const crearProfesional = async (req: Request, res: Response): Promise<Response> => {
   try {
     const { name, profession, experience, score, categorie } = req.body;
-    const newProfessional = new Professional({ name, profession, experience, score, categorie });
+    
+    // Validación de campos requeridos
+    if (!name || !profession) {
+      return res.status(400).json({ 
+        success: false,
+        error: 'Missing required fields: name and profession are required' 
+      });
+    }
+    
+    const newProfessional = new Professional({ 
+      name, 
+      profession, 
+      experience: experience || 0,  
+      score: score || 0, 
+      categorie 
+    });
+    
     await newProfessional.save();
-    return res.status(201).json(newProfessional);
-  } catch (error) {
-    return res.status(500).json({ message: 'Error al crear el profesional', error });
+    
+    return res.status(201).json({
+      success: true,
+      message: 'Professional created successfully',
+      data: newProfessional
+    });
+  } catch (error: any) {
+    console.error('Error creating professional:', error);
+    
+    // Manejar errores de validación de Mongoose
+    if (error.name === 'ValidationError') {
+      return res.status(400).json({ 
+        success: false,
+        error: 'Validation error',
+        details: error.message 
+      });
+    }
+    
+    return res.status(500).json({ 
+      success: false,
+      message: 'Error al crear el profesional', 
+      error: error.message 
+    });
   }
 };
 
 // Obtener todos los profesionales
 export const obtenerProfesionales = async (req: Request, res: Response): Promise<Response> => {
   try {
+    console.log('🔍 Buscando profesionales en la base de datos...');
     const professionals = await Professional.find();
+    console.log(`📊 Encontrados ${professionals.length} profesionales`);
     
-    // Supongamos que cada profesional tiene un campo `score`
-    const items: Item[] = professionals.map((p: ProfessionalType) => ({
-        name: p.name,
-        score: p.score,
-        categorie: p.categorie
-    }));
+    if (professionals.length === 0) {
+      console.log('⚠️  No se encontraron profesionales');
+      return res.status(200).json([]);
+    }
 
-    const rankedItems = rankItems(items);
-
-    return res.status(200).json(rankedItems);
+    // Devolver los datos directamente sin ranking por ahora
+    console.log('✅ Devolviendo profesionales:', professionals.map(p => p.name));
+    return res.status(200).json(professionals);
   } catch (error) {
+    console.error('❌ Error al obtener profesionales:', error);
     return res.status(500).json({ message: 'Error al obtener los profesionales', error });
   }
 };

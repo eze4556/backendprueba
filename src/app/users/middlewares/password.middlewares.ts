@@ -18,19 +18,17 @@ class PasswordMiddleware {
       const { password } = req.body.auth_data || req.body; // Extract password
       // Check password complexity
       if (!PasswordTool.validatePassword(password)) {
-        return HttpHandler.response(res, BAD_REQUEST, {
-          message: 'Bad request error',
-          data: {
-            error: 'Incorrect format. (Minimum 8 characters, uppercase, lowercase, at least 2 numbers and must not contain blank spaces)',
-          },
+        return HttpHandler.error(res, {
+          code: BAD_REQUEST,
+          message: 'Incorrect format. (Minimum 8 characters, uppercase, lowercase, at least 2 numbers and must not contain blank spaces)'
         });
       }
       req.password = password; // Set password
       next();
     } catch (e) {
-      return HttpHandler.response(res, INTERNAL_ERROR, {
-        message: 'Internal Error',
-        data: { error: (e as Error).message },
+      return HttpHandler.error(res, {
+        code: INTERNAL_ERROR,
+        message: (e as Error).message
       });
     }
   }
@@ -52,18 +50,18 @@ class PasswordMiddleware {
       const samePassword = bcrypt.compareSync(password, oldPassword!); // Compare old password with new password
       if (samePassword) {
         // If is the same password return error
-        return HttpHandler.response(res, BAD_REQUEST, {
-          message: 'Bad request error',
-          data: { error: 'Wrong password' },
+        return HttpHandler.error(res, {
+          code: BAD_REQUEST,
+          message: 'Wrong password'
         });
       }
       const hashedPassword = await bcrypt.hash(password!, 10); // Hash and set the password in auth_data
       req.password = hashedPassword; // Set on request the new password
       next();
     } catch (e) {
-      return HttpHandler.response(res, INTERNAL_ERROR, {
-        message: 'Internal Error',
-        data: { error: (e as Error).message },
+      return HttpHandler.error(res, {
+        code: INTERNAL_ERROR,
+        message: (e as Error).message
       });
     }
   }
@@ -86,9 +84,9 @@ class PasswordMiddleware {
       req._id = user!._id; // Save _id for token
       next();
     } catch (e) {
-      return HttpHandler.response(res, INTERNAL_ERROR, {
-        message: 'Internal Error',
-        data: { error: (e as Error).message },
+      return HttpHandler.error(res, {
+        code: INTERNAL_ERROR,
+        message: (e as Error).message
       });
     }
   }
@@ -109,16 +107,16 @@ class PasswordMiddleware {
       ); // Check if user is allowed to change password and set false
       if (!user) {
         // If user is not allowed
-        return HttpHandler.response(res, BAD_REQUEST, {
-          message: 'Bad request error',
-          data: { error: "Can't change password'" },
+        return HttpHandler.error(res, {
+          code: BAD_REQUEST,
+          message: "Can't change password'"
         });
       }
       next();
     } catch (e) {
-      return HttpHandler.response(res, INTERNAL_ERROR, {
-        message: 'Internal Error',
-        data: { error: (e as Error).message },
+      return HttpHandler.error(res, {
+        code: INTERNAL_ERROR,
+        message: (e as Error).message
       });
     }
   }

@@ -27,4 +27,29 @@ router.post(
   PasswordController.changePassword // Change password
 );
 
+// ============================================
+// NUEVOS ENDPOINTS DE RECUPERACIÓN DE CONTRASEÑA
+// ============================================
+
+/**
+ * @route   POST /api/password/forgot
+ * @desc    Solicitar recuperación de contraseña (envía email con token)
+ * @access  Public
+ */
+router.post('/forgot', PasswordController.forgotPassword);
+
+/**
+ * @route   GET /api/password/validate/:token
+ * @desc    Validar token de recuperación
+ * @access  Public
+ */
+router.get('/validate/:token', PasswordController.validateToken);
+
+/**
+ * @route   POST /api/password/reset/:token
+ * @desc    Resetear contraseña con token
+ * @access  Public
+ */
+router.post('/reset/:token', PasswordController.resetPassword);
+
 export default router;

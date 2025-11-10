@@ -25,11 +25,12 @@ class Token {
       const { expiresIn } = req.body; // Cambiado de req a req.body
       const { _id, email } = req.body; // Cambiado de req a req.body
       const token = jwt.sign({ email: email!, _id: _id! }, env.JWT_KEY, { expiresIn: expiresIn || '60d' }); // Generate token
-      return HttpHandler.response(res, CREATED, { message: 'Token created successfully', data: { token, expiresIn } });
+      return HttpHandler.success(res, { message: 'Token created successfully', data: { token, expiresIn } }, CREATED);
     } catch (e) {
-      return HttpHandler.response(res, INTERNAL_ERROR, {
+      return HttpHandler.error(res, {
+        code: INTERNAL_ERROR,
         message: 'Internal Error',
-        data: { error: (e as Error).message },
+        errors: [(e as Error).message]
       });
     }
   };
@@ -76,9 +77,10 @@ class Token {
         next();
       });
     } catch (e) {
-      return HttpHandler.response(res, INTERNAL_ERROR, {
+      return HttpHandler.error(res, {
+        code: INTERNAL_ERROR,
         message: 'Internal Error',
-        data: { error: (e as Error).message },
+        errors: [(e as Error).message]
       });
     }
   }

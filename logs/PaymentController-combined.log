@@ -1,0 +1,4 @@
+[PaymentController] 2025-11-08 02:48:42:4842 [31merror[39m: [31mError en operación de pago:[39m {"metadata":{"error":{"code":"INVALID_TOKEN","name":"PaymentError"}}}
+[PaymentController] 2025-11-08 02:56:13:5613 [31merror[39m: [31mError en operación de pago:[39m {"metadata":{"error":{"code":"INVALID_TOKEN","name":"PaymentError"}}}
+[PaymentController] 2025-11-08 03:02:15:215 [31merror[39m: [31mError en operación de pago:[39m {"metadata":{"error":{"code":"PAYMENT_NOT_FOUND","name":"PaymentError"}}}
+[PaymentController] 2025-11-08 13:41:11:4111 [31merror[39m: [31mError en operación de pago:[39m {"metadata":{"error":{"code":"INVALID_TOKEN","name":"PaymentError"}}}

@@ -1,0 +1,46 @@
+"use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Order = void 0;
+const mongoose_1 = __importStar(require("mongoose"));
+const OrderSchema = new mongoose_1.Schema({
+    cliente: { type: mongoose_1.Schema.Types.ObjectId, ref: "Cliente", required: true },
+    items: [
+        {
+            producto: { type: mongoose_1.Schema.Types.ObjectId, ref: "Producto", required: true },
+            nombre: { type: String, required: true },
+            cantidad: { type: Number, required: true },
+            precioUnitario: { type: Number, required: true },
+            iva: { type: Number, required: true }
+        }
+    ],
+    tipo: { type: String, enum: ["producto", "suscripcion"], required: true },
+    total: { type: Number, required: true },
+    factura: { type: mongoose_1.Schema.Types.ObjectId, ref: "Invoice" },
+    estado: { type: String, enum: ["pendiente", "pagada", "cancelada"], default: "pendiente" },
+    fecha: { type: Date, default: Date.now }
+});
+exports.Order = mongoose_1.default.model("Order", OrderSchema);
+//# sourceMappingURL=order.model.js.map

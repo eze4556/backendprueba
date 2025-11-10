@@ -1,0 +1,68 @@
+[PaymentService] 2025-11-06 11:32:12:3212 [31merror[39m: [31mMétodo de pago no soportado: credit_card[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [31merror[39m: [31mMétodo de pago no soportado: invalid_method[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [32minfo[39m: [32mIniciando autorización de pago: stripe[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [32minfo[39m: [32mAutorización exitosa: pay_1762439532139_vb2u2znm2w[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [32minfo[39m: [32mCapturando pago: payment_test_123[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [32minfo[39m: [32mIniciando autorización de pago: stripe[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [32minfo[39m: [32mAutorización exitosa: pay_1762439532452_g64q7pt3l6v[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [32minfo[39m: [32mCapturando pago: payment_complete_flow[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [31merror[39m: [31mMétodo de pago no soportado: invalid_method[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [31merror[39m: [31mEl monto debe ser mayor a cero[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [31merror[39m: [31mMétodo de pago no soportado: credit_card[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [31merror[39m: [31mMétodo de pago no soportado: credit_card[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [31merror[39m: [31mEl monto debe ser mayor a cero[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [31merror[39m: [31mEl monto debe ser mayor a cero[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [31merror[39m: [31mEl monto debe ser mayor a cero[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [31merror[39m: [31mEl monto debe ser mayor a cero[39m
+[PaymentService] 2025-11-06 11:32:12:3212 [31merror[39m: [31mEl monto debe ser mayor a cero[39m
+[PaymentService] 2025-11-06 15:47:33:4733 [31merror[39m: [31mMétodo de pago no soportado: credit_card[39m
+[PaymentService] 2025-11-06 15:47:33:4733 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 15:47:33:4733 [31merror[39m: [31mMétodo de pago no soportado: invalid_method[39m
+[PaymentService] 2025-11-06 15:47:33:4733 [32minfo[39m: [32mIniciando autorización de pago: stripe[39m
+[PaymentService] 2025-11-06 15:47:33:4733 [32minfo[39m: [32mAutorización exitosa: pay_1762454853572_hnynq4yuap[39m
+[PaymentService] 2025-11-06 15:47:33:4733 [32minfo[39m: [32mCapturando pago: payment_test_123[39m
+[PaymentService] 2025-11-06 15:47:33:4733 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 15:47:33:4733 [32minfo[39m: [32mIniciando autorización de pago: stripe[39m
+[PaymentService] 2025-11-06 15:47:33:4733 [32minfo[39m: [32mAutorización exitosa: pay_1762454853886_rqexw7r4s7n[39m
+[PaymentService] 2025-11-06 15:47:33:4733 [32minfo[39m: [32mCapturando pago: payment_complete_flow[39m
+[PaymentService] 2025-11-06 15:47:33:4733 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 15:47:33:4733 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 15:47:33:4733 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 15:47:33:4733 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 15:47:33:4733 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 15:47:33:4733 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 15:47:33:4733 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 15:47:33:4733 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 15:47:33:4733 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 15:47:34:4734 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 15:47:34:4734 [31merror[39m: [31mMétodo de pago no soportado: invalid_method[39m
+[PaymentService] 2025-11-06 15:47:34:4734 [31merror[39m: [31mEl monto debe ser mayor a cero[39m
+[PaymentService] 2025-11-06 15:47:34:4734 [31merror[39m: [31mMétodo de pago no soportado: credit_card[39m
+[PaymentService] 2025-11-06 15:47:34:4734 [31merror[39m: [31mMétodo de pago no soportado: credit_card[39m
+[PaymentService] 2025-11-06 15:47:34:4734 [31merror[39m: [31mEl monto debe ser mayor a cero[39m
+[PaymentService] 2025-11-06 15:47:34:4734 [31merror[39m: [31mEl monto debe ser mayor a cero[39m
+[PaymentService] 2025-11-06 15:47:34:4734 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-06 15:47:34:4734 [31merror[39m: [31mEl monto debe ser mayor a cero[39m
+[PaymentService] 2025-11-06 15:47:34:4734 [31merror[39m: [31mEl monto debe ser mayor a cero[39m
+[PaymentService] 2025-11-06 15:47:34:4734 [31merror[39m: [31mEl monto debe ser mayor a cero[39m
+[PaymentService] 2025-11-08 02:48:42:4842 [32minfo[39m: [32mIniciando autorización de pago: stripe[39m
+[PaymentService] 2025-11-08 02:56:13:5613 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-08 03:02:15:215 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-08 03:02:15:215 [32minfo[39m: [32mAutorización exitosa: pay_1762581735587_xb6t4mpun1[39m
+[PaymentService] 2025-11-08 03:02:15:215 [32minfo[39m: [32mCapturando pago: test_payment_id[39m
+[PaymentService] 2025-11-08 03:12:14:1214 [32minfo[39m: [32mIniciando autorización de pago: paypal[39m
+[PaymentService] 2025-11-08 03:12:14:1214 [32minfo[39m: [32mAutorización exitosa: pay_1762582334188_yhbm6s38d5o[39m
+[PaymentService] 2025-11-08 13:41:11:4111 [32minfo[39m: [32mIniciando autorización de pago: stripe[39m

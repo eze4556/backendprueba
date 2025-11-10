@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import HttpHandler from '../../../helpers/handler.helper';
 import { BAD_REQUEST, FORBIDDEN, INTERNAL_ERROR } from '../../../constants/codes.constanst';
-import { AuthRequest as BaseAuthRequest } from '../../../middleware/auth.middleware';
+
 import providerService from '../servicio/provider.service';
 
 // Extend the user type in the JWT payload
@@ -23,11 +23,7 @@ interface CustomJwtPayload {
     organizationId?: string;
 }
 
-interface AuthRequest extends Request, BaseAuthRequest {
-    user?: CustomJwtPayload;
-    providerId?: string;
-    organizationId?: string;
-}
+
 
 class ProviderMiddleware {
   private providerService = providerService;
@@ -35,35 +31,35 @@ class ProviderMiddleware {
   /**
    * Verifica si el usuario es dueño del proveedor o es un administrador
    */
-  public isProviderOrAdmin = (req: AuthRequest, res: Response, next: NextFunction): Response | void => {
+  public isProviderOrAdmin = (req: Request, res: Response, next: NextFunction): Response | void => {
     try {
       const providerId = req.params.providerId || req.body.providerId;
       
       if (!providerId) {
-        return HttpHandler.response(res, BAD_REQUEST, {
-          message: 'Bad request error',
-          data: { error: 'ID de proveedor requerido' }
+        return HttpHandler.error(res, {
+          code: BAD_REQUEST,
+          message: 'ID de proveedor requerido'
         });
       }
 
       // Si el usuario es admin, permitimos acceso
-      if (req.user?.role === 'admin') {
+
+      const user = (req as any).user as CustomJwtPayload | undefined;
+      if (user?.role === 'admin') {
+        return next();
+      }
+      if (user?.providerId === providerId) {
         return next();
       }
 
-      // Si el providerId del token coincide con el providerId de la solicitud
-      if (req.user?.providerId === providerId) {
-        return next();
-      }
-
-      return HttpHandler.response(res, FORBIDDEN, {
-        message: 'Forbidden',
-        data: { error: 'No tiene permisos para realizar esta acción' }
+      return HttpHandler.error(res, {
+        code: FORBIDDEN,
+        message: 'No tiene permisos para realizar esta acción'
       });
     } catch (error) {
-      return HttpHandler.response(res, INTERNAL_ERROR, {
-        message: 'Internal Error',
-        data: { error: (error as Error).message }
+      return HttpHandler.error(res, {
+        code: INTERNAL_ERROR,
+        message: (error as Error).message
       });
     }
   };
@@ -71,40 +67,38 @@ class ProviderMiddleware {
   /**
    * Verifica si el proveedor está aprobado
    */
-  public isProviderApproved = async (req: AuthRequest, res: Response, next: NextFunction): Promise<Response | void> => {
+  public isProviderApproved = async (req: Request, res: Response, next: NextFunction): Promise<Response | void> => {
     try {
-      const providerId = req.params.providerId || req.body.providerId || req.user?.providerId;
-      
+      const user = (req as any).user as CustomJwtPayload | undefined;
+      const providerId = req.params.providerId || req.body.providerId || user?.providerId;
       if (!providerId) {
-        return HttpHandler.response(res, BAD_REQUEST, {
-          message: 'Bad request error',
-          data: { error: 'ID de proveedor requerido' }
+        return HttpHandler.error(res, {
+          code: BAD_REQUEST,
+          message: 'ID de proveedor requerido'
         });
       }
-
-      const organizationId = req.user?.organizationId;
-      
+      const organizationId = user?.organizationId;
       if (!organizationId) {
-        return HttpHandler.response(res, BAD_REQUEST, {
-          message: 'Bad request error',
-          data: { error: 'ID de organización requerido' }
+        return HttpHandler.error(res, {
+          code: BAD_REQUEST,
+          message: 'ID de organización requerido'
         });
       }
       
       const isApproved = await this.providerService.isProviderApproved(providerId, organizationId);
       
       if (!isApproved) {
-        return HttpHandler.response(res, FORBIDDEN, {
-          message: 'Forbidden',
-          data: { error: 'El proveedor no está aprobado o no existe' }
+        return HttpHandler.error(res, {
+          code: FORBIDDEN,
+          message: 'El proveedor no está aprobado o no existe'
         });
       }
 
       return next();
     } catch (error) {
-      return HttpHandler.response(res, INTERNAL_ERROR, {
-        message: 'Internal Error',
-        data: { error: (error as Error).message }
+      return HttpHandler.error(res, {
+        code: INTERNAL_ERROR,
+        message: (error as Error).message
       });
     }
   };

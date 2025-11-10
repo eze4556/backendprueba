@@ -1,0 +1,174 @@
+openapi: 3.0.0
+info:
+  title: API Facturación Electrónica
+  version: 1.0.0
+  description: Documentación de la API de facturación electrónica y reportes
+servers:
+  - url: http://localhost:3000
+paths:
+  /health:
+    get:
+      summary: Health Check
+      tags:
+        - Health
+      description: Verifica el estado general del servicio.
+      responses:
+        '200':
+          description: Servicio operativo.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: "ok"
+                  uptime:
+                    type: number
+                    example: 12345
+                  dbState:
+                    type: string
+                    example: "connected"
+  /health/live:
+    get:
+      summary: Liveness Probe
+      tags:
+        - Health
+      description: Verifica si el proceso de la aplicación está en ejecución.
+      responses:
+        '200':
+          description: El proceso está vivo.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: "live"
+  /health/ready:
+    get:
+      summary: Readiness Probe
+      tags:
+        - Health
+      description: Verifica si la aplicación está lista para aceptar tráfico.
+      responses:
+        '200':
+          description: La aplicación está lista.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: "ready"
+                  db:
+                    type: string
+                    example: "connected"
+  /api/billing/invoices:
+    post:
+      summary: Crear factura
+      tags:
+        - Facturación
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateInvoiceDto'
+      responses:
+        '201':
+          description: Factura creada
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvoiceResponseDto'
+  /api/billing/invoices/{id}:
+    get:
+      summary: Obtener factura por ID
+      tags:
+        - Facturación
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Factura encontrada
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvoiceResponseDto'
+  /api/billing/reports/monthly:
+    get:
+      summary: Obtener reporte mensual
+      tags:
+        - Reportes
+      parameters:
+        - name: month
+          in: query
+          required: true
+          schema:
+            type: integer
+        - name: year
+          in: query
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Reporte generado
+          content:
+            application/json:
+              schema:
+                type: object
+components:
+  schemas:
+    CreateInvoiceDto:
+      type: object
+      properties:
+        userId:
+          type: string
+        orderId:
+          type: string
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/InvoiceItemDto'
+        invoiceType:
+          type: integer
+        pointOfSale:
+          type: integer
+    InvoiceItemDto:
+      type: object
+      properties:
+        productId:
+          type: string
+        description:
+          type: string
+        quantity:
+          type: integer
+        unitPrice:
+          type: number
+        vatRate:
+          type: number
+    InvoiceResponseDto:
+      type: object
+      properties:
+        id:
+          type: string
+        invoiceNumber:
+          type: string
+        cae:
+          type: string
+        caeExpiration:
+          type: string
+        total:
+          type: number
+        status:
+          type: string
+        pdfUrl:
+          type: string

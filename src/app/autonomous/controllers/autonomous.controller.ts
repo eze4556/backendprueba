@@ -6,19 +6,20 @@ import { Item } from '../../ranking/ranking.types';
 // Método GET para obtener todos los autónomos
 export const getAllAutonomous = async (req: Request, res: Response, next: NextFunction) => {
     try {
+        console.log('🔍 Buscando autónomos en la base de datos...');
         const autonomous = await Autonomous.find();
+        console.log(`📊 Encontrados ${autonomous.length} autónomos`);
         
-        // Supongamos que cada autónomo tiene un campo `score`
-        const items: Item[] = autonomous.map(a => ({
-            name: a.name,
-            score: a.score,
-            categorie: a.categorie 
-        }));
+        if (autonomous.length === 0) {
+            console.log('⚠️  No se encontraron autónomos');
+            return res.status(200).json([]);
+        }
 
-        const rankedItems = rankItems(items);
-
-        res.json(rankedItems);
+        // Devolver los datos directamente sin ranking por ahora
+        console.log('✅ Devolviendo autónomos:', autonomous.map(a => a.name));
+        res.json(autonomous);
     } catch (err) {
+        console.error('❌ Error al obtener autónomos:', err);
         next(err);
     }
 };

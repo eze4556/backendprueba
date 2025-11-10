@@ -1,8 +1,12 @@
-import { Response, NextFunction } from 'express';
+import { Request, Response, NextFunction } from 'express';
 import HttpHandler from '../../../helpers/handler.helper';
 import { BAD_REQUEST, FORBIDDEN, INTERNAL_ERROR } from '../../../constants/codes.constanst';
-import { AuthRequest } from '../../../middleware/auth.middleware';
 import { SubscriptionService } from '../service/subscription.service';
+
+// Definir la interfaz AuthRequest localmente
+interface AuthRequest extends Request {
+  user?: any;
+}
 
 export class SubscriptionMiddleware {
   private subscriptionService: SubscriptionService;
@@ -19,9 +23,9 @@ export class SubscriptionMiddleware {
       const subscriptionId = req.params.subscriptionId || req.body.subscriptionId;
       
       if (!subscriptionId) {
-        return HttpHandler.response(res, BAD_REQUEST, {
-          message: 'Bad request error',
-          data: { error: 'ID de suscripción requerido' }
+        return HttpHandler.error(res, {
+          code: BAD_REQUEST,
+          message: 'ID de suscripción requerido'
         });
       }
 
@@ -34,24 +38,24 @@ export class SubscriptionMiddleware {
       const subscription = await this.subscriptionService.getSubscriptionById(subscriptionId);
       
       if (!subscription) {
-        return HttpHandler.response(res, BAD_REQUEST, {
-          message: 'Bad request error',
-          data: { error: 'Suscripción no encontrada' }
+        return HttpHandler.error(res, {
+          code: BAD_REQUEST,
+          message: 'Suscripción no encontrada'
         });
       }
 
       if (subscription.providerId !== req.user?.id) {
-        return HttpHandler.response(res, FORBIDDEN, {
-          message: 'Forbidden',
-          data: { error: 'No tiene permisos para acceder a esta suscripción' }
+        return HttpHandler.error(res, {
+          code: FORBIDDEN,
+          message: 'No tiene permisos para acceder a esta suscripción'
         });
       }
 
       next();
     } catch (error) {
-      return HttpHandler.response(res, INTERNAL_ERROR, {
-        message: 'Internal Error',
-        data: { error: (error as Error).message }
+      return HttpHandler.error(res, {
+        code: INTERNAL_ERROR,
+        message: (error as Error).message
       });
     }
   };
@@ -64,35 +68,35 @@ export class SubscriptionMiddleware {
       const { subscriptionId } = req.body;
       
       if (!subscriptionId) {
-        return HttpHandler.response(res, BAD_REQUEST, {
-          message: 'Bad request error',
-          data: { error: 'ID de suscripción requerido' }
+        return HttpHandler.error(res, {
+          code: BAD_REQUEST,
+          message: 'ID de suscripción requerido'
         });
       }
 
       const subscription = await this.subscriptionService.getSubscriptionById(subscriptionId);
       
       if (!subscription) {
-        return HttpHandler.response(res, BAD_REQUEST, {
-          message: 'Bad request error',
-          data: { error: 'Suscripción no encontrada' }
+        return HttpHandler.error(res, {
+          code: BAD_REQUEST,
+          message: 'Suscripción no encontrada'
         });
       }
 
       const canAddMember = this.subscriptionService.canAddMembers(subscription);
       
       if (!canAddMember) {
-        return HttpHandler.response(res, BAD_REQUEST, {
-          message: 'Bad request error',
-          data: { error: 'No hay cupos disponibles en el plan actual' }
+        return HttpHandler.error(res, {
+          code: BAD_REQUEST,
+          message: 'No hay cupos disponibles en el plan actual'
         });
       }
 
       next();
     } catch (error) {
-      return HttpHandler.response(res, INTERNAL_ERROR, {
-        message: 'Internal Error',
-        data: { error: (error as Error).message }
+      return HttpHandler.error(res, {
+        code: INTERNAL_ERROR,
+        message: (error as Error).message
       });
     }
   };
@@ -105,9 +109,9 @@ export class SubscriptionMiddleware {
       const userId = req.user?.id;
       
       if (!userId) {
-        return HttpHandler.response(res, BAD_REQUEST, {
-          message: 'Bad request error',
-          data: { error: 'Usuario no identificado' }
+        return HttpHandler.error(res, {
+          code: BAD_REQUEST,
+          message: 'Usuario no identificado'
         });
       }
 
@@ -115,17 +119,17 @@ export class SubscriptionMiddleware {
       const isMember = await this.subscriptionService.isUserMember(userId);
       
       if (!isMember) {
-        return HttpHandler.response(res, FORBIDDEN, {
-          message: 'Forbidden',
-          data: { error: 'El usuario no pertenece a ninguna suscripción activa' }
+        return HttpHandler.error(res, {
+          code: FORBIDDEN,
+          message: 'El usuario no pertenece a ninguna suscripción activa'
         });
       }
 
       next();
     } catch (error) {
-      return HttpHandler.response(res, INTERNAL_ERROR, {
-        message: 'Internal Error',
-        data: { error: (error as Error).message }
+      return HttpHandler.error(res, {
+        code: INTERNAL_ERROR,
+        message: (error as Error).message
       });
     }
   };

@@ -22,17 +22,17 @@ class CodeMiddleware {
         $and: [{ email }, { code }],
       });
       if (!result) {
-        return HttpHandler.response(res, BAD_REQUEST, {
-          message: 'Bad request error',
-          data: { error: 'Invalid code, expirated token or user not exist' },
+        return HttpHandler.error(res, {
+          code: BAD_REQUEST,
+          message: 'Invalid code, expirated token or user not exist'
         });
       }
       req.expiresIn = '1h'; // Send expiration time 1h;
       next(); // Continue to Generate Token
     } catch (e) {
-      return HttpHandler.response(res, INTERNAL_ERROR, {
-        message: 'Internal Error',
-        data: { error: (e as Error).message },
+      return HttpHandler.error(res, {
+        code: INTERNAL_ERROR,
+        message: (e as Error).message
       });
     }
   }
@@ -51,9 +51,9 @@ class CodeMiddleware {
     
     if (!email) {
       console.log('sendCode middleware - email is missing');
-      return HttpHandler.response(res, BAD_REQUEST, {
-        message: 'Bad request error',
-        data: { error: 'Email is required' },
+      return HttpHandler.error(res, {
+        code: BAD_REQUEST,
+        message: 'Email is required'
       });
     }
     
@@ -67,9 +67,9 @@ class CodeMiddleware {
     if (codeResult) {
       console.log('sendCode middleware - previous code found, rejecting request');
       // Prevent another request before the expiration time is reached
-      return HttpHandler.response(res, BAD_REQUEST, {
-        message: 'Bad request error',
-        data: { error: 'Previous unvalidated code' },
+      return HttpHandler.error(res, {
+        code: BAD_REQUEST,
+        message: 'Previous unvalidated code'
       });
     }
     
@@ -94,9 +94,9 @@ class CodeMiddleware {
     next();
   } catch (e) {
     console.error('sendCode middleware - error:', e);
-    return HttpHandler.response(res, INTERNAL_ERROR, {
-      message: 'Internal Error',
-      data: { error: (e as Error).message },
+    return HttpHandler.error(res, {
+      code: INTERNAL_ERROR,
+      message: (e as Error).message
     });
   }
 }
@@ -108,9 +108,9 @@ public async checkCode(req: Request, res: Response, next: NextFunction): Promise
     
     if (!email || !code) {
       console.log('checkCode middleware - missing email or code');
-      return HttpHandler.response(res, BAD_REQUEST, {
-        message: 'Bad request error',
-        data: { error: 'Email and code are required' },
+      return HttpHandler.error(res, {
+        code: BAD_REQUEST,
+        message: 'Email and code are required'
       });
     }
     
@@ -158,9 +158,9 @@ public async checkCode(req: Request, res: Response, next: NextFunction): Promise
     
     if (!codeResult) {
       console.log('checkCode middleware - invalid code, sending error');
-      return HttpHandler.response(res, BAD_REQUEST, {
-        message: 'Bad request error',
-        data: { error: 'Invalid code, expired code or user not exist' },
+      return HttpHandler.error(res, {
+        code: BAD_REQUEST,
+        message: 'Invalid code, expired code or user not exist'
       });
     }
     
@@ -172,9 +172,9 @@ public async checkCode(req: Request, res: Response, next: NextFunction): Promise
     next();
   } catch (e) {
     console.error('checkCode middleware - error:', e);
-    return HttpHandler.response(res, INTERNAL_ERROR, {
-      message: 'Internal Error',
-      data: { error: (e as Error).message },
+    return HttpHandler.error(res, {
+      code: INTERNAL_ERROR,
+      message: (e as Error).message
     });
   }
 }

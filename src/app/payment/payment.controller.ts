@@ -1,5 +1,5 @@
 import { Router, Request, Response } from 'express';
-import PaymentService from './payment.service';
+import PaymentService from './services/payment.service';
 
 const router = Router();
 const paymentService = new PaymentService();
