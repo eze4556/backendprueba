@@ -1,4 +1,4 @@
-﻿// ImportaciÃ³n de mÃ³dulos principales de Express y utilidades
+﻿// Importacion de modulos principales de Express y utilidades
 import express from 'express';
 import { Request, Response, NextFunction } from 'express';
 import morgan from 'morgan';
@@ -10,12 +10,12 @@ import cors from 'cors';
 // ConfiguraciÃ³n de producciÃ³n
 import { productionConfig, validateProductionConfig } from './config/production.config';
 
-// Validar configuraciÃ³n en producciÃ³n
+// Validar configuracion en produccion
 if (process.env.NODE_ENV === 'production') {
   validateProductionConfig();
 }
 
-// ImportaciÃ³n de rutas de los diferentes mÃ³dulos de la aplicaciÃ³n
+// Importacion de rutas de los diferentes modulos de la aplicacion
 import usersRoutes from './app/users/routes/users.routes';
 import codesRoutes from './app/codes/routes/code.routes';
 import loginRoutes from './app/users/routes/login.routes';
@@ -63,13 +63,13 @@ import {
 import { authMiddleware } from './middleware/auth.middleware';
 import { AuthRequest } from './interfaces/auth.interface';
 
-// ImportaciÃ³n y conexiÃ³n a la base de datos
+// Importacion y conexion a la base de datos
 import './database/database';
 
-// InicializaciÃ³n de la aplicaciÃ³n Express
+// Inicializacion de la aplicacion Express
 const app = express();
 
-// ConfiguraciÃ³n del puerto
+// Configuracion del puerto
 app.set('port', productionConfig.port);
 
 // ---------- CORS CONFIGURADO POR ENTORNO ----------
@@ -87,7 +87,7 @@ app.use(cors(corsOptions));
 // Preflight para todas las rutas
 app.options('*', cors());
 
-// ---------- MIDDLEWARE BÃSICO ----------
+// ---------- MIDDLEWARE BASICO ----------
 app.use(morgan(process.env.NODE_ENV === 'production' ? 'combined' : 'dev'));
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -103,12 +103,12 @@ app.use(rateLimitMiddleware({
   maxRequests: productionConfig.security.rateLimitMaxRequests
 }));
 
-// 3. SanitizaciÃ³n de entrada antes de procesamiento
+// 3. Sanitizacion de entrada antes de procesamiento
 app.use(noSQLSanitizeMiddleware);
 app.use(xssSanitizeMiddleware);
 app.use(inputValidationMiddleware());
 
-// 4. DetecciÃ³n de bots (mÃºltiples implementaciones)
+// 4. Deteccion de bots (multiples implementaciones)
 if (productionConfig.security.botDetectionEnabled) {
   app.use(BotDetectionMiddleware.detectBot);
   app.use(botDetectionMiddleware);
@@ -119,10 +119,10 @@ if (productionConfig.security.geoBlockingEnabled) {
   app.use(geoBlockingMiddleware(productionConfig.security.blockedCountries));
 }
 
-// 6. AuditorÃ­a de todas las requests
+// 6. Auditoria de todas las requests
 app.use(auditLogMiddleware);
 
-// ---------- RUTAS BÃSICAS ----------
+// ---------- RUTAS BASICAS ----------
 app.get('/', (_req: Request, res: Response) => res.status(200).send('API OK'));
 app.get('/favicon.ico', (_req: Request, res: Response) => res.status(204).end());
 
@@ -141,7 +141,7 @@ if (process.env.NODE_ENV === 'production') {
     });
   });
 } else {
-  // Health checks bÃ¡sicos para desarrollo
+  // Health checks basicos para desarrollo
   app.get('/health', healthCheck);
   app.get('/health/live', livenessProbe);
   app.get('/health/ready', readinessProbe);
@@ -154,7 +154,7 @@ app.use('/api/users', usersRoutes);
 app.use('/api/login', loginRoutes);
 app.use('/api/password', passwordRoutes);
 app.use('/api/auth', tokenRoutes); // Rutas de refresh token y logout
-app.use('/api/categorie', categoriesRoutes); // Ahora pÃºblico
+app.use('/api/categorie', categoriesRoutes); // Ahora público
 app.use('/api/cart', cartRoutes); // Carrito de compras
 app.use('/api/wishlist', wishlistRoutes); // Lista de deseos con alertas de precio
 app.use('/api/search', searchRoutes); // Búsqueda global avanzada
@@ -164,7 +164,7 @@ app.use('/api/notifications', notificationRoutes); // Sistema de notificaciones
 app.use('/api/messages', messagingRoutes); // Sistema de mensajerÃ­a con Socket.IO
 app.use('/api/reviews', reviewRoutes); // Sistema de reviews y calificaciones
 app.use('/api/media', mediaRoutes);
-app.use('/api/media-upload', mediaUploadRoutes); // Upload con optimizaciÃ³n Sharp
+app.use('/api/media-upload', mediaUploadRoutes); // Upload con optimizacion Sharp
 app.use('/api/vehicle', vehicleRoutes);
 app.use('/api/professional', professionalRoutes);
 app.use('/api/productType', productTypeRoutes);
@@ -176,7 +176,7 @@ app.use('/api/payment/webhooks', paymentWebhookRoutes);
 app.use('/api/calculator', setCalculatorRoutes);
 app.use('/api/subscription', subscriptionRoutes);
 app.use('/api/providers', providerRoutes);
-app.use('/api/order', orderRoutes); // Sistema de Ã³rdenes completo
+app.use('/api/order', orderRoutes); // Sistema de ordenes completo
 app.use('/api/billing', billingRoutes);
 app.use('/api/stream', streamRoutes);
 app.use('/api/streaming-preferences', streamingPreferencesRoutes);
