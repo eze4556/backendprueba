@@ -9,8 +9,14 @@ import { load } from 'ts-dotenv';
 import { UserRole } from '../../../interfaces/roles.interface';
 
 const env = load({
-  JWT_KEY: String,
+  JWT_KEY: {
+    type: String,
+    optional: true
+  },
 });
+
+// Usar JWT_KEY si está disponible, sino usar JWT_SECRET como fallback
+const JWT_SECRET = env.JWT_KEY || process.env.JWT_SECRET || process.env.JWT_KEY || 'fallback-secret-for-development-only';
 
 // Importa los módulos y utilidades necesarios
 // Carga de variables de entorno
@@ -102,7 +108,7 @@ class UserControllers {
           role: userRole,
           isActive: true
         }, 
-        env.JWT_KEY, 
+        JWT_SECRET, 
         { expiresIn: '60d' }
       );
       
@@ -507,7 +513,7 @@ class UserControllers {
           isActive: user.permissions.active,
           flags: flags
         }, 
-        env.JWT_KEY, 
+        JWT_SECRET, 
         { expiresIn: '60d' }
       );
       
