@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from 'express';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import PasswordTool from '../../../tools/password.tools';
 import HttpHandler from '../../../helpers/handler.helper';
 import UserModel from '../models/user.models';

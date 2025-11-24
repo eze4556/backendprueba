@@ -53,7 +53,7 @@ const getRankings = async () => {
 router.get('/', async (req, res, next) => {
     try {
         const rankedItems = await getRankings();
-        res.json(rankedItems);
+        res.json({ ranking: rankedItems });
     }
     catch (err) {
         next(err);

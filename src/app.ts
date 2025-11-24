@@ -165,6 +165,9 @@ app.use('/api/messages', messagingRoutes); // Sistema de mensajerÃ­a con Socke
 app.use('/api/reviews', reviewRoutes); // Sistema de reviews y calificaciones
 app.use('/api/media', mediaRoutes);
 app.use('/api/media-upload', mediaUploadRoutes); // Upload con optimizacion Sharp
+// Ruta directa para obtener todos los vehículos
+import { getAllVehicles } from './app/vehicles/controllers/vehicle.controller';
+app.get('/api/vehicle', getAllVehicles);
 app.use('/api/vehicle', vehicleRoutes);
 app.use('/api/professional', professionalRoutes);
 app.use('/api/productType', productTypeRoutes);

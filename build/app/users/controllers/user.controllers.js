@@ -15,19 +15,29 @@ var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (
 }) : function(o, v) {
     o["default"] = v;
 });
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const user_models_1 = __importDefault(require("../models/user.models"));
-const bcrypt_1 = __importDefault(require("bcrypt"));
+const bcryptjs_1 = __importDefault(require("bcryptjs"));
 const codes_constanst_1 = require("../../../constants/codes.constanst");
 const jwt = __importStar(require("jsonwebtoken"));
 const ts_dotenv_1 = require("ts-dotenv");
@@ -60,7 +70,7 @@ class UserControllers {
             console.log('registerUser - setting email in primary_data');
             primary_data.email = email; // Set email in object primary_data
             console.log('registerUser - hashing password');
-            auth_data.password = await bcrypt_1.default.hash(password, 10); // Hash and set the password in auth_data
+            auth_data.password = await bcryptjs_1.default.hash(password, 10); // Hash and set the password in auth_data
             console.log('registerUser - creating user model');
             const user = new user_models_1.default({
                 primary_data,
@@ -375,6 +385,7 @@ class UserControllers {
             const { email, contraseña } = req.body;
             console.log('loginUser - email recibido:', email);
             console.log('loginUser - contraseña recibida:', contraseña ? 'EXISTS' : 'MISSING');
+            console.log('Valor recibido de contraseña:', JSON.stringify(contraseña));
             // Validar que se proporcionen email y contraseña
             if (!email || !contraseña) {
                 console.log('loginUser - faltan email o contraseña');
@@ -390,6 +401,7 @@ class UserControllers {
             if (user) {
                 console.log('loginUser - user._id:', user._id);
                 console.log('loginUser - user.primary_data.email:', user.primary_data.email);
+                console.log('Usuario encontrado:', JSON.stringify(user, null, 2));
             }
             if (!user) {
                 console.log('loginUser - usuario no encontrado');
@@ -401,7 +413,7 @@ class UserControllers {
             console.log('loginUser - usuario encontrado, verificando contraseña...');
             // Verificar contraseña usando bcrypt
             console.log('loginUser - verificando contraseña...');
-            const isValidPassword = await bcrypt_1.default.compare(contraseña, user.auth_data.password);
+            const isValidPassword = await bcryptjs_1.default.compare(contraseña, user.auth_data.password);
             console.log('loginUser - isValidPassword:', isValidPassword);
             if (!isValidPassword) {
                 console.log('loginUser - contraseña incorrecta');

@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const bcrypt_1 = __importDefault(require("bcrypt"));
+const bcryptjs_1 = __importDefault(require("bcryptjs"));
 const password_tools_1 = __importDefault(require("../../../tools/password.tools"));
 const handler_helper_1 = __importDefault(require("../../../helpers/handler.helper"));
 const user_models_1 = __importDefault(require("../models/user.models"));
@@ -50,7 +50,7 @@ class PasswordMiddleware {
             const oldPassword = await user_models_1.default.findById({ _id }).then((user) => {
                 return user === null || user === void 0 ? void 0 : user.auth_data.password; // Find old user password
             });
-            const samePassword = bcrypt_1.default.compareSync(password, oldPassword); // Compare old password with new password
+            const samePassword = bcryptjs_1.default.compareSync(password, oldPassword); // Compare old password with new password
             if (samePassword) {
                 // If is the same password return error
                 return handler_helper_1.default.error(res, {
@@ -58,7 +58,7 @@ class PasswordMiddleware {
                     message: 'Wrong password'
                 });
             }
-            const hashedPassword = await bcrypt_1.default.hash(password, 10); // Hash and set the password in auth_data
+            const hashedPassword = await bcryptjs_1.default.hash(password, 10); // Hash and set the password in auth_data
             req.password = hashedPassword; // Set on request the new password
             next();
         }

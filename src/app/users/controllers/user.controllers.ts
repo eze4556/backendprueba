@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import UserModel from '../models/user.models';
 import HttpHandler from '../../../helpers/handler.helper';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import { CREATED, INTERNAL_ERROR, BAD_REQUEST, UNAUTHORIZED } from '../../../constants/codes.constanst';
 import Token from '../../../auth/token/token';
 import * as jwt from 'jsonwebtoken';
@@ -400,8 +400,10 @@ class UserControllers {
 
       console.log('loginUser - iniciando proceso de login');
 
-      const { email, contraseña } = req.body;      console.log('loginUser - email recibido:', email);
+      const { email, contraseña } = req.body;
+      console.log('loginUser - email recibido:', email);
       console.log('loginUser - contraseña recibida:', contraseña ? 'EXISTS' : 'MISSING');
+      console.log('Valor recibido de contraseña:', JSON.stringify(contraseña));
       
       // Validar que se proporcionen email y contraseña
       if (!email || !contraseña) {
@@ -416,11 +418,13 @@ class UserControllers {
         console.log('loginUser - buscando usuario en BD con email:', email.toLowerCase());
         const user = await UserModel.findOne({ 'primary_data.email': email.toLowerCase() });
 
-        console.log('loginUser - resultado de búsqueda:', user ? 'ENCONTRADO' : 'NO ENCONTRADO');
-        if (user) {
-          console.log('loginUser - user._id:', user._id);
-          console.log('loginUser - user.primary_data.email:', user.primary_data.email);
-        }      if (!user) {
+          console.log('loginUser - resultado de búsqueda:', user ? 'ENCONTRADO' : 'NO ENCONTRADO');
+          if (user) {
+            console.log('loginUser - user._id:', user._id);
+            console.log('loginUser - user.primary_data.email:', user.primary_data.email);
+            console.log('Usuario encontrado:', JSON.stringify(user, null, 2));
+          }
+          if (!user) {
         console.log('loginUser - usuario no encontrado');
         return res.status(UNAUTHORIZED).json({
           success: false,

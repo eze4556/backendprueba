@@ -1,869 +1,178 @@
-[StreamSocket] 2025-11-07 23:33:17:3317 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-07 23:36:41:3641 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-07 23:37:33:3733 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-07 23:39:22:3922 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-07 23:41:09:419 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 00:17:22:1722 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 00:17:56:1756 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 00:21:16:2116 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 00:22:54:2254 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 00:27:49:2749 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 01:21:53:2153 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 01:25:43:2543 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 01:38:16:3816 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 01:38:44:3844 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 01:40:33:4033 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 01:42:17:4217 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 01:50:54:5054 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 02:00:23:023 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 02:03:10:310 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 02:03:42:342 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 02:04:18:418 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 02:05:04:54 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 02:05:25:525 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 02:05:46:546 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 02:44:19:4419 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 02:59:51:5951 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 03:28:41:2841 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 03:30:18:3018 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 03:31:56:3156 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 03:40:56:4056 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 03:41:14:4114 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 03:52:49:5249 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 04:10:49:1049 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 04:20:17:2017 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 13:35:39:3539 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 14:15:26:1526 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 14:16:36:1636 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 14:25:53:2553 [32minfo[39m: [32mCliente conectado: onKar4VnESRjWE07AAAB[39m {}
-[StreamSocket] 2025-11-08 14:26:04:264 [32minfo[39m: [32mWebRTC offer enviado en stream stream_1ef2c530-26c2-401c-99b9-da06e703c23f[39m {}
-[StreamSocket] 2025-11-08 14:26:04:264 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_1ef2c530-26c2-401c-99b9-da06e703c23f[39m {}
-[StreamSocket] 2025-11-08 14:26:11:2611 [32minfo[39m: [32mCliente desconectado: onKar4VnESRjWE07AAAB[39m {}
-[StreamSocket] 2025-11-08 14:26:15:2615 [32minfo[39m: [32mCliente conectado: -idF77L7nJbq2VdSAAAD[39m {}
-[StreamSocket] 2025-11-08 14:26:15:2615 [32minfo[39m: [32mWebRTC offer enviado en stream stream_68713103-4a97-4e0e-985f-0d8a469a80cc[39m {}
-[StreamSocket] 2025-11-08 14:26:15:2615 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_68713103-4a97-4e0e-985f-0d8a469a80cc[39m {}
-[StreamSocket] 2025-11-08 14:26:19:2619 [32minfo[39m: [32mUsuario streamer salió del stream stream_68713103-4a97-4e0e-985f-0d8a469a80cc[39m {}
-[StreamSocket] 2025-11-08 14:26:19:2619 [32minfo[39m: [32mCliente desconectado: -idF77L7nJbq2VdSAAAD[39m {}
-[StreamSocket] 2025-11-08 14:26:33:2633 [32minfo[39m: [32mCliente conectado: Wt2VI8XugiWTpq1dAAAF[39m {}
-[StreamSocket] 2025-11-08 14:26:33:2633 [32minfo[39m: [32mWebRTC offer enviado en stream stream_3d1cfcb1-ce5f-4e4b-985d-90ad597967e8[39m {}
-[StreamSocket] 2025-11-08 14:26:33:2633 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_3d1cfcb1-ce5f-4e4b-985d-90ad597967e8[39m {}
-[StreamSocket] 2025-11-08 14:26:39:2639 [32minfo[39m: [32mCliente conectado: Y9F49HcV01rSZ8dfAAAH[39m {}
-[StreamSocket] 2025-11-08 14:26:39:2639 [32minfo[39m: [32mUsuario Invitado (guest_1762622798973) se unió al stream stream_3d1cfcb1-ce5f-4e4b-985d-90ad597967e8[39m {}
-[StreamSocket] 2025-11-08 14:26:52:2652 [32minfo[39m: [32mMensaje en stream stream_3d1cfcb1-ce5f-4e4b-985d-90ad597967e8 de Invitado: HOLA[39m {}
-[StreamSocket] 2025-11-08 14:27:09:279 [32minfo[39m: [32mUsuario guest_1762622829823 salió del stream stream_3d1cfcb1-ce5f-4e4b-985d-90ad597967e8[39m {}
-[StreamSocket] 2025-11-08 14:27:09:279 [32minfo[39m: [32mCliente desconectado: Y9F49HcV01rSZ8dfAAAH[39m {}
-[StreamSocket] 2025-11-08 14:27:56:2756 [32minfo[39m: [32mCliente desconectado: Wt2VI8XugiWTpq1dAAAF[39m {}
-[StreamSocket] 2025-11-08 14:27:57:2757 [32minfo[39m: [32mCliente conectado: CB0ux7jxZhpb2AsgAAAJ[39m {}
-[StreamSocket] 2025-11-08 14:27:57:2757 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_3d1cfcb1-ce5f-4e4b-985d-90ad597967e8[39m {}
-[StreamSocket] 2025-11-08 14:27:57:2757 [32minfo[39m: [32mWebRTC offer enviado en stream stream_3d1cfcb1-ce5f-4e4b-985d-90ad597967e8[39m {}
-[StreamSocket] 2025-11-08 14:28:13:2813 [32minfo[39m: [32mMensaje en stream stream_3d1cfcb1-ce5f-4e4b-985d-90ad597967e8 de Streamer: Bienvenidos a mi Stream![39m {}
-[StreamSocket] 2025-11-08 14:28:35:2835 [32minfo[39m: [32mCliente desconectado: CB0ux7jxZhpb2AsgAAAJ[39m {}
-[StreamSocket] 2025-11-08 14:34:20:3420 [32minfo[39m: [32mCliente conectado: dFqiB7P6IA4ds_2SAAAL[39m {}
-[StreamSocket] 2025-11-08 14:34:20:3420 [32minfo[39m: [32mUsuario Invitado (guest_1762623260651) se unió al stream stream_3d1cfcb1-ce5f-4e4b-985d-90ad597967e8[39m {}
-[StreamSocket] 2025-11-08 14:34:23:3423 [32minfo[39m: [32mCliente desconectado: dFqiB7P6IA4ds_2SAAAL[39m {}
-[StreamSocket] 2025-11-08 14:34:27:3427 [32minfo[39m: [32mCliente conectado: Qt5WEEEexre9_5V2AAAN[39m {}
-[StreamSocket] 2025-11-08 14:34:27:3427 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_3d1cfcb1-ce5f-4e4b-985d-90ad597967e8[39m {}
-[StreamSocket] 2025-11-08 14:34:27:3427 [32minfo[39m: [32mWebRTC offer enviado en stream stream_3d1cfcb1-ce5f-4e4b-985d-90ad597967e8[39m {}
-[StreamSocket] 2025-11-08 14:34:29:3429 [32minfo[39m: [32mUsuario streamer salió del stream stream_3d1cfcb1-ce5f-4e4b-985d-90ad597967e8[39m {}
-[StreamSocket] 2025-11-08 14:34:29:3429 [32minfo[39m: [32mCliente desconectado: Qt5WEEEexre9_5V2AAAN[39m {}
-[StreamSocket] 2025-11-08 14:43:34:4334 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 16:40:24:4024 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 16:42:17:4217 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 16:43:06:436 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 16:43:44:4344 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 16:44:52:4452 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 16:51:56:5156 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 16:58:01:581 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 16:58:31:5831 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 17:19:46:1946 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 17:31:17:3117 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 17:39:43:3943 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 17:41:02:412 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 17:44:47:4447 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 17:49:26:4926 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 17:55:04:554 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 17:56:02:562 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 18:01:25:125 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 18:04:19:419 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 18:10:11:1011 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 18:13:17:1317 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 18:27:24:2724 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 18:30:04:304 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 18:33:51:3351 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 18:36:25:3625 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 18:40:11:4011 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 18:49:51:4951 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 18:55:36:5536 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 19:02:03:23 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 19:02:21:221 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 19:15:17:1517 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 19:31:48:3148 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 19:36:50:3650 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 19:44:00:440 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 19:48:12:4812 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 19:52:17:5217 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 19:53:53:5353 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 19:58:10:5810 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 19:59:50:5950 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 20:08:56:856 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 20:10:56:1056 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 20:13:20:1320 [32minfo[39m: [32mCliente conectado: jSctmtSckYYxZELRAAAB[39m {}
-[StreamSocket] 2025-11-08 20:13:20:1320 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_f68db8e2-0429-4473-92ae-dd5185daf8ee[39m {}
-[StreamSocket] 2025-11-08 20:13:20:1320 [32minfo[39m: [32mWebRTC offer enviado en stream stream_f68db8e2-0429-4473-92ae-dd5185daf8ee[39m {}
-[StreamSocket] 2025-11-08 20:13:57:1357 [32minfo[39m: [32mCliente conectado: 9X5W-KhCFuk1pAgeAAAD[39m {}
-[StreamSocket] 2025-11-08 20:13:57:1357 [32minfo[39m: [32mUsuario Invitado (guest_1762643637379) se unió al stream stream_f68db8e2-0429-4473-92ae-dd5185daf8ee[39m {}
-[StreamSocket] 2025-11-08 20:14:09:149 [32minfo[39m: [32mMensaje en stream stream_f68db8e2-0429-4473-92ae-dd5185daf8ee de Invitado: Hola[39m {}
-[StreamSocket] 2025-11-08 20:14:26:1426 [32minfo[39m: [32mUsuario guest_1762643666861 salió del stream stream_f68db8e2-0429-4473-92ae-dd5185daf8ee[39m {}
-[StreamSocket] 2025-11-08 20:14:26:1426 [32minfo[39m: [32mCliente desconectado: 9X5W-KhCFuk1pAgeAAAD[39m {}
-[StreamSocket] 2025-11-08 20:14:34:1434 [32minfo[39m: [32mCliente conectado: pT3gNjLHocCdjINOAAAF[39m {}
-[StreamSocket] 2025-11-08 20:14:34:1434 [32minfo[39m: [32mUsuario Invitado (guest_1762643674049) se unió al stream stream_f68db8e2-0429-4473-92ae-dd5185daf8ee[39m {}
-[StreamSocket] 2025-11-08 20:14:36:1436 [32minfo[39m: [32mCliente desconectado: pT3gNjLHocCdjINOAAAF[39m {}
-[StreamSocket] 2025-11-08 20:14:38:1438 [32minfo[39m: [32mCliente desconectado: jSctmtSckYYxZELRAAAB[39m {}
-[StreamSocket] 2025-11-08 20:18:34:1834 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 20:42:58:4258 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 21:13:11:1311 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 21:18:57:1857 [32minfo[39m: [32mCliente conectado: z-xzGnADesDzd8GtAAAB[39m {}
-[StreamSocket] 2025-11-08 21:18:57:1857 [32minfo[39m: [32mWebRTC offer enviado en stream stream_71610ce8-81f3-4467-9d6f-69af0a22c17a[39m {}
-[StreamSocket] 2025-11-08 21:18:57:1857 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_71610ce8-81f3-4467-9d6f-69af0a22c17a[39m {}
-[StreamSocket] 2025-11-08 21:19:51:1951 [32minfo[39m: [32mUsuario streamer salió del stream stream_71610ce8-81f3-4467-9d6f-69af0a22c17a[39m {}
-[StreamSocket] 2025-11-08 21:19:51:1951 [32minfo[39m: [32mCliente desconectado: z-xzGnADesDzd8GtAAAB[39m {}
-[StreamSocket] 2025-11-08 21:29:04:294 [32minfo[39m: [32mCliente conectado: Nc8AxmMpAxRytdB9AAAD[39m {}
-[StreamSocket] 2025-11-08 21:29:04:294 [32minfo[39m: [32mWebRTC offer enviado en stream stream_dba4511c-b8bd-40bd-b4fa-2603d2665a4e[39m {}
-[StreamSocket] 2025-11-08 21:29:04:294 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_dba4511c-b8bd-40bd-b4fa-2603d2665a4e[39m {}
-[StreamSocket] 2025-11-08 21:29:09:299 [32minfo[39m: [32mWebRTC offer enviado en stream stream_dba4511c-b8bd-40bd-b4fa-2603d2665a4e[39m {}
-[StreamSocket] 2025-11-08 21:29:15:2915 [32minfo[39m: [32mWebRTC offer enviado en stream stream_dba4511c-b8bd-40bd-b4fa-2603d2665a4e[39m {}
-[StreamSocket] 2025-11-08 21:29:18:2918 [32minfo[39m: [32mWebRTC offer enviado en stream stream_dba4511c-b8bd-40bd-b4fa-2603d2665a4e[39m {}
-[StreamSocket] 2025-11-08 21:29:27:2927 [32minfo[39m: [32mUsuario streamer salió del stream stream_dba4511c-b8bd-40bd-b4fa-2603d2665a4e[39m {}
-[StreamSocket] 2025-11-08 21:29:27:2927 [32minfo[39m: [32mCliente desconectado: Nc8AxmMpAxRytdB9AAAD[39m {}
-[StreamSocket] 2025-11-08 21:42:33:4233 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 21:43:43:4343 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 21:46:49:4649 [32minfo[39m: [32mCliente conectado: haz4SYTkcvI79qVVAAAB[39m {}
-[StreamSocket] 2025-11-08 21:46:49:4649 [32minfo[39m: [32mWebRTC offer enviado en stream stream_6f2be5d5-960c-4821-a27b-9f82dfc5c28f[39m {}
-[StreamSocket] 2025-11-08 21:46:49:4649 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_6f2be5d5-960c-4821-a27b-9f82dfc5c28f[39m {}
-[StreamSocket] 2025-11-08 21:47:08:478 [32minfo[39m: [32mWebRTC offer enviado en stream stream_6f2be5d5-960c-4821-a27b-9f82dfc5c28f[39m {}
-[StreamSocket] 2025-11-08 21:47:15:4715 [32minfo[39m: [32mWebRTC offer enviado en stream stream_6f2be5d5-960c-4821-a27b-9f82dfc5c28f[39m {}
-[StreamSocket] 2025-11-08 21:47:20:4720 [32minfo[39m: [32mWebRTC offer enviado en stream stream_6f2be5d5-960c-4821-a27b-9f82dfc5c28f[39m {}
-[StreamSocket] 2025-11-08 21:47:30:4730 [32minfo[39m: [32mCliente desconectado: haz4SYTkcvI79qVVAAAB[39m {}
-[StreamSocket] 2025-11-08 21:57:22:5722 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 21:58:33:5833 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 22:00:39:039 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 22:02:54:254 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 22:06:12:612 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 22:07:12:712 [32minfo[39m: [32mCliente conectado: LPVMbYpzS4Bn3A6XAAAB[39m {}
-[StreamSocket] 2025-11-08 22:07:13:713 [32minfo[39m: [32mWebRTC offer enviado en stream stream_9b3fb51e-af1d-4a3a-8f28-c3c0b07fb6bb[39m {}
-[StreamSocket] 2025-11-08 22:07:13:713 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_9b3fb51e-af1d-4a3a-8f28-c3c0b07fb6bb[39m {}
-[StreamSocket] 2025-11-08 22:08:24:824 [32minfo[39m: [32mWebRTC offer enviado en stream stream_9b3fb51e-af1d-4a3a-8f28-c3c0b07fb6bb[39m {}
-[StreamSocket] 2025-11-08 22:08:27:827 [32minfo[39m: [32mWebRTC offer enviado en stream stream_9b3fb51e-af1d-4a3a-8f28-c3c0b07fb6bb[39m {}
-[StreamSocket] 2025-11-08 22:08:45:845 [32minfo[39m: [32mWebRTC offer enviado en stream stream_9b3fb51e-af1d-4a3a-8f28-c3c0b07fb6bb[39m {}
-[StreamSocket] 2025-11-08 22:09:04:94 [32minfo[39m: [32mWebRTC offer enviado en stream stream_9b3fb51e-af1d-4a3a-8f28-c3c0b07fb6bb[39m {}
-[StreamSocket] 2025-11-08 22:09:23:923 [32minfo[39m: [32mWebRTC offer enviado en stream stream_9b3fb51e-af1d-4a3a-8f28-c3c0b07fb6bb[39m {}
-[StreamSocket] 2025-11-08 22:09:28:928 [32minfo[39m: [32mWebRTC offer enviado en stream stream_9b3fb51e-af1d-4a3a-8f28-c3c0b07fb6bb[39m {}
-[StreamSocket] 2025-11-08 22:09:33:933 [32minfo[39m: [32mWebRTC offer enviado en stream stream_9b3fb51e-af1d-4a3a-8f28-c3c0b07fb6bb[39m {}
-[StreamSocket] 2025-11-08 22:09:55:955 [32minfo[39m: [32mWebRTC offer enviado en stream stream_9b3fb51e-af1d-4a3a-8f28-c3c0b07fb6bb[39m {}
-[StreamSocket] 2025-11-08 22:10:02:102 [32minfo[39m: [32mWebRTC offer enviado en stream stream_9b3fb51e-af1d-4a3a-8f28-c3c0b07fb6bb[39m {}
-[StreamSocket] 2025-11-08 22:11:39:1139 [32minfo[39m: [32mCliente conectado: Qa4xSbXKiQGeXdoyAAAD[39m {}
-[StreamSocket] 2025-11-08 22:11:39:1139 [32minfo[39m: [32mUsuario Invitado (guest_1762650699329) se unió al stream stream_9b3fb51e-af1d-4a3a-8f28-c3c0b07fb6bb[39m {}
-[StreamSocket] 2025-11-08 22:12:02:122 [32minfo[39m: [32mCliente desconectado: Qa4xSbXKiQGeXdoyAAAD[39m {}
-[StreamSocket] 2025-11-08 22:12:11:1211 [32minfo[39m: [32mCliente conectado: T1YzmT5xaqwmZS89AAAF[39m {}
-[StreamSocket] 2025-11-08 22:12:11:1211 [32minfo[39m: [32mUsuario Invitado (guest_1762650731012) se unió al stream stream_9b3fb51e-af1d-4a3a-8f28-c3c0b07fb6bb[39m {}
-[StreamSocket] 2025-11-08 22:13:46:1346 [32minfo[39m: [32mCliente conectado: 22l8tfEVFrvZBBgoAAAH[39m {}
-[StreamSocket] 2025-11-08 22:13:46:1346 [32minfo[39m: [32mUsuario Invitado (guest_1762650826350) se unió al stream stream_9b3fb51e-af1d-4a3a-8f28-c3c0b07fb6bb[39m {}
-[StreamSocket] 2025-11-08 22:14:48:1448 [32minfo[39m: [32mCliente desconectado: 22l8tfEVFrvZBBgoAAAH[39m {}
-[StreamSocket] 2025-11-08 22:14:55:1455 [32minfo[39m: [32mUsuario streamer salió del stream stream_9b3fb51e-af1d-4a3a-8f28-c3c0b07fb6bb[39m {}
-[StreamSocket] 2025-11-08 22:14:55:1455 [32minfo[39m: [32mCliente desconectado: LPVMbYpzS4Bn3A6XAAAB[39m {}
-[StreamSocket] 2025-11-08 22:16:16:1616 [32minfo[39m: [32mCliente desconectado: T1YzmT5xaqwmZS89AAAF[39m {}
-[StreamSocket] 2025-11-08 22:18:25:1825 [32minfo[39m: [32mCliente conectado: pW6VElUvxp2uIchSAAAJ[39m {}
-[StreamSocket] 2025-11-08 22:18:25:1825 [32minfo[39m: [32mWebRTC offer enviado en stream stream_4f94704f-ee35-497f-bd15-9a63c79a499b[39m {}
-[StreamSocket] 2025-11-08 22:18:25:1825 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_4f94704f-ee35-497f-bd15-9a63c79a499b[39m {}
-[StreamSocket] 2025-11-08 22:18:35:1835 [32minfo[39m: [32mCliente conectado: HFH22Q6ceLrU1q6oAAAL[39m {}
-[StreamSocket] 2025-11-08 22:18:35:1835 [32minfo[39m: [32mUsuario Invitado (guest_1762651115218) se unió al stream stream_4f94704f-ee35-497f-bd15-9a63c79a499b[39m {}
-[StreamSocket] 2025-11-08 22:18:56:1856 [32minfo[39m: [32mMensaje en stream stream_4f94704f-ee35-497f-bd15-9a63c79a499b de Invitado: BIENVENIDO[39m {}
-[StreamSocket] 2025-11-08 22:19:04:194 [32minfo[39m: [32mMensaje en stream stream_4f94704f-ee35-497f-bd15-9a63c79a499b de Streamer: GRACIAS[39m {}
-[StreamSocket] 2025-11-08 22:19:23:1923 [32minfo[39m: [32mCliente desconectado: pW6VElUvxp2uIchSAAAJ[39m {}
-[StreamSocket] 2025-11-08 22:19:26:1926 [32minfo[39m: [32mCliente desconectado: HFH22Q6ceLrU1q6oAAAL[39m {}
-[StreamSocket] 2025-11-08 22:28:33:2833 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 23:12:03:123 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-08 23:14:53:1453 [32minfo[39m: [32mCliente conectado: YmiWvBjO0DPzzDddAAAB[39m {}
-[StreamSocket] 2025-11-08 23:14:54:1454 [32minfo[39m: [32mWebRTC offer enviado en stream stream_31d19fd9-71e1-4633-bc5e-15dd54a17023[39m {}
-[StreamSocket] 2025-11-08 23:14:54:1454 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_31d19fd9-71e1-4633-bc5e-15dd54a17023[39m {}
-[StreamSocket] 2025-11-08 23:15:33:1533 [32minfo[39m: [32mMensaje en stream stream_31d19fd9-71e1-4633-bc5e-15dd54a17023 de Streamer: Este es un stream hecho test para que lo veas Patricio[39m {}
-[StreamSocket] 2025-11-08 23:15:54:1554 [32minfo[39m: [32mCliente desconectado: YmiWvBjO0DPzzDddAAAB[39m {}
-[StreamSocket] 2025-11-08 23:17:02:172 [32minfo[39m: [32mCliente conectado: I56bY3R0WTjwHFsfAAAD[39m {}
-[StreamSocket] 2025-11-08 23:17:02:172 [32minfo[39m: [32mUsuario Invitado (guest_1762654622203) se unió al stream stream_31d19fd9-71e1-4633-bc5e-15dd54a17023[39m {}
-[StreamSocket] 2025-11-08 23:17:13:1713 [32minfo[39m: [32mUsuario guest_1762654633156 salió del stream stream_31d19fd9-71e1-4633-bc5e-15dd54a17023[39m {}
-[StreamSocket] 2025-11-08 23:17:13:1713 [32minfo[39m: [32mCliente desconectado: I56bY3R0WTjwHFsfAAAD[39m {}
-[StreamSocket] 2025-11-09 13:38:15:3815 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-09 13:38:41:3841 [32minfo[39m: [32mCliente conectado: pVVncz9nmFvaltpOAAAB[39m {}
-[StreamSocket] 2025-11-09 13:38:41:3841 [32minfo[39m: [32mUsuario Invitado (guest_1762706321044) se unió al stream stream_31d19fd9-71e1-4633-bc5e-15dd54a17023[39m {}
-[StreamSocket] 2025-11-09 13:40:53:4053 [32minfo[39m: [32mCliente desconectado: pVVncz9nmFvaltpOAAAB[39m {}
-[StreamSocket] 2025-11-09 13:40:54:4054 [32minfo[39m: [32mCliente conectado: tEirhiWRz5bYVbWFAAAD[39m {}
-[StreamSocket] 2025-11-09 13:40:54:4054 [32minfo[39m: [32mUsuario Invitado (guest_1762706454626) se unió al stream stream_31d19fd9-71e1-4633-bc5e-15dd54a17023[39m {}
-[StreamSocket] 2025-11-09 13:40:59:4059 [32minfo[39m: [32mCliente desconectado: tEirhiWRz5bYVbWFAAAD[39m {}
-[StreamSocket] 2025-11-09 13:41:14:4114 [32minfo[39m: [32mCliente conectado: XUv18lTLEgzf7cPCAAAF[39m {}
-[StreamSocket] 2025-11-09 13:41:14:4114 [32minfo[39m: [32mUsuario Invitado (guest_1762706474181) se unió al stream stream_31d19fd9-71e1-4633-bc5e-15dd54a17023[39m {}
-[StreamSocket] 2025-11-09 13:41:18:4118 [32minfo[39m: [32mCliente desconectado: XUv18lTLEgzf7cPCAAAF[39m {}
-[StreamSocket] 2025-11-09 13:41:28:4128 [32minfo[39m: [32mCliente conectado: tuNsh_DWtGbfUTA1AAAH[39m {}
-[StreamSocket] 2025-11-09 13:41:28:4128 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 13:41:28:4128 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 13:57:33:5733 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-09 14:01:54:154 [32minfo[39m: [32mCliente conectado: LOxkejsT0_NMNA3kAAAB[39m {}
-[StreamSocket] 2025-11-09 14:01:54:154 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:01:54:154 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:02:03:23 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:03:01:31 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:03:08:38 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:03:17:317 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:03:46:346 [32minfo[39m: [32mCliente conectado: J2U5o4qt6i1d0gjtAAAD[39m {}
-[StreamSocket] 2025-11-09 14:03:46:346 [32minfo[39m: [32mUsuario Invitado (guest_1762707826312) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:04:04:44 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:04:04:44 [32minfo[39m: [32mWebRTC answer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:04:26:426 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:04:26:426 [32minfo[39m: [32mWebRTC answer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:04:35:435 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:04:35:435 [32minfo[39m: [32mWebRTC answer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:05:04:54 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:05:04:54 [32minfo[39m: [32mWebRTC answer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:05:09:59 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:05:09:59 [32minfo[39m: [32mWebRTC answer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:05:14:514 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:05:14:514 [32minfo[39m: [32mWebRTC answer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:05:18:518 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:05:18:518 [32minfo[39m: [32mWebRTC answer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:06:40:640 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:06:40:640 [32minfo[39m: [32mWebRTC answer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:06:47:647 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:06:47:647 [32minfo[39m: [32mWebRTC answer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:09:32:932 [32minfo[39m: [32mCliente desconectado: J2U5o4qt6i1d0gjtAAAD[39m {}
-[StreamSocket] 2025-11-09 14:23:45:2345 [32minfo[39m: [32mCliente desconectado: LOxkejsT0_NMNA3kAAAB[39m {}
-[StreamSocket] 2025-11-09 14:23:46:2346 [32minfo[39m: [32mCliente conectado: 4D7fm3TgXMfpcT33AAAF[39m {}
-[StreamSocket] 2025-11-09 14:23:46:2346 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:23:46:2346 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:24:21:2421 [32minfo[39m: [32mCliente desconectado: 4D7fm3TgXMfpcT33AAAF[39m {}
-[StreamSocket] 2025-11-09 14:24:22:2422 [32minfo[39m: [32mCliente conectado: F-Tf6ILseT85OYtuAAAH[39m {}
-[StreamSocket] 2025-11-09 14:24:22:2422 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:24:22:2422 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:25:13:2513 [32minfo[39m: [32mCliente desconectado: F-Tf6ILseT85OYtuAAAH[39m {}
-[StreamSocket] 2025-11-09 14:25:13:2513 [32minfo[39m: [32mCliente conectado: QQ4xY9ZrM-b3F9p7AAAJ[39m {}
-[StreamSocket] 2025-11-09 14:25:14:2514 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:25:14:2514 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:25:20:2520 [32minfo[39m: [32mCliente conectado: 7zVzAkTFXXHWZOZrAAAL[39m {}
-[StreamSocket] 2025-11-09 14:25:20:2520 [32minfo[39m: [32mUsuario Invitado (guest_1762709120564) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:29:03:293 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-09 14:29:12:2912 [32minfo[39m: [32mCliente conectado: OUGJfMC2PbiRs5CMAAAC[39m {}
-[StreamSocket] 2025-11-09 14:29:12:2912 [32minfo[39m: [32mCliente conectado: bFzkf6moKcWX6K6lAAAE[39m {}
-[StreamSocket] 2025-11-09 14:29:12:2912 [32minfo[39m: [32mUsuario Invitado (guest_1762709352590) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:34:56:3456 [32minfo[39m: [32mCliente desconectado: OUGJfMC2PbiRs5CMAAAC[39m {}
-[StreamSocket] 2025-11-09 14:34:56:3456 [32minfo[39m: [32mCliente desconectado: bFzkf6moKcWX6K6lAAAE[39m {}
-[StreamSocket] 2025-11-09 14:34:58:3458 [32minfo[39m: [32mCliente conectado: Ix7EX8Vb9hGwCOtbAAAG[39m {}
-[StreamSocket] 2025-11-09 14:34:58:3458 [32minfo[39m: [32mUsuario Invitado (guest_1762709698077) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:34:58:3458 [32minfo[39m: [32mCliente conectado: P7TqITlbzXtp9-e1AAAI[39m {}
-[StreamSocket] 2025-11-09 14:34:58:3458 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:34:58:3458 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:34:58:3458 [32minfo[39m: [32mWebRTC answer enviado en stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:35:08:358 [32minfo[39m: [32mCliente desconectado: Ix7EX8Vb9hGwCOtbAAAG[39m {}
-[StreamSocket] 2025-11-09 14:35:11:3511 [32minfo[39m: [32mCliente desconectado: P7TqITlbzXtp9-e1AAAI[39m {}
-[StreamSocket] 2025-11-09 14:35:13:3513 [32minfo[39m: [32mCliente conectado: q_pIDE438R5RkgGbAAAK[39m {}
-[StreamSocket] 2025-11-09 14:35:13:3513 [32minfo[39m: [32mUsuario Invitado (guest_1762709713137) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:35:25:3525 [32minfo[39m: [32mCliente desconectado: q_pIDE438R5RkgGbAAAK[39m {}
-[StreamSocket] 2025-11-09 14:35:26:3526 [32minfo[39m: [32mCliente conectado: jRcHQtVCknPIvTHdAAAM[39m {}
-[StreamSocket] 2025-11-09 14:35:26:3526 [32minfo[39m: [32mUsuario Invitado (guest_1762709725981) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:35:30:3530 [32minfo[39m: [32mCliente desconectado: jRcHQtVCknPIvTHdAAAM[39m {}
-[StreamSocket] 2025-11-09 14:35:45:3545 [32minfo[39m: [32mCliente conectado: 84Clq3-7DCfURfvKAAAO[39m {}
-[StreamSocket] 2025-11-09 14:35:45:3545 [32minfo[39m: [32mUsuario Invitado (guest_1762709745192) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:36:49:3649 [32minfo[39m: [32mCliente desconectado: 84Clq3-7DCfURfvKAAAO[39m {}
-[StreamSocket] 2025-11-09 14:37:35:3735 [32minfo[39m: [32mCliente conectado: C27QXuBzq3iiydPbAAAQ[39m {}
-[StreamSocket] 2025-11-09 14:37:35:3735 [32minfo[39m: [32mUsuario Invitado (guest_1762709855003) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:38:03:383 [32minfo[39m: [32mCliente desconectado: C27QXuBzq3iiydPbAAAQ[39m {}
-[StreamSocket] 2025-11-09 14:38:03:383 [32minfo[39m: [32mCliente conectado: VIVmS7IO6nD7gEwuAAAS[39m {}
-[StreamSocket] 2025-11-09 14:38:03:383 [32minfo[39m: [32mUsuario Invitado (guest_1762709883853) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:38:16:3816 [32minfo[39m: [32mCliente desconectado: VIVmS7IO6nD7gEwuAAAS[39m {}
-[StreamSocket] 2025-11-09 14:38:16:3816 [32minfo[39m: [32mCliente conectado: KKLHK0cuYqu3o8waAAAU[39m {}
-[StreamSocket] 2025-11-09 14:38:16:3816 [32minfo[39m: [32mUsuario Invitado (guest_1762709896564) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:38:18:3818 [32minfo[39m: [32mCliente desconectado: KKLHK0cuYqu3o8waAAAU[39m {}
-[StreamSocket] 2025-11-09 14:38:19:3819 [32minfo[39m: [32mCliente conectado: Ph-zslKPrxa-VHp1AAAW[39m {}
-[StreamSocket] 2025-11-09 14:38:19:3819 [32minfo[39m: [32mUsuario Invitado (guest_1762709899905) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:39:27:3927 [32minfo[39m: [32mCliente desconectado: Ph-zslKPrxa-VHp1AAAW[39m {}
-[StreamSocket] 2025-11-09 14:39:27:3927 [32minfo[39m: [32mCliente conectado: RemLbGQ4O7w-9EgjAAAY[39m {}
-[StreamSocket] 2025-11-09 14:39:27:3927 [32minfo[39m: [32mUsuario Invitado (guest_1762709967897) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:39:45:3945 [32minfo[39m: [32mCliente desconectado: RemLbGQ4O7w-9EgjAAAY[39m {}
-[StreamSocket] 2025-11-09 14:39:48:3948 [32minfo[39m: [32mCliente conectado: 0KF3ikiOVgNSMDY8AAAa[39m {}
-[StreamSocket] 2025-11-09 14:39:48:3948 [32minfo[39m: [32mUsuario Invitado (guest_1762709988703) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:39:55:3955 [32minfo[39m: [32mCliente desconectado: 0KF3ikiOVgNSMDY8AAAa[39m {}
-[StreamSocket] 2025-11-09 14:39:55:3955 [32minfo[39m: [32mCliente conectado: FeiklekwYmctIta8AAAc[39m {}
-[StreamSocket] 2025-11-09 14:39:55:3955 [32minfo[39m: [32mUsuario Invitado (guest_1762709995561) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:47:00:470 [32minfo[39m: [32mCliente desconectado: FeiklekwYmctIta8AAAc[39m {}
-[StreamSocket] 2025-11-09 14:47:01:471 [32minfo[39m: [32mCliente conectado: 5G0wtGZv2GSxQAbiAAAe[39m {}
-[StreamSocket] 2025-11-09 14:47:01:471 [32minfo[39m: [32mUsuario Invitado (guest_1762710421501) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:47:02:472 [32minfo[39m: [32mCliente desconectado: 5G0wtGZv2GSxQAbiAAAe[39m {}
-[StreamSocket] 2025-11-09 14:47:18:4718 [32minfo[39m: [32mCliente conectado: SOFuZGnn8jgTehiTAAAg[39m {}
-[StreamSocket] 2025-11-09 14:47:18:4718 [32minfo[39m: [32mUsuario Invitado (guest_1762710438945) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:51:40:5140 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-09 14:51:46:5146 [32minfo[39m: [32mCliente conectado: oCndocL2OlOeHYisAAAB[39m {}
-[StreamSocket] 2025-11-09 14:51:49:5149 [32minfo[39m: [32mCliente desconectado: oCndocL2OlOeHYisAAAB[39m {}
-[StreamSocket] 2025-11-09 14:51:50:5150 [32minfo[39m: [32mCliente conectado: LnPx2Idf-8L60dZ9AAAD[39m {}
-[StreamSocket] 2025-11-09 14:51:50:5150 [32minfo[39m: [32mUsuario Invitado (guest_1762710710443) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 14:51:55:5155 [32minfo[39m: [32mCliente desconectado: LnPx2Idf-8L60dZ9AAAD[39m {}
-[StreamSocket] 2025-11-09 14:51:58:5158 [32minfo[39m: [32mCliente conectado: oe3naElR8VP7ACc9AAAF[39m {}
-[StreamSocket] 2025-11-09 14:51:58:5158 [32minfo[39m: [32mUsuario Invitado (guest_1762710718729) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 15:33:04:334 [32minfo[39m: [32mCliente desconectado: oe3naElR8VP7ACc9AAAF[39m {}
-[StreamSocket] 2025-11-09 15:33:05:335 [32minfo[39m: [32mCliente conectado: AJgX2oKqwzKHKcinAAAH[39m {}
-[StreamSocket] 2025-11-09 15:33:05:335 [32minfo[39m: [32mUsuario Invitado (guest_1762713185710) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 15:33:20:3320 [32minfo[39m: [32mCliente desconectado: AJgX2oKqwzKHKcinAAAH[39m {}
-[StreamSocket] 2025-11-09 15:33:22:3322 [32minfo[39m: [32mCliente conectado: qokCNEwc0nqoiIB7AAAJ[39m {}
-[StreamSocket] 2025-11-09 15:33:22:3322 [32minfo[39m: [32mUsuario Invitado (guest_1762713202460) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 15:33:32:3332 [32minfo[39m: [32mCliente desconectado: qokCNEwc0nqoiIB7AAAJ[39m {}
-[StreamSocket] 2025-11-09 15:33:32:3332 [32minfo[39m: [32mCliente conectado: Zc9Fe1BYE9TGLG0jAAAL[39m {}
-[StreamSocket] 2025-11-09 15:33:32:3332 [32minfo[39m: [32mUsuario Invitado (guest_1762713212803) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 15:34:33:3433 [32minfo[39m: [32mCliente desconectado: Zc9Fe1BYE9TGLG0jAAAL[39m {}
-[StreamSocket] 2025-11-09 15:34:33:3433 [32minfo[39m: [32mCliente conectado: 6yQ6mKblXVlD3413AAAN[39m {}
-[StreamSocket] 2025-11-09 15:34:33:3433 [32minfo[39m: [32mUsuario Invitado (guest_1762713273778) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 15:39:17:3917 [32minfo[39m: [32mCliente desconectado: 6yQ6mKblXVlD3413AAAN[39m {}
-[StreamSocket] 2025-11-09 15:39:18:3918 [32minfo[39m: [32mCliente conectado: FBUlItNmY1r9ulfRAAAP[39m {}
-[StreamSocket] 2025-11-09 15:39:18:3918 [32minfo[39m: [32mUsuario Invitado (guest_1762713558437) se unió al stream stream_c6c36af0-02e1-4396-beb5-a2fa12a55cd4[39m {}
-[StreamSocket] 2025-11-09 15:40:08:408 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-09 15:40:15:4015 [32minfo[39m: [32mCliente conectado: hHMFX2o272Q3oSDDAAAB[39m {}
-[StreamSocket] 2025-11-09 15:40:50:4050 [32minfo[39m: [32mCliente desconectado: hHMFX2o272Q3oSDDAAAB[39m {}
-[StreamSocket] 2025-11-09 15:59:46:5946 [32minfo[39m: [32mCliente conectado: aLw7VkLMd4h_GH_hAAAD[39m {}
-[StreamSocket] 2025-11-09 15:59:56:5956 [32minfo[39m: [32mWebRTC offer enviado en stream stream_776e55d9-97b9-4bc3-b34d-33292193ab7d[39m {}
-[StreamSocket] 2025-11-09 15:59:56:5956 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_776e55d9-97b9-4bc3-b34d-33292193ab7d[39m {}
-[StreamSocket] 2025-11-09 16:00:07:07 [32minfo[39m: [32mUsuario streamer salió del stream stream_776e55d9-97b9-4bc3-b34d-33292193ab7d[39m {}
-[StreamSocket] 2025-11-09 16:00:07:07 [32minfo[39m: [32mCliente desconectado: aLw7VkLMd4h_GH_hAAAD[39m {}
-[StreamSocket] 2025-11-09 16:04:41:441 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-09 16:06:11:611 [32minfo[39m: [32mCliente conectado: FThOT2uTNuHD9zFOAAAB[39m {}
-[StreamSocket] 2025-11-09 16:06:11:611 [32minfo[39m: [32mWebRTC offer enviado en stream stream_8dfff499-3a85-44bf-b306-269d31e0c5ac[39m {}
-[StreamSocket] 2025-11-09 16:06:11:611 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_8dfff499-3a85-44bf-b306-269d31e0c5ac[39m {}
-[StreamSocket] 2025-11-09 16:07:07:77 [32minfo[39m: [32mCliente conectado: qW434_e5YA6b_P5wAAAD[39m {}
-[StreamSocket] 2025-11-09 16:07:07:77 [32minfo[39m: [32mUsuario Invitado (guest_1762715227042) se unió al stream stream_8dfff499-3a85-44bf-b306-269d31e0c5ac[39m {}
-[StreamSocket] 2025-11-09 16:12:04:124 [32minfo[39m: [32mCliente desconectado: qW434_e5YA6b_P5wAAAD[39m {}
-[StreamSocket] 2025-11-09 16:12:05:125 [32minfo[39m: [32mCliente desconectado: FThOT2uTNuHD9zFOAAAB[39m {}
-[StreamSocket] 2025-11-09 16:12:06:126 [32minfo[39m: [32mCliente conectado: FVos5SSVOIj7PTdwAAAG[39m {}
-[StreamSocket] 2025-11-09 16:12:06:126 [32minfo[39m: [32mCliente conectado: lCml5LOPOjo0Sx4mAAAH[39m {}
-[StreamSocket] 2025-11-09 16:12:06:126 [32minfo[39m: [32mUsuario Invitado (guest_1762715526506) se unió al stream stream_8dfff499-3a85-44bf-b306-269d31e0c5ac[39m {}
-[StreamSocket] 2025-11-09 16:12:06:126 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_8dfff499-3a85-44bf-b306-269d31e0c5ac[39m {}
-[StreamSocket] 2025-11-09 16:12:06:126 [32minfo[39m: [32mWebRTC offer enviado en stream stream_8dfff499-3a85-44bf-b306-269d31e0c5ac[39m {}
-[StreamSocket] 2025-11-09 16:12:06:126 [32minfo[39m: [32mWebRTC answer enviado en stream stream_8dfff499-3a85-44bf-b306-269d31e0c5ac[39m {}
-[StreamSocket] 2025-11-09 16:12:15:1215 [32minfo[39m: [32mCliente desconectado: lCml5LOPOjo0Sx4mAAAH[39m {}
-[StreamSocket] 2025-11-09 16:12:16:1216 [32minfo[39m: [32mCliente conectado: MdjLq10GExQ6fw2-AAAJ[39m {}
-[StreamSocket] 2025-11-09 16:12:16:1216 [32minfo[39m: [32mUsuario Invitado (guest_1762715536394) se unió al stream stream_8dfff499-3a85-44bf-b306-269d31e0c5ac[39m {}
-[StreamSocket] 2025-11-09 16:12:18:1218 [32minfo[39m: [32mCliente desconectado: MdjLq10GExQ6fw2-AAAJ[39m {}
-[StreamSocket] 2025-11-09 16:12:29:1229 [32minfo[39m: [32mCliente conectado: 5vAMqhhVTagLm_sBAAAL[39m {}
-[StreamSocket] 2025-11-09 16:12:29:1229 [32minfo[39m: [32mUsuario Invitado (guest_1762715548959) se unió al stream stream_8dfff499-3a85-44bf-b306-269d31e0c5ac[39m {}
-[StreamSocket] 2025-11-09 16:33:39:3339 [32minfo[39m: [32mCliente desconectado: 5vAMqhhVTagLm_sBAAAL[39m {}
-[StreamSocket] 2025-11-09 16:33:39:3339 [32minfo[39m: [32mCliente desconectado: FVos5SSVOIj7PTdwAAAG[39m {}
-[StreamSocket] 2025-11-09 16:33:40:3340 [32minfo[39m: [32mCliente conectado: JPRk2iiH_TbLnsWAAAAN[39m {}
-[StreamSocket] 2025-11-09 16:33:40:3340 [32minfo[39m: [32mUsuario Invitado (guest_1762716820368) se unió al stream stream_8dfff499-3a85-44bf-b306-269d31e0c5ac[39m {}
-[StreamSocket] 2025-11-09 16:33:40:3340 [32minfo[39m: [32mCliente conectado: Dgadl2xbTvtEkQfqAAAP[39m {}
-[StreamSocket] 2025-11-09 16:33:40:3340 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_8dfff499-3a85-44bf-b306-269d31e0c5ac[39m {}
-[StreamSocket] 2025-11-09 16:33:40:3340 [32minfo[39m: [32mWebRTC offer enviado en stream stream_8dfff499-3a85-44bf-b306-269d31e0c5ac[39m {}
-[StreamSocket] 2025-11-09 16:33:40:3340 [32minfo[39m: [32mWebRTC answer enviado en stream stream_8dfff499-3a85-44bf-b306-269d31e0c5ac[39m {}
-[StreamSocket] 2025-11-09 16:33:59:3359 [32minfo[39m: [32mCliente desconectado: JPRk2iiH_TbLnsWAAAAN[39m {}
-[StreamSocket] 2025-11-09 16:33:59:3359 [32minfo[39m: [32mCliente conectado: V-UeMn49Nn-Lyyl9AAAR[39m {}
-[StreamSocket] 2025-11-09 16:33:59:3359 [32minfo[39m: [32mUsuario Invitado (guest_1762716839872) se unió al stream stream_8dfff499-3a85-44bf-b306-269d31e0c5ac[39m {}
-[StreamSocket] 2025-11-09 16:34:19:3419 [32minfo[39m: [32mCliente desconectado: V-UeMn49Nn-Lyyl9AAAR[39m {}
-[StreamSocket] 2025-11-09 16:34:19:3419 [32minfo[39m: [32mCliente conectado: OIKjehsdpKuNCYepAAAT[39m {}
-[StreamSocket] 2025-11-09 16:34:19:3419 [32minfo[39m: [32mUsuario Invitado (guest_1762716859760) se unió al stream stream_8dfff499-3a85-44bf-b306-269d31e0c5ac[39m {}
-[StreamSocket] 2025-11-09 16:39:33:3933 [32minfo[39m: [32mCliente desconectado: OIKjehsdpKuNCYepAAAT[39m {}
-[StreamSocket] 2025-11-09 16:39:33:3933 [32minfo[39m: [32mCliente desconectado: Dgadl2xbTvtEkQfqAAAP[39m {}
-[StreamSocket] 2025-11-09 16:39:34:3934 [32minfo[39m: [32mCliente conectado: wUZ-L4fN_wGDsufLAAAV[39m {}
-[StreamSocket] 2025-11-09 16:39:34:3934 [32minfo[39m: [32mUsuario Invitado (guest_1762717173952) se unió al stream stream_8dfff499-3a85-44bf-b306-269d31e0c5ac[39m {}
-[StreamSocket] 2025-11-09 16:39:34:3934 [32minfo[39m: [32mCliente conectado: PkoY572NmnL2mNCkAAAX[39m {}
-[StreamSocket] 2025-11-09 16:39:34:3934 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_8dfff499-3a85-44bf-b306-269d31e0c5ac[39m {}
-[StreamSocket] 2025-11-09 16:39:34:3934 [32minfo[39m: [32mWebRTC offer enviado en stream stream_8dfff499-3a85-44bf-b306-269d31e0c5ac[39m {}
-[StreamSocket] 2025-11-09 16:39:34:3934 [32minfo[39m: [32mWebRTC answer enviado en stream stream_8dfff499-3a85-44bf-b306-269d31e0c5ac[39m {}
-[StreamSocket] 2025-11-09 16:39:49:3949 [32minfo[39m: [32mUsuario streamer salió del stream stream_8dfff499-3a85-44bf-b306-269d31e0c5ac[39m {}
-[StreamSocket] 2025-11-09 16:39:49:3949 [32minfo[39m: [32mCliente desconectado: PkoY572NmnL2mNCkAAAX[39m {}
-[StreamSocket] 2025-11-09 16:39:53:3953 [32minfo[39m: [32mCliente desconectado: wUZ-L4fN_wGDsufLAAAV[39m {}
-[StreamSocket] 2025-11-09 16:40:01:401 [32minfo[39m: [32mCliente conectado: 8k_uDxUIBAdQMXIgAAAZ[39m {}
-[StreamSocket] 2025-11-09 16:40:01:401 [32minfo[39m: [32mWebRTC offer enviado en stream stream_3eff9350-0a68-4a25-ad2d-4c9fe0fec81a[39m {}
-[StreamSocket] 2025-11-09 16:40:01:401 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_3eff9350-0a68-4a25-ad2d-4c9fe0fec81a[39m {}
-[StreamSocket] 2025-11-09 16:40:06:406 [32minfo[39m: [32mCliente conectado: erPlpqxNdAgGrJmoAAAb[39m {}
-[StreamSocket] 2025-11-09 16:40:06:406 [32minfo[39m: [32mUsuario Invitado (guest_1762717206052) se unió al stream stream_3eff9350-0a68-4a25-ad2d-4c9fe0fec81a[39m {}
-[StreamSocket] 2025-11-09 16:40:12:4012 [32minfo[39m: [32mCliente desconectado: erPlpqxNdAgGrJmoAAAb[39m {}
-[StreamSocket] 2025-11-09 16:40:17:4017 [32minfo[39m: [32mCliente conectado: ggP2E10sGkOGQ-lNAAAd[39m {}
-[StreamSocket] 2025-11-09 16:40:17:4017 [32minfo[39m: [32mUsuario Invitado (guest_1762717217662) se unió al stream stream_3eff9350-0a68-4a25-ad2d-4c9fe0fec81a[39m {}
-[StreamSocket] 2025-11-09 16:40:25:4025 [32minfo[39m: [32mCliente desconectado: 8k_uDxUIBAdQMXIgAAAZ[39m {}
-[StreamSocket] 2025-11-09 16:40:25:4025 [32minfo[39m: [32mCliente desconectado: ggP2E10sGkOGQ-lNAAAd[39m {}
-[StreamSocket] 2025-11-09 16:40:26:4026 [32minfo[39m: [32mCliente conectado: sbP95tYi7VaGYaBAAAAf[39m {}
-[StreamSocket] 2025-11-09 16:40:26:4026 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_3eff9350-0a68-4a25-ad2d-4c9fe0fec81a[39m {}
-[StreamSocket] 2025-11-09 16:40:26:4026 [32minfo[39m: [32mWebRTC offer enviado en stream stream_3eff9350-0a68-4a25-ad2d-4c9fe0fec81a[39m {}
-[StreamSocket] 2025-11-09 16:40:26:4026 [32minfo[39m: [32mCliente conectado: ALKP6VOOESYp-w3JAAAh[39m {}
-[StreamSocket] 2025-11-09 16:40:26:4026 [32minfo[39m: [32mUsuario Invitado (guest_1762717226802) se unió al stream stream_3eff9350-0a68-4a25-ad2d-4c9fe0fec81a[39m {}
-[StreamSocket] 2025-11-09 16:41:16:4116 [32minfo[39m: [32mCliente desconectado: ALKP6VOOESYp-w3JAAAh[39m {}
-[StreamSocket] 2025-11-09 16:41:17:4117 [32minfo[39m: [32mCliente conectado: 7n-IfH0qCst7w-2RAAAj[39m {}
-[StreamSocket] 2025-11-09 16:41:17:4117 [32minfo[39m: [32mUsuario Invitado (guest_1762717277401) se unió al stream stream_3eff9350-0a68-4a25-ad2d-4c9fe0fec81a[39m {}
-[StreamSocket] 2025-11-09 16:42:48:4248 [32minfo[39m: [32mCliente desconectado: 7n-IfH0qCst7w-2RAAAj[39m {}
-[StreamSocket] 2025-11-09 16:42:49:4249 [32minfo[39m: [32mCliente conectado: 8zd0PKH9zdN-nTnKAAAl[39m {}
-[StreamSocket] 2025-11-09 16:42:49:4249 [32minfo[39m: [32mUsuario Invitado (guest_1762717369790) se unió al stream stream_3eff9350-0a68-4a25-ad2d-4c9fe0fec81a[39m {}
-[StreamSocket] 2025-11-09 16:48:34:4834 [32minfo[39m: [32mCliente desconectado: 8zd0PKH9zdN-nTnKAAAl[39m {}
-[StreamSocket] 2025-11-09 16:48:34:4834 [32minfo[39m: [32mCliente desconectado: sbP95tYi7VaGYaBAAAAf[39m {}
-[StreamSocket] 2025-11-09 16:48:35:4835 [32minfo[39m: [32mCliente conectado: iz5Btr691NBBhbdfAAAn[39m {}
-[StreamSocket] 2025-11-09 16:48:35:4835 [32minfo[39m: [32mUsuario Invitado (guest_1762717715428) se unió al stream stream_3eff9350-0a68-4a25-ad2d-4c9fe0fec81a[39m {}
-[StreamSocket] 2025-11-09 16:48:35:4835 [32minfo[39m: [32mCliente conectado: 1w172hZI2Fy7UXkzAAAp[39m {}
-[StreamSocket] 2025-11-09 16:48:35:4835 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_3eff9350-0a68-4a25-ad2d-4c9fe0fec81a[39m {}
-[StreamSocket] 2025-11-09 16:48:36:4836 [32minfo[39m: [32mWebRTC offer enviado en stream stream_3eff9350-0a68-4a25-ad2d-4c9fe0fec81a[39m {}
-[StreamSocket] 2025-11-09 16:48:36:4836 [32minfo[39m: [32mWebRTC answer enviado en stream stream_3eff9350-0a68-4a25-ad2d-4c9fe0fec81a[39m {}
-[StreamSocket] 2025-11-09 16:48:49:4849 [32minfo[39m: [32mUsuario streamer salió del stream stream_3eff9350-0a68-4a25-ad2d-4c9fe0fec81a[39m {}
-[StreamSocket] 2025-11-09 16:48:49:4849 [32minfo[39m: [32mCliente desconectado: 1w172hZI2Fy7UXkzAAAp[39m {}
-[StreamSocket] 2025-11-09 16:48:54:4854 [32minfo[39m: [32mCliente desconectado: iz5Btr691NBBhbdfAAAn[39m {}
-[StreamSocket] 2025-11-09 16:49:00:490 [32minfo[39m: [32mCliente conectado: 1H_ZO6MGCmxuLfiUAAAr[39m {}
-[StreamSocket] 2025-11-09 16:49:00:490 [32minfo[39m: [32mWebRTC offer enviado en stream stream_768be8f4-f8f9-44b6-8657-fd5e6a466de1[39m {}
-[StreamSocket] 2025-11-09 16:49:00:490 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_768be8f4-f8f9-44b6-8657-fd5e6a466de1[39m {}
-[StreamSocket] 2025-11-09 16:49:05:495 [32minfo[39m: [32mCliente conectado: PXJGShhXlFBExkcdAAAt[39m {}
-[StreamSocket] 2025-11-09 16:49:05:495 [32minfo[39m: [32mUsuario Invitado (guest_1762717745539) se unió al stream stream_768be8f4-f8f9-44b6-8657-fd5e6a466de1[39m {}
-[StreamSocket] 2025-11-09 16:49:20:4920 [32minfo[39m: [32mCliente desconectado: PXJGShhXlFBExkcdAAAt[39m {}
-[StreamSocket] 2025-11-09 16:49:20:4920 [32minfo[39m: [32mCliente conectado: HnO6vC9x76fpNuhoAAAv[39m {}
-[StreamSocket] 2025-11-09 16:49:20:4920 [32minfo[39m: [32mUsuario Invitado (guest_1762717760800) se unió al stream stream_768be8f4-f8f9-44b6-8657-fd5e6a466de1[39m {}
-[StreamSocket] 2025-11-09 16:50:49:5049 [32minfo[39m: [32mCliente desconectado: HnO6vC9x76fpNuhoAAAv[39m {}
-[StreamSocket] 2025-11-09 16:50:49:5049 [32minfo[39m: [32mCliente desconectado: 1H_ZO6MGCmxuLfiUAAAr[39m {}
-[StreamSocket] 2025-11-09 16:50:50:5050 [32minfo[39m: [32mCliente conectado: UlheL3UtNWs264CUAAAx[39m {}
-[StreamSocket] 2025-11-09 16:50:50:5050 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_768be8f4-f8f9-44b6-8657-fd5e6a466de1[39m {}
-[StreamSocket] 2025-11-09 16:50:50:5050 [32minfo[39m: [32mWebRTC offer enviado en stream stream_768be8f4-f8f9-44b6-8657-fd5e6a466de1[39m {}
-[StreamSocket] 2025-11-09 16:50:50:5050 [32minfo[39m: [32mCliente conectado: T6C4J70OmN9q8ZD1AAAz[39m {}
-[StreamSocket] 2025-11-09 16:50:50:5050 [32minfo[39m: [32mUsuario Invitado (guest_1762717850343) se unió al stream stream_768be8f4-f8f9-44b6-8657-fd5e6a466de1[39m {}
-[StreamSocket] 2025-11-09 16:51:01:511 [32minfo[39m: [32mCliente desconectado: T6C4J70OmN9q8ZD1AAAz[39m {}
-[StreamSocket] 2025-11-09 16:51:01:511 [32minfo[39m: [32mCliente conectado: RzFquNfD8pt9ODzeAAA1[39m {}
-[StreamSocket] 2025-11-09 16:51:01:511 [32minfo[39m: [32mUsuario Invitado (guest_1762717861706) se unió al stream stream_768be8f4-f8f9-44b6-8657-fd5e6a466de1[39m {}
-[StreamSocket] 2025-11-09 16:51:04:514 [32minfo[39m: [32mCliente desconectado: RzFquNfD8pt9ODzeAAA1[39m {}
-[StreamSocket] 2025-11-09 16:51:06:516 [32minfo[39m: [32mUsuario streamer salió del stream stream_768be8f4-f8f9-44b6-8657-fd5e6a466de1[39m {}
-[StreamSocket] 2025-11-09 16:51:06:516 [32minfo[39m: [32mCliente desconectado: UlheL3UtNWs264CUAAAx[39m {}
-[StreamSocket] 2025-11-09 16:51:09:519 [32minfo[39m: [32mCliente conectado: p0fi9sY63DWUX1VYAAA3[39m {}
-[StreamSocket] 2025-11-09 16:51:10:5110 [32minfo[39m: [32mWebRTC offer enviado en stream stream_9b4afab4-ba48-47ca-b7a9-f54e59ac7c8d[39m {}
-[StreamSocket] 2025-11-09 16:51:10:5110 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_9b4afab4-ba48-47ca-b7a9-f54e59ac7c8d[39m {}
-[StreamSocket] 2025-11-09 16:51:18:5118 [32minfo[39m: [32mCliente conectado: aZDRTEV77WcOealZAAA5[39m {}
-[StreamSocket] 2025-11-09 16:51:18:5118 [32minfo[39m: [32mUsuario Invitado (guest_1762717878912) se unió al stream stream_9b4afab4-ba48-47ca-b7a9-f54e59ac7c8d[39m {}
-[StreamSocket] 2025-11-09 16:52:29:5229 [32minfo[39m: [32mCliente desconectado: aZDRTEV77WcOealZAAA5[39m {}
-[StreamSocket] 2025-11-09 16:52:29:5229 [32minfo[39m: [32mCliente desconectado: p0fi9sY63DWUX1VYAAA3[39m {}
-[StreamSocket] 2025-11-09 16:52:29:5229 [32minfo[39m: [32mCliente conectado: 1-2B9A46z8t_BjQwAAA7[39m {}
-[StreamSocket] 2025-11-09 16:52:29:5229 [32minfo[39m: [32mUsuario Invitado (guest_1762717949772) se unió al stream stream_9b4afab4-ba48-47ca-b7a9-f54e59ac7c8d[39m {}
-[StreamSocket] 2025-11-09 16:52:30:5230 [32minfo[39m: [32mCliente conectado: wvLrBK3c-6PllbB2AAA9[39m {}
-[StreamSocket] 2025-11-09 16:52:30:5230 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_9b4afab4-ba48-47ca-b7a9-f54e59ac7c8d[39m {}
-[StreamSocket] 2025-11-09 16:52:30:5230 [32minfo[39m: [32mWebRTC offer enviado en stream stream_9b4afab4-ba48-47ca-b7a9-f54e59ac7c8d[39m {}
-[StreamSocket] 2025-11-09 16:52:30:5230 [32minfo[39m: [32mWebRTC answer enviado en stream stream_9b4afab4-ba48-47ca-b7a9-f54e59ac7c8d[39m {}
-[StreamSocket] 2025-11-09 16:52:52:5252 [32minfo[39m: [32mCliente desconectado: 1-2B9A46z8t_BjQwAAA7[39m {}
-[StreamSocket] 2025-11-09 16:52:52:5252 [32minfo[39m: [32mCliente desconectado: wvLrBK3c-6PllbB2AAA9[39m {}
-[StreamSocket] 2025-11-09 16:52:53:5253 [32minfo[39m: [32mCliente conectado: YNf_gVQ3By5JaqOvAAA_[39m {}
-[StreamSocket] 2025-11-09 16:52:53:5253 [32minfo[39m: [32mUsuario Invitado (guest_1762717973333) se unió al stream stream_9b4afab4-ba48-47ca-b7a9-f54e59ac7c8d[39m {}
-[StreamSocket] 2025-11-09 16:52:53:5253 [32minfo[39m: [32mCliente conectado: 7ClB4PuLiI9qBAB3AABB[39m {}
-[StreamSocket] 2025-11-09 16:52:53:5253 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_9b4afab4-ba48-47ca-b7a9-f54e59ac7c8d[39m {}
-[StreamSocket] 2025-11-09 16:52:53:5253 [32minfo[39m: [32mWebRTC offer enviado en stream stream_9b4afab4-ba48-47ca-b7a9-f54e59ac7c8d[39m {}
-[StreamSocket] 2025-11-09 16:52:53:5253 [32minfo[39m: [32mWebRTC answer enviado en stream stream_9b4afab4-ba48-47ca-b7a9-f54e59ac7c8d[39m {}
-[StreamSocket] 2025-11-09 16:53:03:533 [32minfo[39m: [32mUsuario streamer salió del stream stream_9b4afab4-ba48-47ca-b7a9-f54e59ac7c8d[39m {}
-[StreamSocket] 2025-11-09 16:53:03:533 [32minfo[39m: [32mCliente desconectado: 7ClB4PuLiI9qBAB3AABB[39m {}
-[StreamSocket] 2025-11-09 16:53:07:537 [32minfo[39m: [32mCliente desconectado: YNf_gVQ3By5JaqOvAAA_[39m {}
-[StreamSocket] 2025-11-09 16:53:12:5312 [32minfo[39m: [32mCliente conectado: qn1UClGbhYiYEO7jAABD[39m {}
-[StreamSocket] 2025-11-09 16:53:12:5312 [32minfo[39m: [32mWebRTC offer enviado en stream stream_d1a7f2dc-5693-4587-bf4d-24fdd62d0110[39m {}
-[StreamSocket] 2025-11-09 16:53:12:5312 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_d1a7f2dc-5693-4587-bf4d-24fdd62d0110[39m {}
-[StreamSocket] 2025-11-09 16:53:19:5319 [32minfo[39m: [32mCliente conectado: u8CipNHMkC-ZIvT6AABF[39m {}
-[StreamSocket] 2025-11-09 16:53:19:5319 [32minfo[39m: [32mUsuario Invitado (guest_1762717999475) se unió al stream stream_d1a7f2dc-5693-4587-bf4d-24fdd62d0110[39m {}
-[StreamSocket] 2025-11-09 16:55:15:5515 [32minfo[39m: [32mCliente desconectado: u8CipNHMkC-ZIvT6AABF[39m {}
-[StreamSocket] 2025-11-09 16:55:16:5516 [32minfo[39m: [32mCliente conectado: iAn5rjvaQNWF5Gj5AABH[39m {}
-[StreamSocket] 2025-11-09 16:55:16:5516 [32minfo[39m: [32mUsuario Invitado (guest_1762718115943) se unió al stream stream_d1a7f2dc-5693-4587-bf4d-24fdd62d0110[39m {}
-[StreamSocket] 2025-11-09 16:57:40:5740 [32minfo[39m: [32mCliente desconectado: iAn5rjvaQNWF5Gj5AABH[39m {}
-[StreamSocket] 2025-11-09 16:57:40:5740 [32minfo[39m: [32mCliente desconectado: qn1UClGbhYiYEO7jAABD[39m {}
-[StreamSocket] 2025-11-09 16:57:41:5741 [32minfo[39m: [32mCliente conectado: 1sEQfTlLLIn3by2tAABJ[39m {}
-[StreamSocket] 2025-11-09 16:57:41:5741 [32minfo[39m: [32mUsuario Invitado (guest_1762718261575) se unió al stream stream_d1a7f2dc-5693-4587-bf4d-24fdd62d0110[39m {}
-[StreamSocket] 2025-11-09 16:57:41:5741 [32minfo[39m: [32mCliente conectado: 9yxMSJ36NFCjhqlvAABL[39m {}
-[StreamSocket] 2025-11-09 16:57:41:5741 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_d1a7f2dc-5693-4587-bf4d-24fdd62d0110[39m {}
-[StreamSocket] 2025-11-09 16:57:41:5741 [32minfo[39m: [32mWebRTC offer enviado en stream stream_d1a7f2dc-5693-4587-bf4d-24fdd62d0110[39m {}
-[StreamSocket] 2025-11-09 16:57:42:5742 [32minfo[39m: [32mWebRTC answer enviado en stream stream_d1a7f2dc-5693-4587-bf4d-24fdd62d0110[39m {}
-[StreamSocket] 2025-11-09 16:58:10:5810 [32minfo[39m: [32mCliente desconectado: 9yxMSJ36NFCjhqlvAABL[39m {}
-[StreamSocket] 2025-11-09 16:58:10:5810 [32minfo[39m: [32mCliente desconectado: 1sEQfTlLLIn3by2tAABJ[39m {}
-[StreamSocket] 2025-11-09 16:58:11:5811 [32minfo[39m: [32mCliente conectado: gvZ1is2ucRkeUK_6AABN[39m {}
-[StreamSocket] 2025-11-09 16:58:11:5811 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_d1a7f2dc-5693-4587-bf4d-24fdd62d0110[39m {}
-[StreamSocket] 2025-11-09 16:58:11:5811 [32minfo[39m: [32mWebRTC offer enviado en stream stream_d1a7f2dc-5693-4587-bf4d-24fdd62d0110[39m {}
-[StreamSocket] 2025-11-09 16:59:22:5922 [32minfo[39m: [32mCliente desconectado: gvZ1is2ucRkeUK_6AABN[39m {}
-[StreamSocket] 2025-11-09 16:59:25:5925 [32minfo[39m: [32mCliente conectado: a9rtTlLgKrSPJIWuAABP[39m {}
-[StreamSocket] 2025-11-09 16:59:25:5925 [32minfo[39m: [32mWebRTC offer enviado en stream stream_33037220-69a4-48d8-805c-229cff53eaf7[39m {}
-[StreamSocket] 2025-11-09 16:59:25:5925 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_33037220-69a4-48d8-805c-229cff53eaf7[39m {}
-[StreamSocket] 2025-11-09 17:01:38:138 [32minfo[39m: [32mCliente desconectado: a9rtTlLgKrSPJIWuAABP[39m {}
-[StreamSocket] 2025-11-09 17:01:39:139 [32minfo[39m: [32mCliente conectado: bdhdglkJrLUsT9mzAABR[39m {}
-[StreamSocket] 2025-11-09 17:01:39:139 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_33037220-69a4-48d8-805c-229cff53eaf7[39m {}
-[StreamSocket] 2025-11-09 17:01:39:139 [32minfo[39m: [32mWebRTC offer enviado en stream stream_33037220-69a4-48d8-805c-229cff53eaf7[39m {}
-[StreamSocket] 2025-11-09 17:01:53:153 [32minfo[39m: [32mCliente desconectado: bdhdglkJrLUsT9mzAABR[39m {}
-[StreamSocket] 2025-11-09 17:01:54:154 [32minfo[39m: [32mCliente conectado: xrFnQ9CnvME2OSzYAABT[39m {}
-[StreamSocket] 2025-11-09 17:01:54:154 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_33037220-69a4-48d8-805c-229cff53eaf7[39m {}
-[StreamSocket] 2025-11-09 17:01:54:154 [32minfo[39m: [32mWebRTC offer enviado en stream stream_33037220-69a4-48d8-805c-229cff53eaf7[39m {}
-[StreamSocket] 2025-11-09 17:05:21:521 [32minfo[39m: [32mCliente desconectado: xrFnQ9CnvME2OSzYAABT[39m {}
-[StreamSocket] 2025-11-09 17:05:22:522 [32minfo[39m: [32mCliente conectado: Na_z4auj-8THeoryAABW[39m {}
-[StreamSocket] 2025-11-09 17:05:22:522 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_33037220-69a4-48d8-805c-229cff53eaf7[39m {}
-[StreamSocket] 2025-11-09 17:05:22:522 [32minfo[39m: [32mCliente conectado: M3mRbbfRERW_Z1s8AABX[39m {}
-[StreamSocket] 2025-11-09 17:05:22:522 [32minfo[39m: [32mUsuario Invitado (guest_1762718722546) se unió al stream stream_33037220-69a4-48d8-805c-229cff53eaf7[39m {}
-[StreamSocket] 2025-11-09 17:05:22:522 [32minfo[39m: [32mUsuario Invitado (guest_1762718722563) se unió al stream stream_33037220-69a4-48d8-805c-229cff53eaf7[39m {}
-[StreamSocket] 2025-11-09 17:05:22:522 [32minfo[39m: [32mWebRTC offer enviado en stream stream_33037220-69a4-48d8-805c-229cff53eaf7[39m {}
-[StreamSocket] 2025-11-09 17:05:22:522 [32minfo[39m: [32mWebRTC answer enviado en stream stream_33037220-69a4-48d8-805c-229cff53eaf7[39m {}
-[StreamSocket] 2025-11-09 17:05:31:531 [32minfo[39m: [32mCliente desconectado: Na_z4auj-8THeoryAABW[39m {}
-[StreamSocket] 2025-11-09 17:05:32:532 [32minfo[39m: [32mCliente conectado: 2C38pwEZ5YSQWauZAABZ[39m {}
-[StreamSocket] 2025-11-09 17:05:32:532 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_33037220-69a4-48d8-805c-229cff53eaf7[39m {}
-[StreamSocket] 2025-11-09 17:05:32:532 [32minfo[39m: [32mWebRTC offer enviado en stream stream_33037220-69a4-48d8-805c-229cff53eaf7[39m {}
-[StreamSocket] 2025-11-09 17:05:32:532 [32minfo[39m: [32mWebRTC answer enviado en stream stream_33037220-69a4-48d8-805c-229cff53eaf7[39m {}
-[StreamSocket] 2025-11-09 17:05:37:537 [32minfo[39m: [32mCliente desconectado: M3mRbbfRERW_Z1s8AABX[39m {}
-[StreamSocket] 2025-11-09 17:05:38:538 [32minfo[39m: [32mCliente conectado: TYtrIYt0VNUsO4s3AABb[39m {}
-[StreamSocket] 2025-11-09 17:05:38:538 [32minfo[39m: [32mUsuario Invitado (guest_1762718738082) se unió al stream stream_33037220-69a4-48d8-805c-229cff53eaf7[39m {}
-[StreamSocket] 2025-11-09 17:05:38:538 [32minfo[39m: [32mUsuario Invitado (guest_1762718738092) se unió al stream stream_33037220-69a4-48d8-805c-229cff53eaf7[39m {}
-[StreamSocket] 2025-11-09 17:05:43:543 [32minfo[39m: [32mCliente desconectado: TYtrIYt0VNUsO4s3AABb[39m {}
-[StreamSocket] 2025-11-09 17:05:45:545 [32minfo[39m: [32mCliente conectado: fT29CYZOiq_QhNf4AABd[39m {}
-[StreamSocket] 2025-11-09 17:05:45:545 [32minfo[39m: [32mUsuario Invitado (guest_1762718745038) se unió al stream stream_33037220-69a4-48d8-805c-229cff53eaf7[39m {}
-[StreamSocket] 2025-11-09 17:05:45:545 [32minfo[39m: [32mUsuario Invitado (guest_1762718745049) se unió al stream stream_33037220-69a4-48d8-805c-229cff53eaf7[39m {}
-[StreamSocket] 2025-11-09 17:06:13:613 [32minfo[39m: [32mCliente desconectado: 2C38pwEZ5YSQWauZAABZ[39m {}
-[StreamSocket] 2025-11-09 17:06:17:617 [32minfo[39m: [32mCliente desconectado: fT29CYZOiq_QhNf4AABd[39m {}
-[StreamSocket] 2025-11-09 17:06:22:622 [32minfo[39m: [32mCliente conectado: jJpvcEA4uGEs1a5jAABf[39m {}
-[StreamSocket] 2025-11-09 17:06:22:622 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:06:22:622 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:06:29:629 [32minfo[39m: [32mCliente conectado: dKV-xEAXihuG1KLxAABh[39m {}
-[StreamSocket] 2025-11-09 17:06:29:629 [32minfo[39m: [32mUsuario Invitado (guest_1762718789858) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:06:29:629 [32minfo[39m: [32mUsuario Invitado (guest_1762718789868) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:08:03:83 [32minfo[39m: [32mCliente desconectado: dKV-xEAXihuG1KLxAABh[39m {}
-[StreamSocket] 2025-11-09 17:08:03:83 [32minfo[39m: [32mCliente desconectado: jJpvcEA4uGEs1a5jAABf[39m {}
-[StreamSocket] 2025-11-09 17:08:03:83 [32minfo[39m: [32mCliente conectado: 5jlxWLIzsVYj3gKTAABj[39m {}
-[StreamSocket] 2025-11-09 17:08:03:83 [32minfo[39m: [32mUsuario Invitado (guest_1762718883877) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:08:03:83 [32minfo[39m: [32mUsuario Invitado (guest_1762718883889) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:08:04:84 [32minfo[39m: [32mCliente conectado: SoKZTgvbsSKMQgEEAABl[39m {}
-[StreamSocket] 2025-11-09 17:08:04:84 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:08:04:84 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:08:04:84 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:08:44:844 [32minfo[39m: [32mCliente desconectado: SoKZTgvbsSKMQgEEAABl[39m {}
-[StreamSocket] 2025-11-09 17:08:45:845 [32minfo[39m: [32mCliente conectado: X7oHDWTU9tvmdvgxAABn[39m {}
-[StreamSocket] 2025-11-09 17:08:45:845 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:08:45:845 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:08:45:845 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:08:58:858 [32minfo[39m: [32mCliente desconectado: 5jlxWLIzsVYj3gKTAABj[39m {}
-[StreamSocket] 2025-11-09 17:08:58:858 [32minfo[39m: [32mCliente conectado: NxVel8lrc83ROuMtAABp[39m {}
-[StreamSocket] 2025-11-09 17:08:58:858 [32minfo[39m: [32mUsuario Invitado (guest_1762718938593) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:08:58:858 [32minfo[39m: [32mUsuario Invitado (guest_1762718938602) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:09:04:94 [32minfo[39m: [32mCliente desconectado: NxVel8lrc83ROuMtAABp[39m {}
-[StreamSocket] 2025-11-09 17:09:06:96 [32minfo[39m: [32mCliente conectado: GkEkV7W4EGhbUNUbAABr[39m {}
-[StreamSocket] 2025-11-09 17:09:06:96 [32minfo[39m: [32mUsuario Invitado (guest_1762718946217) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:09:06:96 [32minfo[39m: [32mUsuario Invitado (guest_1762718946225) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:09:40:940 [32minfo[39m: [32mCliente desconectado: GkEkV7W4EGhbUNUbAABr[39m {}
-[StreamSocket] 2025-11-09 17:09:40:940 [32minfo[39m: [32mCliente desconectado: X7oHDWTU9tvmdvgxAABn[39m {}
-[StreamSocket] 2025-11-09 17:09:41:941 [32minfo[39m: [32mCliente conectado: LDUWzSoFLKHx92-DAABt[39m {}
-[StreamSocket] 2025-11-09 17:09:41:941 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:09:41:941 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:09:41:941 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:09:41:941 [32minfo[39m: [32mCliente conectado: qHyKRj5ZJhxJGr1tAABv[39m {}
-[StreamSocket] 2025-11-09 17:09:41:941 [32minfo[39m: [32mUsuario Invitado (guest_1762718981659) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:09:41:941 [32minfo[39m: [32mUsuario Invitado (guest_1762718981671) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:09:41:941 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:09:41:941 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:09:41:941 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:09:56:956 [32minfo[39m: [32mCliente desconectado: qHyKRj5ZJhxJGr1tAABv[39m {}
-[StreamSocket] 2025-11-09 17:09:57:957 [32minfo[39m: [32mCliente conectado: cEEMKskC2XIRyvSSAABx[39m {}
-[StreamSocket] 2025-11-09 17:09:57:957 [32minfo[39m: [32mUsuario Invitado (guest_1762718997148) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:09:57:957 [32minfo[39m: [32mUsuario Invitado (guest_1762718997160) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:09:57:957 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:09:57:957 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:09:57:957 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:05:115 [32minfo[39m: [32mCliente desconectado: cEEMKskC2XIRyvSSAABx[39m {}
-[StreamSocket] 2025-11-09 17:11:05:115 [32minfo[39m: [32mCliente desconectado: LDUWzSoFLKHx92-DAABt[39m {}
-[StreamSocket] 2025-11-09 17:11:06:116 [32minfo[39m: [32mCliente conectado: vYSdT_ff6BJuG_s3AAB0[39m {}
-[StreamSocket] 2025-11-09 17:11:06:116 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:06:116 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:06:116 [32minfo[39m: [32mCliente conectado: TteUD8gvdQtBP3hzAAB1[39m {}
-[StreamSocket] 2025-11-09 17:11:06:116 [32minfo[39m: [32mUsuario Invitado (guest_1762719066291) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:06:116 [32minfo[39m: [32mUsuario Invitado (guest_1762719066304) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:06:116 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:06:116 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:06:116 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:06:116 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:06:116 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:06:116 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:20:1120 [32minfo[39m: [32mCliente desconectado: TteUD8gvdQtBP3hzAAB1[39m {}
-[StreamSocket] 2025-11-09 17:11:21:1121 [32minfo[39m: [32mCliente conectado: XT0xFACf5TBGqOdaAAB3[39m {}
-[StreamSocket] 2025-11-09 17:11:21:1121 [32minfo[39m: [32mUsuario Invitado (guest_1762719081189) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:21:1121 [32minfo[39m: [32mUsuario Invitado (guest_1762719081198) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:21:1121 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:21:1121 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:21:1121 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:27:1127 [32minfo[39m: [32mCliente desconectado: vYSdT_ff6BJuG_s3AAB0[39m {}
-[StreamSocket] 2025-11-09 17:11:27:1127 [32minfo[39m: [32mCliente conectado: Bg-MLMrwyCgu68CGAAB5[39m {}
-[StreamSocket] 2025-11-09 17:11:27:1127 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:27:1127 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:27:1127 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:27:1127 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:27:1127 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:35:1135 [32minfo[39m: [32mCliente desconectado: XT0xFACf5TBGqOdaAAB3[39m {}
-[StreamSocket] 2025-11-09 17:11:36:1136 [32minfo[39m: [32mCliente conectado: 9h6ElzMvf1EAL_smAAB7[39m {}
-[StreamSocket] 2025-11-09 17:11:36:1136 [32minfo[39m: [32mUsuario Invitado (guest_1762719096115) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:36:1136 [32minfo[39m: [32mUsuario Invitado (guest_1762719096130) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:36:1136 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:36:1136 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:11:36:1136 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:13:02:132 [32minfo[39m: [32mCliente desconectado: 9h6ElzMvf1EAL_smAAB7[39m {}
-[StreamSocket] 2025-11-09 17:13:02:132 [32minfo[39m: [32mCliente desconectado: Bg-MLMrwyCgu68CGAAB5[39m {}
-[StreamSocket] 2025-11-09 17:13:03:133 [32minfo[39m: [32mCliente conectado: 7wxxs_W3DrploxcGAAB9[39m {}
-[StreamSocket] 2025-11-09 17:13:03:133 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:13:03:133 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:13:03:133 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:13:03:133 [32minfo[39m: [32mCliente conectado: w4fQIE7e3SQy-WgoAAB_[39m {}
-[StreamSocket] 2025-11-09 17:13:03:133 [32minfo[39m: [32mUsuario Invitado (guest_1762719183439) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:13:03:133 [32minfo[39m: [32mUsuario Invitado (guest_1762719183456) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:13:03:133 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:13:03:133 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:13:03:133 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:15:13:1513 [32minfo[39m: [32mCliente desconectado: w4fQIE7e3SQy-WgoAAB_[39m {}
-[StreamSocket] 2025-11-09 17:15:13:1513 [32minfo[39m: [32mCliente desconectado: 7wxxs_W3DrploxcGAAB9[39m {}
-[StreamSocket] 2025-11-09 17:15:14:1514 [32minfo[39m: [32mCliente conectado: 4esVW7sUNvrFtAW1AACC[39m {}
-[StreamSocket] 2025-11-09 17:15:14:1514 [32minfo[39m: [32mCliente conectado: iLNsRliD0-u3rBS6AACD[39m {}
-[StreamSocket] 2025-11-09 17:15:14:1514 [32minfo[39m: [32mUsuario Invitado (guest_1762719314577) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:15:14:1514 [32minfo[39m: [32mUsuario Invitado (guest_1762719314601) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:15:14:1514 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:15:14:1514 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:15:14:1514 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:15:14:1514 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:15:14:1514 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:15:32:1532 [32minfo[39m: [32mCliente desconectado: 4esVW7sUNvrFtAW1AACC[39m {}
-[StreamSocket] 2025-11-09 17:15:33:1533 [32minfo[39m: [32mCliente conectado: eWgHpEB3rAnMUNyeAACF[39m {}
-[StreamSocket] 2025-11-09 17:15:33:1533 [32minfo[39m: [32mUsuario Invitado (guest_1762719333124) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:15:33:1533 [32minfo[39m: [32mUsuario Invitado (guest_1762719333132) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:15:33:1533 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:15:33:1533 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:15:33:1533 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:16:25:1625 [32minfo[39m: [32mCliente desconectado: eWgHpEB3rAnMUNyeAACF[39m {}
-[StreamSocket] 2025-11-09 17:16:25:1625 [32minfo[39m: [32mCliente desconectado: iLNsRliD0-u3rBS6AACD[39m {}
-[StreamSocket] 2025-11-09 17:16:26:1626 [32minfo[39m: [32mCliente conectado: 1GQnbFWAHt2_tVodAACH[39m {}
-[StreamSocket] 2025-11-09 17:16:26:1626 [32minfo[39m: [32mUsuario Invitado (guest_1762719386324) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:16:26:1626 [32minfo[39m: [32mUsuario Invitado (guest_1762719386334) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:16:26:1626 [32minfo[39m: [32mCliente conectado: BliLvIHKjVXxJuG7AACJ[39m {}
-[StreamSocket] 2025-11-09 17:16:26:1626 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:16:26:1626 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:16:26:1626 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:16:26:1626 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:16:26:1626 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:16:40:1640 [32minfo[39m: [32mCliente desconectado: 1GQnbFWAHt2_tVodAACH[39m {}
-[StreamSocket] 2025-11-09 17:16:41:1641 [32minfo[39m: [32mCliente conectado: zE0PkPtXe-feE5mmAACL[39m {}
-[StreamSocket] 2025-11-09 17:16:41:1641 [32minfo[39m: [32mUsuario Invitado (guest_1762719401275) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:16:41:1641 [32minfo[39m: [32mUsuario Invitado (guest_1762719401282) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:16:41:1641 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:16:41:1641 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:16:41:1641 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:17:06:176 [32minfo[39m: [32mCliente desconectado: BliLvIHKjVXxJuG7AACJ[39m {}
-[StreamSocket] 2025-11-09 17:17:06:176 [32minfo[39m: [32mCliente desconectado: zE0PkPtXe-feE5mmAACL[39m {}
-[StreamSocket] 2025-11-09 17:17:06:176 [32minfo[39m: [32mCliente conectado: WyfjS6doMHOObk8iAACN[39m {}
-[StreamSocket] 2025-11-09 17:17:06:176 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:17:06:176 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:17:06:176 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:17:07:177 [32minfo[39m: [32mCliente conectado: qxEKUC4YTGUqfzJBAACP[39m {}
-[StreamSocket] 2025-11-09 17:17:07:177 [32minfo[39m: [32mUsuario Invitado (guest_1762719427090) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:17:07:177 [32minfo[39m: [32mUsuario Invitado (guest_1762719427119) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:17:07:177 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:17:07:177 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:17:07:177 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:17:20:1720 [32minfo[39m: [32mCliente desconectado: qxEKUC4YTGUqfzJBAACP[39m {}
-[StreamSocket] 2025-11-09 17:17:20:1720 [32minfo[39m: [32mCliente conectado: x592Gyey_6x0ehUwAACR[39m {}
-[StreamSocket] 2025-11-09 17:17:20:1720 [32minfo[39m: [32mUsuario Invitado (guest_1762719440870) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:17:20:1720 [32minfo[39m: [32mUsuario Invitado (guest_1762719440883) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:17:20:1720 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:17:20:1720 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:17:20:1720 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:18:06:186 [32minfo[39m: [32mCliente desconectado: x592Gyey_6x0ehUwAACR[39m {}
-[StreamSocket] 2025-11-09 17:18:06:186 [32minfo[39m: [32mCliente desconectado: WyfjS6doMHOObk8iAACN[39m {}
-[StreamSocket] 2025-11-09 17:18:06:186 [32minfo[39m: [32mCliente conectado: IG-dLcqzlA-6zsDpAACT[39m {}
-[StreamSocket] 2025-11-09 17:18:06:186 [32minfo[39m: [32mUsuario Invitado (guest_1762719486889) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:18:06:186 [32minfo[39m: [32mUsuario Invitado (guest_1762719486906) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:18:06:186 [32minfo[39m: [32mCliente conectado: QN-YlXqwh-4qE86bAACV[39m {}
-[StreamSocket] 2025-11-09 17:18:07:187 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:18:07:187 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:18:07:187 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:18:07:187 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:18:07:187 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:18:27:1827 [32minfo[39m: [32mCliente desconectado: IG-dLcqzlA-6zsDpAACT[39m {}
-[StreamSocket] 2025-11-09 17:18:28:1828 [32minfo[39m: [32mCliente conectado: gq9fPn8JUlGS0L6oAACX[39m {}
-[StreamSocket] 2025-11-09 17:18:28:1828 [32minfo[39m: [32mUsuario Invitado (guest_1762719508040) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:18:28:1828 [32minfo[39m: [32mUsuario Invitado (guest_1762719508054) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:18:28:1828 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:18:28:1828 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:18:28:1828 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:19:03:193 [32minfo[39m: [32mCliente desconectado: gq9fPn8JUlGS0L6oAACX[39m {}
-[StreamSocket] 2025-11-09 17:19:03:193 [32minfo[39m: [32mCliente conectado: Jk4wQO0LAYL6IV_qAACZ[39m {}
-[StreamSocket] 2025-11-09 17:19:03:193 [32minfo[39m: [32mUsuario Invitado (guest_1762719543690) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:19:03:193 [32minfo[39m: [32mUsuario Invitado (guest_1762719543702) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:19:03:193 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:19:03:193 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:19:03:193 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:21:15:2115 [32minfo[39m: [32mCliente desconectado: Jk4wQO0LAYL6IV_qAACZ[39m {}
-[StreamSocket] 2025-11-09 17:21:15:2115 [32minfo[39m: [32mCliente desconectado: QN-YlXqwh-4qE86bAACV[39m {}
-[StreamSocket] 2025-11-09 17:21:15:2115 [32minfo[39m: [32mCliente conectado: MY1CYuN2_GkZA80rAACb[39m {}
-[StreamSocket] 2025-11-09 17:21:15:2115 [32minfo[39m: [32mUsuario Invitado (guest_1762719675851) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:21:15:2115 [32minfo[39m: [32mUsuario Invitado (guest_1762719675866) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:21:16:2116 [32minfo[39m: [32mCliente conectado: dOfq9u9XdMieZyPWAACd[39m {}
-[StreamSocket] 2025-11-09 17:21:16:2116 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:21:16:2116 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:21:16:2116 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:21:16:2116 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:21:26:2126 [32minfo[39m: [32mCliente desconectado: MY1CYuN2_GkZA80rAACb[39m {}
-[StreamSocket] 2025-11-09 17:21:27:2127 [32minfo[39m: [32mCliente conectado: -CYhFxBfmGsL0XY0AACf[39m {}
-[StreamSocket] 2025-11-09 17:21:27:2127 [32minfo[39m: [32mUsuario Invitado (guest_1762719687264) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:21:27:2127 [32minfo[39m: [32mUsuario Invitado (guest_1762719687287) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:21:27:2127 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:21:27:2127 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:21:27:2127 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:22:00:220 [32minfo[39m: [32mCliente desconectado: -CYhFxBfmGsL0XY0AACf[39m {}
-[StreamSocket] 2025-11-09 17:22:00:220 [32minfo[39m: [32mCliente desconectado: dOfq9u9XdMieZyPWAACd[39m {}
-[StreamSocket] 2025-11-09 17:22:01:221 [32minfo[39m: [32mCliente conectado: e3orDv9c6HbtK68tAACh[39m {}
-[StreamSocket] 2025-11-09 17:22:01:221 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:22:01:221 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:22:01:221 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:22:01:221 [32minfo[39m: [32mCliente conectado: EXf79zMF3fvEbV32AACj[39m {}
-[StreamSocket] 2025-11-09 17:22:01:221 [32minfo[39m: [32mUsuario Invitado (guest_1762719721671) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:22:01:221 [32minfo[39m: [32mUsuario Invitado (guest_1762719721682) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:22:01:221 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:22:01:221 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:22:01:221 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:22:35:2235 [32minfo[39m: [32mCliente desconectado: EXf79zMF3fvEbV32AACj[39m {}
-[StreamSocket] 2025-11-09 17:22:36:2236 [32minfo[39m: [32mCliente conectado: kpqX3bZWDtEEtK-yAACl[39m {}
-[StreamSocket] 2025-11-09 17:22:36:2236 [32minfo[39m: [32mUsuario Invitado (guest_1762719756246) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:22:36:2236 [32minfo[39m: [32mUsuario Invitado (guest_1762719756226) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:22:36:2236 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:22:36:2236 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:22:36:2236 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:23:23:2323 [32minfo[39m: [32mCliente desconectado: kpqX3bZWDtEEtK-yAACl[39m {}
-[StreamSocket] 2025-11-09 17:23:25:2325 [32minfo[39m: [32mCliente conectado: 1GDrI2iBpw5d2yx-AACn[39m {}
-[StreamSocket] 2025-11-09 17:23:25:2325 [32minfo[39m: [32mUsuario Invitado (guest_1762719805820) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:23:25:2325 [32minfo[39m: [32mUsuario Invitado (guest_1762719805843) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:23:25:2325 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:23:25:2325 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:23:25:2325 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:25:09:259 [32minfo[39m: [32mCliente desconectado: 1GDrI2iBpw5d2yx-AACn[39m {}
-[StreamSocket] 2025-11-09 17:25:09:259 [32minfo[39m: [32mCliente desconectado: e3orDv9c6HbtK68tAACh[39m {}
-[StreamSocket] 2025-11-09 17:25:10:2510 [32minfo[39m: [32mCliente conectado: LiLJX6anNPKRLvMFAACp[39m {}
-[StreamSocket] 2025-11-09 17:25:10:2510 [32minfo[39m: [32mUsuario Invitado (guest_1762719910562) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:25:10:2510 [32minfo[39m: [32mUsuario Invitado (guest_1762719910577) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:25:10:2510 [32minfo[39m: [32mCliente conectado: c4CjmsZmCJrvqN7QAACr[39m {}
-[StreamSocket] 2025-11-09 17:25:10:2510 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:25:10:2510 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:25:11:2511 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:25:11:2511 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:25:26:2526 [32minfo[39m: [32mCliente desconectado: LiLJX6anNPKRLvMFAACp[39m {}
-[StreamSocket] 2025-11-09 17:25:27:2527 [32minfo[39m: [32mCliente conectado: 1AGbd8PscwrsFyw1AACt[39m {}
-[StreamSocket] 2025-11-09 17:25:27:2527 [32minfo[39m: [32mUsuario Invitado (guest_1762719927282) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:25:27:2527 [32minfo[39m: [32mUsuario Invitado (guest_1762719927300) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:25:27:2527 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:25:27:2527 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:25:27:2527 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:25:32:2532 [32minfo[39m: [32mCliente desconectado: 1AGbd8PscwrsFyw1AACt[39m {}
-[StreamSocket] 2025-11-09 17:25:32:2532 [32minfo[39m: [32mCliente desconectado: c4CjmsZmCJrvqN7QAACr[39m {}
-[StreamSocket] 2025-11-09 17:25:32:2532 [32minfo[39m: [32mCliente conectado: uIDcGsZrEeUPXaAUAACv[39m {}
-[StreamSocket] 2025-11-09 17:25:32:2532 [32minfo[39m: [32mUsuario Invitado (guest_1762719932777) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:25:32:2532 [32minfo[39m: [32mUsuario Invitado (guest_1762719932794) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:25:33:2533 [32minfo[39m: [32mCliente conectado: p_GAg0zBVBkqSh1OAACx[39m {}
-[StreamSocket] 2025-11-09 17:25:33:2533 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:25:33:2533 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:25:33:2533 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:25:33:2533 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:25:40:2540 [32minfo[39m: [32mCliente desconectado: uIDcGsZrEeUPXaAUAACv[39m {}
-[StreamSocket] 2025-11-09 17:25:40:2540 [32minfo[39m: [32mCliente conectado: sHnLyRCRMiv5hkfCAACz[39m {}
-[StreamSocket] 2025-11-09 17:25:40:2540 [32minfo[39m: [32mUsuario Invitado (guest_1762719940919) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:25:41:2541 [32minfo[39m: [32mUsuario Invitado (guest_1762719940938) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:25:41:2541 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:25:41:2541 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:25:41:2541 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:30:10:3010 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-09 17:30:16:3016 [32minfo[39m: [32mCliente conectado: fDxw6Mr0JMFY0UujAAAB[39m {}
-[StreamSocket] 2025-11-09 17:30:16:3016 [32minfo[39m: [32mCliente conectado: fDxw6Mr0JMFY0UujAAAB[39m {}
-[StreamSocket] 2025-11-09 17:30:16:3016 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:30:16:3016 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:30:16:3016 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:30:30:3030 [32minfo[39m: [32mCliente conectado: o4zwi-4LbRkjpWv0AAAD[39m {}
-[StreamSocket] 2025-11-09 17:30:30:3030 [32minfo[39m: [32mCliente conectado: o4zwi-4LbRkjpWv0AAAD[39m {}
-[StreamSocket] 2025-11-09 17:30:30:3030 [32minfo[39m: [32mUsuario Invitado (guest_1762720230344) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:30:30:3030 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:30:30:3030 [32minfo[39m: [32mUsuario Invitado (guest_1762720230361) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:30:30:3030 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:30:30:3030 [32minfo[39m: [32mSolicitud de nueva oferta reenviada al streamer (streamer) para viewer (streamer) en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:30:30:3030 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:30:32:3032 [32minfo[39m: [32mCliente desconectado: o4zwi-4LbRkjpWv0AAAD[39m {}
-[StreamSocket] 2025-11-09 17:30:32:3032 [32minfo[39m: [32mCliente conectado: ChMAgW-GiTi7Sv20AAAF[39m {}
-[StreamSocket] 2025-11-09 17:30:32:3032 [32minfo[39m: [32mCliente conectado: ChMAgW-GiTi7Sv20AAAF[39m {}
-[StreamSocket] 2025-11-09 17:30:32:3032 [32minfo[39m: [32mUsuario Invitado (guest_1762720232836) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:30:32:3032 [32minfo[39m: [32mUsuario Invitado (guest_1762720232816) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:30:32:3032 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:30:32:3032 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:30:32:3032 [32minfo[39m: [32mSolicitud de nueva oferta reenviada al streamer (streamer) para viewer (streamer) en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:30:32:3032 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:34:52:3452 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-09 17:34:58:3458 [32minfo[39m: [32mCliente conectado: mfn8A_aK5h9ybWIkAAAC[39m {}
-[StreamSocket] 2025-11-09 17:34:58:3458 [32minfo[39m: [32mCliente conectado: mfn8A_aK5h9ybWIkAAAC[39m {}
-[StreamSocket] 2025-11-09 17:34:58:3458 [32minfo[39m: [32mCliente conectado: pSnX3vPz4IGUicrwAAAD[39m {}
-[StreamSocket] 2025-11-09 17:34:58:3458 [32minfo[39m: [32mCliente conectado: pSnX3vPz4IGUicrwAAAD[39m {}
-[StreamSocket] 2025-11-09 17:37:40:3740 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
-[StreamSocket] 2025-11-09 17:37:56:3756 [32minfo[39m: [32mCliente conectado: IkpG2WH7ATuUrjTVAAAB[39m {}
-[StreamSocket] 2025-11-09 17:37:56:3756 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:37:56:3756 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:37:57:3757 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:38:07:387 [32minfo[39m: [32mCliente conectado: 2WLdy1pUipmOnhIkAAAD[39m {}
-[StreamSocket] 2025-11-09 17:38:07:387 [32minfo[39m: [32mUsuario Invitado (guest_1762720687635) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:38:07:387 [32minfo[39m: [32mUsuario Invitado (guest_1762720687657) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:38:07:387 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:38:07:387 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:38:07:387 [32minfo[39m: [32mSolicitud de nueva oferta reenviada al streamer (streamer) para viewer (streamer) en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:38:07:387 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:42:07:427 [32minfo[39m: [32mCliente desconectado: IkpG2WH7ATuUrjTVAAAB[39m {}
-[StreamSocket] 2025-11-09 17:42:07:427 [32minfo[39m: [32mCliente desconectado: 2WLdy1pUipmOnhIkAAAD[39m {}
-[StreamSocket] 2025-11-09 17:42:08:428 [32minfo[39m: [32mCliente conectado: nArqFrjGIjQGfC0BAAAF[39m {}
-[StreamSocket] 2025-11-09 17:42:08:428 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:42:08:428 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:42:08:428 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:42:08:428 [32minfo[39m: [32mCliente conectado: xIAQfZNmnbc-niv-AAAH[39m {}
-[StreamSocket] 2025-11-09 17:42:09:429 [32minfo[39m: [32mUsuario Invitado (guest_1762720928878) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:42:09:429 [32minfo[39m: [32mUsuario Invitado (guest_1762720928904) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:42:09:429 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:42:09:429 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:42:09:429 [32minfo[39m: [32mSolicitud de nueva oferta reenviada al streamer (streamer) para viewer (unknown-viewer) en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:42:09:429 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:42:26:4226 [32minfo[39m: [32mCliente desconectado: xIAQfZNmnbc-niv-AAAH[39m {}
-[StreamSocket] 2025-11-09 17:42:26:4226 [32minfo[39m: [32mCliente conectado: UsieyIL4ApK_jEJ6AAAJ[39m {}
-[StreamSocket] 2025-11-09 17:42:26:4226 [32minfo[39m: [32mUsuario Invitado (guest_1762720946892) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:42:26:4226 [32minfo[39m: [32mUsuario Invitado (guest_1762720946906) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:42:26:4226 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:42:26:4226 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:42:26:4226 [32minfo[39m: [32mSolicitud de nueva oferta reenviada al streamer (streamer) para viewer (unknown-viewer) en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:42:26:4226 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:42:36:4236 [32minfo[39m: [32mCliente desconectado: UsieyIL4ApK_jEJ6AAAJ[39m {}
-[StreamSocket] 2025-11-09 17:42:37:4237 [32minfo[39m: [32mCliente conectado: 4wB3xCBgGvqpvZQkAAAL[39m {}
-[StreamSocket] 2025-11-09 17:42:37:4237 [32minfo[39m: [32mUsuario Invitado (guest_1762720957149) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:42:37:4237 [32minfo[39m: [32mUsuario Invitado (guest_1762720957167) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:42:37:4237 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:42:37:4237 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:42:37:4237 [32minfo[39m: [32mSolicitud de nueva oferta reenviada al streamer (streamer) para viewer (unknown-viewer) en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:42:37:4237 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:43:17:4317 [32minfo[39m: [32mCliente desconectado: nArqFrjGIjQGfC0BAAAF[39m {}
-[StreamSocket] 2025-11-09 17:43:17:4317 [32minfo[39m: [32mCliente desconectado: 4wB3xCBgGvqpvZQkAAAL[39m {}
-[StreamSocket] 2025-11-09 17:43:18:4318 [32minfo[39m: [32mCliente conectado: Z3-GHt0_v5Ic3WcEAAAN[39m {}
-[StreamSocket] 2025-11-09 17:43:18:4318 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:43:18:4318 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:43:18:4318 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:43:18:4318 [32minfo[39m: [32mCliente conectado: 78I6r0BVWXbqofNtAAAP[39m {}
-[StreamSocket] 2025-11-09 17:43:18:4318 [32minfo[39m: [32mUsuario Invitado (guest_1762720998726) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:43:18:4318 [32minfo[39m: [32mUsuario Invitado (guest_1762720998755) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:43:18:4318 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:43:18:4318 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:43:18:4318 [32minfo[39m: [32mSolicitud de nueva oferta reenviada al streamer (streamer) para viewer (unknown-viewer) en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:43:18:4318 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:44:28:4428 [32minfo[39m: [32mCliente conectado: G2njfs_CrfSKB0x4AAAR[39m {}
-[StreamSocket] 2025-11-09 17:44:28:4428 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:44:28:4428 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:44:28:4428 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:44:28:4428 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:44:28:4428 [32minfo[39m: [32mSolicitud de nueva oferta reenviada al streamer (streamer) para viewer (unknown-viewer) en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:44:28:4428 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:44:34:4434 [32minfo[39m: [32mCliente desconectado: G2njfs_CrfSKB0x4AAAR[39m {}
-[StreamSocket] 2025-11-09 17:44:35:4435 [32minfo[39m: [32mCliente conectado: SzaZ_jjWyCEUZXaLAAAT[39m {}
-[StreamSocket] 2025-11-09 17:44:35:4435 [32minfo[39m: [32mUsuario Invitado (guest_1762721075789) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:44:35:4435 [32minfo[39m: [32mUsuario Invitado (guest_1762721075780) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:44:35:4435 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:44:35:4435 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:44:35:4435 [32minfo[39m: [32mSolicitud de nueva oferta reenviada al streamer (streamer) para viewer (unknown-viewer) en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:44:35:4435 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:44:43:4443 [32minfo[39m: [32mUsuario guest_1762721083464 salió del stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:44:43:4443 [32minfo[39m: [32mCliente desconectado: SzaZ_jjWyCEUZXaLAAAT[39m {}
-[StreamSocket] 2025-11-09 17:44:57:4457 [32minfo[39m: [32mCliente conectado: gogwgfx1X2Xyc6M4AAAV[39m {}
-[StreamSocket] 2025-11-09 17:44:57:4457 [32minfo[39m: [32mUsuario Invitado (guest_1762721097267) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:44:57:4457 [32minfo[39m: [32mUsuario Invitado (guest_1762721097282) se unió al stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:44:57:4457 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:44:57:4457 [32minfo[39m: [32mWebRTC offer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:44:57:4457 [32minfo[39m: [32mSolicitud de nueva oferta reenviada al streamer (streamer) para viewer (unknown-viewer) en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:44:57:4457 [32minfo[39m: [32mWebRTC answer enviado en stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:45:03:453 [32minfo[39m: [32mUsuario guest_1762721103632 salió del stream stream_92efe0d1-e8c8-4d91-a104-07b7d8b7842e[39m {}
-[StreamSocket] 2025-11-09 17:45:03:453 [32minfo[39m: [32mCliente desconectado: gogwgfx1X2Xyc6M4AAAV[39m {}
-[StreamSocket] 2025-11-09 17:45:08:458 [32minfo[39m: [32mCliente desconectado: Z3-GHt0_v5Ic3WcEAAAN[39m {}
-[StreamSocket] 2025-11-09 17:45:10:4510 [32minfo[39m: [32mCliente desconectado: 78I6r0BVWXbqofNtAAAP[39m {}
+[StreamSocket] 2025-11-16 20:16:18:1618 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-17 02:27:34:2734 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-17 02:32:16:3216 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-17 17:17:38:1738 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-17 17:41:35:4135 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-17 18:18:53:1853 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-17 22:57:08:578 [32minfo[39m: [32mCliente conectado: 5CrX_LYx8HL5bvekAAAB[39m {}
+[StreamSocket] 2025-11-17 22:57:08:578 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_4cc86391-ce44-4d99-9690-51ccf7f60830[39m {}
+[StreamSocket] 2025-11-17 22:57:08:578 [32minfo[39m: [32mWebRTC offer enviado en stream stream_4cc86391-ce44-4d99-9690-51ccf7f60830[39m {}
+[StreamSocket] 2025-11-17 22:57:33:5733 [32minfo[39m: [32mMensaje en stream stream_4cc86391-ce44-4d99-9690-51ccf7f60830 de Streamer: ezequiel funciona tu front[39m {}
+[StreamSocket] 2025-11-17 22:57:37:5737 [32minfo[39m: [32mCliente desconectado: 5CrX_LYx8HL5bvekAAAB[39m {}
+[StreamSocket] 2025-11-17 22:59:13:5913 [32minfo[39m: [32mCliente conectado: PVoFMSMYeYBtX0cPAAAD[39m {}
+[StreamSocket] 2025-11-17 22:59:13:5913 [32minfo[39m: [32mUsuario Invitado (guest_1763431153629) se unió al stream stream_4cc86391-ce44-4d99-9690-51ccf7f60830[39m {}
+[StreamSocket] 2025-11-17 22:59:17:5917 [32minfo[39m: [32mUsuario guest_1763431157782 salió del stream stream_4cc86391-ce44-4d99-9690-51ccf7f60830[39m {}
+[StreamSocket] 2025-11-17 22:59:17:5917 [32minfo[39m: [32mCliente desconectado: PVoFMSMYeYBtX0cPAAAD[39m {}
+[StreamSocket] 2025-11-17 22:59:21:5921 [32minfo[39m: [32mCliente conectado: p3HysxFOWMLhOEAlAAAF[39m {}
+[StreamSocket] 2025-11-17 22:59:21:5921 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_4cc86391-ce44-4d99-9690-51ccf7f60830[39m {}
+[StreamSocket] 2025-11-17 22:59:21:5921 [32minfo[39m: [32mWebRTC offer enviado en stream stream_4cc86391-ce44-4d99-9690-51ccf7f60830[39m {}
+[StreamSocket] 2025-11-17 22:59:25:5925 [32minfo[39m: [32mCliente desconectado: p3HysxFOWMLhOEAlAAAF[39m {}
+[StreamSocket] 2025-11-18 09:02:32:232 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-18 09:12:55:1255 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-18 09:24:17:2417 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-18 09:54:47:5447 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-18 09:56:53:5653 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-18 10:09:23:923 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-18 10:39:26:3926 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-18 10:43:53:4353 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-18 10:51:50:5150 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-18 10:52:51:5251 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-18 10:57:08:578 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-18 11:15:10:1510 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-18 11:30:47:3047 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-18 12:03:21:321 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-18 12:06:10:610 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-18 13:05:52:552 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-18 13:16:40:1640 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-20 16:53:17:5317 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-20 17:12:36:1236 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-20 17:12:56:1256 [32minfo[39m: [32mCliente conectado: 6K-Ac_aYbe69pv_uAAAB[39m {}
+[StreamSocket] 2025-11-20 17:12:57:1257 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c2d20d56-73e0-4f41-9c6b-9c2cde56e13e[39m {}
+[StreamSocket] 2025-11-20 17:12:57:1257 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_c2d20d56-73e0-4f41-9c6b-9c2cde56e13e[39m {}
+[StreamSocket] 2025-11-20 17:13:10:1310 [32minfo[39m: [32mUsuario streamer salió del stream stream_c2d20d56-73e0-4f41-9c6b-9c2cde56e13e[39m {}
+[StreamSocket] 2025-11-20 17:13:10:1310 [32minfo[39m: [32mCliente desconectado: 6K-Ac_aYbe69pv_uAAAB[39m {}
+[StreamSocket] 2025-11-20 17:20:51:2051 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-20 17:29:04:294 [32minfo[39m: [32mCliente conectado: aK_3rHpNzIrquoM3AAAB[39m {}
+[StreamSocket] 2025-11-20 17:29:04:294 [32minfo[39m: [32mWebRTC offer enviado en stream stream_b003ce2f-c52c-4b92-a196-cd7c2c94054d[39m {}
+[StreamSocket] 2025-11-20 17:29:04:294 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_b003ce2f-c52c-4b92-a196-cd7c2c94054d[39m {}
+[StreamSocket] 2025-11-20 17:29:07:297 [32minfo[39m: [32mUsuario streamer salió del stream stream_b003ce2f-c52c-4b92-a196-cd7c2c94054d[39m {}
+[StreamSocket] 2025-11-20 17:29:07:297 [32minfo[39m: [32mCliente desconectado: aK_3rHpNzIrquoM3AAAB[39m {}
+[StreamSocket] 2025-11-20 18:31:30:3130 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-20 18:34:40:3440 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-20 19:24:32:2432 [32minfo[39m: [32mCliente conectado: Y8Xbrloq-j1uue46AAAB[39m {}
+[StreamSocket] 2025-11-20 19:24:32:2432 [32minfo[39m: [32mCliente desconectado: Y8Xbrloq-j1uue46AAAB[39m {}
+[StreamSocket] 2025-11-20 19:37:52:3752 [32minfo[39m: [32mCliente conectado: ZXWioErmzrzDwHQxAAAD[39m {}
+[StreamSocket] 2025-11-20 19:37:52:3752 [32minfo[39m: [32mCliente desconectado: ZXWioErmzrzDwHQxAAAD[39m {}
+[StreamSocket] 2025-11-20 19:41:32:4132 [32minfo[39m: [32mCliente conectado: PU0nD5zioz50SbXwAAAF[39m {}
+[StreamSocket] 2025-11-20 19:41:45:4145 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 19:41:46:4146 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 19:50:12:5012 [32minfo[39m: [32mCliente desconectado: PU0nD5zioz50SbXwAAAF[39m {}
+[StreamSocket] 2025-11-20 19:50:14:5014 [32minfo[39m: [32mCliente conectado: tE9kCzykGwKIuv4RAAAH[39m {}
+[StreamSocket] 2025-11-20 19:50:14:5014 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 19:50:15:5015 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 19:50:19:5019 [32minfo[39m: [32mCliente desconectado: tE9kCzykGwKIuv4RAAAH[39m {}
+[StreamSocket] 2025-11-20 19:50:20:5020 [32minfo[39m: [32mCliente conectado: hQvSHEY3PC4mzrVYAAAJ[39m {}
+[StreamSocket] 2025-11-20 19:50:20:5020 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 19:50:21:5021 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 19:52:12:5212 [32minfo[39m: [32mCliente desconectado: hQvSHEY3PC4mzrVYAAAJ[39m {}
+[StreamSocket] 2025-11-20 19:52:14:5214 [32minfo[39m: [32mCliente conectado: iOOKNuERcxHy1yn9AAAL[39m {}
+[StreamSocket] 2025-11-20 19:52:14:5214 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 19:52:15:5215 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 19:52:23:5223 [32minfo[39m: [32mCliente desconectado: iOOKNuERcxHy1yn9AAAL[39m {}
+[StreamSocket] 2025-11-20 19:52:24:5224 [32minfo[39m: [32mCliente conectado: ncePUPfudIMbbAZEAAAN[39m {}
+[StreamSocket] 2025-11-20 19:52:24:5224 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 19:52:25:5225 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 19:54:14:5414 [32minfo[39m: [32mCliente desconectado: ncePUPfudIMbbAZEAAAN[39m {}
+[StreamSocket] 2025-11-20 19:54:16:5416 [32minfo[39m: [32mCliente conectado: HyhtIDbZ59UQ8TrbAAAP[39m {}
+[StreamSocket] 2025-11-20 19:54:16:5416 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 19:54:17:5417 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 19:54:21:5421 [32minfo[39m: [32mCliente desconectado: HyhtIDbZ59UQ8TrbAAAP[39m {}
+[StreamSocket] 2025-11-20 19:54:21:5421 [32minfo[39m: [32mCliente conectado: OhNgikVmzAXnyScEAAAR[39m {}
+[StreamSocket] 2025-11-20 19:54:21:5421 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 19:54:22:5422 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 19:55:05:555 [32minfo[39m: [32mCliente desconectado: OhNgikVmzAXnyScEAAAR[39m {}
+[StreamSocket] 2025-11-20 19:55:06:556 [32minfo[39m: [32mCliente conectado: nSWLfSyqmBkyUi0RAAAT[39m {}
+[StreamSocket] 2025-11-20 19:55:06:556 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 19:55:07:557 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 19:55:34:5534 [32minfo[39m: [32mCliente desconectado: nSWLfSyqmBkyUi0RAAAT[39m {}
+[StreamSocket] 2025-11-20 19:55:35:5535 [32minfo[39m: [32mCliente conectado: tyVpf_FBLYUzSP4XAAAV[39m {}
+[StreamSocket] 2025-11-20 19:55:35:5535 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 19:55:36:5536 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 19:55:41:5541 [32minfo[39m: [32mCliente desconectado: tyVpf_FBLYUzSP4XAAAV[39m {}
+[StreamSocket] 2025-11-20 19:55:42:5542 [32minfo[39m: [32mCliente conectado: UtWppVnecn5Pe-4mAAAX[39m {}
+[StreamSocket] 2025-11-20 19:55:42:5542 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 19:55:43:5543 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 19:56:20:5620 [32minfo[39m: [32mCliente desconectado: UtWppVnecn5Pe-4mAAAX[39m {}
+[StreamSocket] 2025-11-20 19:56:21:5621 [32minfo[39m: [32mCliente conectado: mliDC2aAl5QYdwDYAAAZ[39m {}
+[StreamSocket] 2025-11-20 19:56:21:5621 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 19:56:22:5622 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 19:56:23:5623 [32minfo[39m: [32mCliente desconectado: mliDC2aAl5QYdwDYAAAZ[39m {}
+[StreamSocket] 2025-11-20 19:56:24:5624 [32minfo[39m: [32mCliente conectado: spUJqauVZDWHp6qSAAAb[39m {}
+[StreamSocket] 2025-11-20 19:56:24:5624 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 19:56:25:5625 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 20:00:04:04 [32minfo[39m: [32mCliente desconectado: spUJqauVZDWHp6qSAAAb[39m {}
+[StreamSocket] 2025-11-20 20:00:05:05 [32minfo[39m: [32mCliente conectado: RTBaQ6tfZGJ3pomLAAAd[39m {}
+[StreamSocket] 2025-11-20 20:00:05:05 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 20:00:06:06 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 20:00:34:034 [32minfo[39m: [32mCliente desconectado: RTBaQ6tfZGJ3pomLAAAd[39m {}
+[StreamSocket] 2025-11-20 20:04:52:452 [32minfo[39m: [32mCliente conectado: uRlB5O4ksVvKjwGLAAAf[39m {}
+[StreamSocket] 2025-11-20 20:04:53:453 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 20:04:55:455 [32minfo[39m: [32mWebRTC offer enviado en stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 20:07:53:753 [32minfo[39m: [32mUsuario streamer salió del stream stream_c03a999d-b1d4-46f5-a0da-e6a2c2d47454[39m {}
+[StreamSocket] 2025-11-20 20:07:53:753 [32minfo[39m: [32mCliente desconectado: uRlB5O4ksVvKjwGLAAAf[39m {}
+[StreamSocket] 2025-11-20 20:09:33:933 [32minfo[39m: [32mCliente conectado: dkT1kT-geHENr5vMAAAh[39m {}
+[StreamSocket] 2025-11-20 20:09:35:935 [32minfo[39m: [32mWebRTC offer enviado en stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-20 20:09:35:935 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-20 20:09:51:951 [32minfo[39m: [32mCliente desconectado: dkT1kT-geHENr5vMAAAh[39m {}
+[StreamSocket] 2025-11-20 20:10:21:1021 [32minfo[39m: [32mCliente conectado: O_D-MsYqKldDk4m5AAAj[39m {}
+[StreamSocket] 2025-11-20 20:10:21:1021 [32minfo[39m: [32mUsuario Streamer (streamer) se unió al stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-20 20:10:23:1023 [32minfo[39m: [32mWebRTC offer enviado en stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-20 20:10:59:1059 [32minfo[39m: [32mMensaje en stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7 de Streamer: ghjghjhjghgj[39m {}
+[StreamSocket] 2025-11-20 20:11:57:1157 [32minfo[39m: [32mCliente desconectado: O_D-MsYqKldDk4m5AAAj[39m {}
+[StreamSocket] 2025-11-20 20:22:39:2239 [32minfo[39m: [32mCliente conectado: QZaUnbpuwDDNmcjZAAAl[39m {}
+[StreamSocket] 2025-11-20 20:22:39:2239 [32minfo[39m: [32mUsuario Invitado (guest_1763680959284) se unió al stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-20 20:22:40:2240 [32minfo[39m: [32mCliente desconectado: QZaUnbpuwDDNmcjZAAAl[39m {}
+[StreamSocket] 2025-11-20 20:22:41:2241 [32minfo[39m: [32mCliente conectado: M5v2slTt4xYRZRq2AAAn[39m {}
+[StreamSocket] 2025-11-20 20:22:41:2241 [32minfo[39m: [32mUsuario Invitado (guest_1763680961379) se unió al stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-20 20:22:48:2248 [32minfo[39m: [32mUsuario guest_1763680968782 salió del stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-20 20:22:48:2248 [32minfo[39m: [32mCliente desconectado: M5v2slTt4xYRZRq2AAAn[39m {}
+[StreamSocket] 2025-11-20 20:46:40:4640 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-22 11:45:56:4556 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-23 19:51:02:512 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}
+[StreamSocket] 2025-11-23 20:52:34:5234 [32minfo[39m: [32mCliente conectado: JlbS6e_A8k7ffK1IAAAB[39m {}
+[StreamSocket] 2025-11-23 20:52:34:5234 [32minfo[39m: [32mUsuario Invitado (guest_1763941954099) se unió al stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-23 20:52:45:5245 [32minfo[39m: [32mUsuario guest_1763941965033 salió del stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-23 20:52:45:5245 [32minfo[39m: [32mCliente desconectado: JlbS6e_A8k7ffK1IAAAB[39m {}
+[StreamSocket] 2025-11-23 21:21:35:2135 [32minfo[39m: [32mCliente conectado: AqdlCXgPKLmDBOZkAAAD[39m {}
+[StreamSocket] 2025-11-23 21:21:35:2135 [32minfo[39m: [32mUsuario Invitado (guest_1763943695376) se unió al stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-23 21:21:59:2159 [32minfo[39m: [32mUsuario guest_1763943719342 salió del stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-23 21:21:59:2159 [32minfo[39m: [32mCliente desconectado: AqdlCXgPKLmDBOZkAAAD[39m {}
+[StreamSocket] 2025-11-23 21:22:18:2218 [32minfo[39m: [32mCliente conectado: hE8hPm4GIPhBYKr1AAAF[39m {}
+[StreamSocket] 2025-11-23 21:22:18:2218 [32minfo[39m: [32mUsuario Invitado (guest_1763943738327) se unió al stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-23 21:22:21:2221 [32minfo[39m: [32mCliente desconectado: hE8hPm4GIPhBYKr1AAAF[39m {}
+[StreamSocket] 2025-11-23 21:22:22:2222 [32minfo[39m: [32mCliente conectado: SJnxSus3rDYMQP4wAAAH[39m {}
+[StreamSocket] 2025-11-23 21:22:22:2222 [32minfo[39m: [32mUsuario Invitado (guest_1763943742214) se unió al stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-23 21:22:27:2227 [32minfo[39m: [32mCliente desconectado: SJnxSus3rDYMQP4wAAAH[39m {}
+[StreamSocket] 2025-11-23 21:22:29:2229 [32minfo[39m: [32mCliente conectado: npoLnTBkVJfpt1MhAAAJ[39m {}
+[StreamSocket] 2025-11-23 21:22:29:2229 [32minfo[39m: [32mUsuario Invitado (guest_1763943749685) se unió al stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-23 21:22:31:2231 [32minfo[39m: [32mUsuario guest_1763943751663 salió del stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-23 21:22:31:2231 [32minfo[39m: [32mCliente desconectado: npoLnTBkVJfpt1MhAAAJ[39m {}
+[StreamSocket] 2025-11-23 21:24:22:2422 [32minfo[39m: [32mCliente conectado: PmYX5q_E9Jk8A23OAAAL[39m {}
+[StreamSocket] 2025-11-23 21:24:22:2422 [32minfo[39m: [32mUsuario Invitado (guest_1763943862376) se unió al stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-23 21:24:55:2455 [32minfo[39m: [32mCliente desconectado: PmYX5q_E9Jk8A23OAAAL[39m {}
+[StreamSocket] 2025-11-23 21:24:58:2458 [32minfo[39m: [32mCliente conectado: Eytr0Rrh2-Rnm2i4AAAN[39m {}
+[StreamSocket] 2025-11-23 21:24:58:2458 [32minfo[39m: [32mUsuario Invitado (guest_1763943898429) se unió al stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-23 21:25:10:2510 [32minfo[39m: [32mCliente desconectado: Eytr0Rrh2-Rnm2i4AAAN[39m {}
+[StreamSocket] 2025-11-23 21:25:11:2511 [32minfo[39m: [32mCliente conectado: YcJuaBVdzq1aBc6QAAAP[39m {}
+[StreamSocket] 2025-11-23 21:25:11:2511 [32minfo[39m: [32mUsuario Invitado (guest_1763943911020) se unió al stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-23 21:25:19:2519 [32minfo[39m: [32mCliente desconectado: YcJuaBVdzq1aBc6QAAAP[39m {}
+[StreamSocket] 2025-11-23 21:25:19:2519 [32minfo[39m: [32mCliente conectado: mo7GKa1HUlRmZhg0AAAR[39m {}
+[StreamSocket] 2025-11-23 21:25:19:2519 [32minfo[39m: [32mUsuario Invitado (guest_1763943919640) se unió al stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-23 21:25:52:2552 [32minfo[39m: [32mCliente desconectado: mo7GKa1HUlRmZhg0AAAR[39m {}
+[StreamSocket] 2025-11-23 21:25:53:2553 [32minfo[39m: [32mCliente conectado: ogaz7Uhvg37G6MUeAAAT[39m {}
+[StreamSocket] 2025-11-23 21:25:53:2553 [32minfo[39m: [32mUsuario Invitado (guest_1763943953117) se unió al stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-23 21:25:53:2553 [32minfo[39m: [32mUsuario guest_1763943953863 salió del stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-23 21:25:53:2553 [32minfo[39m: [32mCliente desconectado: ogaz7Uhvg37G6MUeAAAT[39m {}
+[StreamSocket] 2025-11-23 21:25:55:2555 [32minfo[39m: [32mCliente conectado: OTiINJ8yXzad5F5XAAAV[39m {}
+[StreamSocket] 2025-11-23 21:25:55:2555 [32minfo[39m: [32mUsuario Invitado (guest_1763943955252) se unió al stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-23 21:26:41:2641 [32minfo[39m: [32mCliente desconectado: OTiINJ8yXzad5F5XAAAV[39m {}
+[StreamSocket] 2025-11-23 21:26:42:2642 [32minfo[39m: [32mCliente conectado: mcbIZ81BvIozL_5HAAAX[39m {}
+[StreamSocket] 2025-11-23 21:26:42:2642 [32minfo[39m: [32mUsuario Invitado (guest_1763944001919) se unió al stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-23 21:26:52:2652 [32minfo[39m: [32mCliente desconectado: mcbIZ81BvIozL_5HAAAX[39m {}
+[StreamSocket] 2025-11-23 21:26:53:2653 [32minfo[39m: [32mCliente conectado: 89dPQHi9s-N5QtTkAAAZ[39m {}
+[StreamSocket] 2025-11-23 21:26:53:2653 [32minfo[39m: [32mUsuario Invitado (guest_1763944012917) se unió al stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-23 21:27:10:2710 [32minfo[39m: [32mCliente desconectado: 89dPQHi9s-N5QtTkAAAZ[39m {}
+[StreamSocket] 2025-11-23 21:27:14:2714 [32minfo[39m: [32mCliente conectado: Hs-EJ1kkCpFnFPEUAAAb[39m {}
+[StreamSocket] 2025-11-23 21:27:14:2714 [32minfo[39m: [32mUsuario Invitado (guest_1763944034119) se unió al stream stream_b853ca18-4ad4-4993-9a41-aa65a09849a7[39m {}
+[StreamSocket] 2025-11-23 21:27:24:2724 [32minfo[39m: [32mCliente desconectado: Hs-EJ1kkCpFnFPEUAAAb[39m {}
+[StreamSocket] 2025-11-23 22:02:10:210 [32minfo[39m: [32mSocket.IO configurado para streaming[39m {}

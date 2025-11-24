@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const ts_dotenv_1 = require("ts-dotenv");
-const bcrypt_1 = __importDefault(require("bcrypt"));
+const bcryptjs_1 = __importDefault(require("bcryptjs"));
 const env = (0, ts_dotenv_1.load)({
     JWT_KEY: String,
     JWT_EXPIRES_IN: String,
@@ -59,8 +59,8 @@ class AuthService {
      * @param password Contraseña a hashear
      */
     async hashPassword(password) {
-        const salt = await bcrypt_1.default.genSalt(10);
-        return bcrypt_1.default.hash(password, salt);
+        const salt = await bcryptjs_1.default.genSalt(10);
+        return bcryptjs_1.default.hash(password, salt);
     }
     /**
      * Compara una contraseña con su hash
@@ -68,7 +68,7 @@ class AuthService {
      * @param hash Hash almacenado
      */
     async comparePasswords(password, hash) {
-        return bcrypt_1.default.compare(password, hash);
+        return bcryptjs_1.default.compare(password, hash);
     }
 }
 exports.default = new AuthService();

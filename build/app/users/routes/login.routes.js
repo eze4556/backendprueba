@@ -7,7 +7,7 @@ const express_1 = require("express");
 const history_middlewares_1 = __importDefault(require("../../history/middlewares/history.middlewares"));
 const token_1 = __importDefault(require("../../../auth/token/token"));
 const user_models_1 = __importDefault(require("../models/user.models"));
-const bcrypt_1 = __importDefault(require("bcrypt"));
+const bcryptjs_1 = __importDefault(require("bcryptjs"));
 const handler_helper_1 = __importDefault(require("../../../helpers/handler.helper"));
 const codes_constanst_1 = require("../../../constants/codes.constanst");
 const user_controllers_1 = __importDefault(require("../controllers/user.controllers"));
@@ -38,7 +38,7 @@ async function checkCredentials(req, res, next) {
         }
         console.log('checkCredentials - usuario encontrado, verificando contraseña...');
         // Verificar contraseña usando bcrypt
-        const isValidPassword = await bcrypt_1.default.compare(contraseña, user.auth_data.password);
+        const isValidPassword = await bcryptjs_1.default.compare(contraseña, user.auth_data.password);
         if (!isValidPassword) {
             console.log('checkCredentials - contraseña incorrecta');
             return handler_helper_1.default.error(res, {

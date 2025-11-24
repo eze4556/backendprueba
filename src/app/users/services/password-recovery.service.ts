@@ -1,7 +1,7 @@
 import { randomUUID } from 'crypto';
 import UserModel from '../models/user.models';
 import PasswordResetModel from '../models/password-reset.models';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import nodemailer from 'nodemailer';
 
 class PasswordRecoveryService {

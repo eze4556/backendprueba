@@ -1,289 +1,96 @@
-[Server] 2025-11-07 23:33:17:3317 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-07 23:33:17:3317 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-07 23:33:17:3317 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-07 23:36:41:3641 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-07 23:36:41:3641 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-07 23:36:41:3641 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-07 23:37:33:3733 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-07 23:37:33:3733 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-07 23:37:33:3733 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-07 23:39:22:3922 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-07 23:39:22:3922 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-07 23:39:22:3922 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-07 23:41:09:419 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-07 23:41:09:419 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-07 23:41:09:419 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 00:17:22:1722 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 00:17:22:1722 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 00:17:22:1722 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 00:17:56:1756 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 00:17:57:1757 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 00:17:57:1757 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 00:21:16:2116 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 00:21:16:2116 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 00:21:16:2116 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 00:22:54:2254 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 00:22:54:2254 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 00:22:54:2254 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 00:27:49:2749 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 00:27:49:2749 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 00:27:49:2749 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 01:21:53:2153 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 01:21:53:2153 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 01:21:53:2153 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 01:25:43:2543 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 01:25:43:2543 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 01:25:43:2543 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 01:38:16:3816 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 01:38:16:3816 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 01:38:16:3816 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 01:38:44:3844 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 01:38:44:3844 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 01:38:44:3844 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 01:40:33:4033 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 01:40:33:4033 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 01:40:33:4033 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 01:42:17:4217 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 01:42:17:4217 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 01:42:17:4217 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 01:50:54:5054 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 01:50:54:5054 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 01:50:54:5054 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 02:00:23:023 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 02:00:23:023 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 02:00:23:023 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 02:03:10:310 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 02:03:10:310 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 02:03:10:310 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 02:03:42:342 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 02:03:42:342 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 02:03:42:342 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 02:04:18:418 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 02:04:18:418 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 02:04:18:418 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 02:05:04:54 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 02:05:04:54 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 02:05:04:54 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 02:05:25:525 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 02:05:25:525 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 02:05:25:525 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 02:05:46:546 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 02:05:46:546 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 02:05:46:546 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 02:44:19:4419 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 02:44:19:4419 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 02:44:19:4419 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 02:59:51:5951 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 02:59:51:5951 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 02:59:51:5951 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 03:28:41:2841 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 03:28:41:2841 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 03:28:41:2841 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 03:30:18:3018 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 03:30:18:3018 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 03:30:18:3018 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 03:31:56:3156 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 03:31:56:3156 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 03:31:56:3156 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 03:40:56:4056 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 03:40:56:4056 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 03:40:56:4056 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 03:41:14:4114 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 03:41:14:4114 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 03:41:14:4114 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 03:52:49:5249 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 03:52:49:5249 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 03:52:49:5249 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 04:10:49:1049 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 04:10:49:1049 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 04:10:49:1049 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 04:20:17:2017 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 04:20:17:2017 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 04:20:17:2017 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 13:35:39:3539 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 13:35:39:3539 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 13:35:39:3539 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 14:15:26:1526 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 14:15:26:1526 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 14:15:26:1526 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 14:16:36:1636 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 14:16:36:1636 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 14:16:36:1636 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 14:43:34:4334 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 14:43:34:4334 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 14:43:34:4334 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 16:40:24:4024 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 16:40:24:4024 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 16:40:24:4024 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 16:42:17:4217 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 16:42:17:4217 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 16:42:17:4217 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 16:43:06:436 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 16:43:06:436 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 16:43:06:436 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 16:43:44:4344 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 16:43:44:4344 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 16:43:44:4344 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 16:44:52:4452 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 16:44:52:4452 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 16:44:52:4452 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 16:51:56:5156 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 16:51:56:5156 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 16:51:56:5156 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 16:58:01:581 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 16:58:01:581 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 16:58:01:581 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 16:58:31:5831 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 16:58:31:5831 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 16:58:31:5831 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 17:19:46:1946 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 17:19:46:1946 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 17:19:46:1946 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 17:31:17:3117 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 17:31:17:3117 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 17:31:17:3117 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 17:39:43:3943 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 17:39:43:3943 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 17:39:43:3943 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 17:41:02:412 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 17:41:02:412 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 17:41:02:412 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 17:44:47:4447 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 17:44:47:4447 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 17:44:47:4447 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 17:49:26:4926 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 17:49:26:4926 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 17:49:26:4926 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 17:55:04:554 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 17:55:04:554 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 17:55:04:554 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 17:56:02:562 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 17:56:02:562 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 17:56:02:562 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 18:01:25:125 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 18:01:25:125 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 18:01:25:125 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 18:04:19:419 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 18:04:19:419 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 18:04:19:419 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 18:10:11:1011 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 18:10:11:1011 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 18:10:11:1011 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 18:13:17:1317 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 18:13:17:1317 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 18:13:17:1317 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 18:27:24:2724 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 18:27:24:2724 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 18:27:24:2724 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 18:30:04:304 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 18:30:04:304 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 18:30:04:304 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 18:33:51:3351 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 18:33:51:3351 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 18:33:51:3351 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 18:36:25:3625 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 18:36:25:3625 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 18:36:25:3625 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 18:40:11:4011 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 18:40:11:4011 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 18:40:11:4011 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 18:49:51:4951 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 18:49:51:4951 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 18:49:51:4951 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 18:55:36:5536 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 18:55:36:5536 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 18:55:36:5536 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 19:02:03:23 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 19:02:03:23 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 19:02:03:23 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 19:02:21:221 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 19:02:21:221 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 19:02:21:221 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 19:15:17:1517 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 19:15:17:1517 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 19:15:17:1517 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 19:31:48:3148 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 19:31:48:3148 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 19:31:48:3148 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 19:36:50:3650 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 19:36:50:3650 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 19:36:50:3650 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 19:44:00:440 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 19:44:00:440 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 19:44:00:440 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 19:48:12:4812 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 19:48:12:4812 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 19:48:12:4812 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 19:52:17:5217 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 19:52:17:5217 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 19:52:17:5217 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 19:53:53:5353 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 19:53:53:5353 [32minfo[39m: [32mServer is running on port 4300[39m {}
-[Server] 2025-11-08 19:53:53:5353 [32minfo[39m: [32mSocket.IO listening on port 4300[39m {}
-[Server] 2025-11-08 19:58:10:5810 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 19:58:10:5810 [32minfo[39m: [32mServer is running on port 4300[39m {}
-[Server] 2025-11-08 19:58:10:5810 [32minfo[39m: [32mSocket.IO listening on port 4300[39m {}
-[Server] 2025-11-08 19:59:50:5950 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 19:59:50:5950 [32minfo[39m: [32mServer is running on port 4300[39m {}
-[Server] 2025-11-08 19:59:50:5950 [32minfo[39m: [32mSocket.IO listening on port 4300[39m {}
-[Server] 2025-11-08 20:08:56:856 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 20:08:56:856 [32minfo[39m: [32mServer is running on port 4300[39m {}
-[Server] 2025-11-08 20:08:56:856 [32minfo[39m: [32mSocket.IO listening on port 4300[39m {}
-[Server] 2025-11-08 20:10:56:1056 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 20:10:56:1056 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 20:10:56:1056 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 20:18:34:1834 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 20:18:34:1834 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 20:18:34:1834 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 20:42:58:4258 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 20:42:58:4258 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 20:42:58:4258 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 21:13:11:1311 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 21:13:11:1311 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 21:13:11:1311 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 21:42:33:4233 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 21:42:33:4233 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 21:42:33:4233 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 21:43:43:4343 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 21:43:43:4343 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 21:43:43:4343 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 21:57:22:5722 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 21:58:33:5833 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 22:00:39:039 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 22:02:54:254 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 22:06:12:612 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 22:06:12:612 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 22:06:12:612 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 22:28:33:2833 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 22:28:33:2833 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 22:28:33:2833 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-08 23:12:03:123 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-08 23:12:03:123 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-08 23:12:03:123 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-09 13:38:15:3815 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-09 13:38:15:3815 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-09 13:38:15:3815 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-09 13:57:33:5733 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-09 13:57:33:5733 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-09 13:57:33:5733 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-09 14:29:03:293 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-09 14:29:03:293 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-09 14:29:03:293 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-09 14:51:40:5140 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-09 14:51:40:5140 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-09 14:51:40:5140 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-09 15:40:08:408 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-09 15:40:08:408 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-09 15:40:08:408 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-09 16:04:41:441 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-09 16:04:41:441 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-09 16:04:41:441 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-09 17:30:10:3010 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-09 17:30:10:3010 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-09 17:30:10:3010 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-09 17:34:52:3452 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-09 17:34:52:3452 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-09 17:34:52:3452 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
-[Server] 2025-11-09 17:37:40:3740 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
-[Server] 2025-11-09 17:37:40:3740 [32minfo[39m: [32mServer is running on port 3000[39m {}
-[Server] 2025-11-09 17:37:40:3740 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-16 20:16:18:1618 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-16 20:16:18:1618 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-16 20:16:18:1618 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-17 02:27:34:2734 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-17 02:27:34:2734 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-17 02:27:34:2734 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-17 02:32:16:3216 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-17 02:32:16:3216 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-17 02:32:16:3216 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-17 17:17:38:1738 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-17 17:17:38:1738 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-17 17:17:38:1738 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-17 17:41:35:4135 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-17 17:41:35:4135 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-17 17:41:35:4135 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-17 18:18:53:1853 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-17 18:18:53:1853 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-17 18:18:53:1853 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-18 09:02:32:232 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-18 09:02:32:232 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-18 09:02:32:232 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-18 09:12:55:1255 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-18 09:12:55:1255 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-18 09:12:55:1255 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-18 09:24:17:2417 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-18 09:24:17:2417 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-18 09:24:17:2417 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-18 09:54:47:5447 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-18 09:54:47:5447 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-18 09:54:47:5447 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-18 09:56:53:5653 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-18 09:56:53:5653 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-18 09:56:53:5653 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-18 10:09:23:923 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-18 10:09:23:923 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-18 10:09:23:923 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-18 10:39:26:3926 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-18 10:39:26:3926 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-18 10:39:26:3926 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-18 10:43:53:4353 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-18 10:43:53:4353 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-18 10:43:53:4353 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-18 10:51:50:5150 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-18 10:51:50:5150 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-18 10:51:50:5150 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-18 10:52:51:5251 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-18 10:52:51:5251 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-18 10:52:51:5251 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-18 10:57:08:578 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-18 10:57:08:578 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-18 10:57:08:578 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-18 11:15:10:1510 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-18 11:15:10:1510 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-18 11:15:10:1510 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-18 11:30:47:3047 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-18 11:30:47:3047 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-18 11:30:47:3047 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-18 12:03:21:321 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-18 12:03:21:321 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-18 12:03:21:321 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-18 12:06:10:610 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-18 12:06:10:610 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-18 12:06:10:610 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-18 13:05:52:552 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-18 13:05:52:552 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-18 13:05:52:552 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-18 13:16:40:1640 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-18 13:16:40:1640 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-18 13:16:40:1640 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-20 16:53:17:5317 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-20 16:53:17:5317 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-20 16:53:17:5317 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-20 17:12:36:1236 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-20 17:12:36:1236 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-20 17:12:36:1236 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-20 17:20:51:2051 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-20 17:20:51:2051 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-20 17:20:51:2051 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-20 18:31:30:3130 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-20 18:31:30:3130 [32minfo[39m: [32mServer is running on port 3002[39m {}
+[Server] 2025-11-20 18:31:30:3130 [32minfo[39m: [32mSocket.IO listening on port 3002[39m {}
+[Server] 2025-11-20 18:34:40:3440 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-20 18:34:40:3440 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-20 18:34:40:3440 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-20 20:46:40:4640 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-20 20:46:40:4640 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-20 20:46:40:4640 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-22 11:45:56:4556 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-22 11:45:56:4556 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-22 11:45:56:4556 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-23 19:51:02:512 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-23 19:51:02:512 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-23 19:51:02:512 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}
+[Server] 2025-11-23 22:02:10:210 [32minfo[39m: [32mSocket.IO inicializado para streaming en vivo[39m {}
+[Server] 2025-11-23 22:02:10:210 [32minfo[39m: [32mServer is running on port 3000[39m {}
+[Server] 2025-11-23 22:02:10:210 [32minfo[39m: [32mSocket.IO listening on port 3000[39m {}

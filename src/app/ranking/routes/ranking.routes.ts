@@ -13,12 +13,12 @@ import {
 
 const router = Router();
 
-// Rutas públicas para obtener vendedores por ID
+// Rutas pï¿½blicas para obtener vendedores por ID
 router.get('/professional/:id', getProfessionalById);
 router.get('/autonomous/:id', getAutonomousById);
 router.get('/dedicated/:id', getDedicatedById);
 
-// Rutas públicas para ranking
+// Rutas pï¿½blicas para ranking
 router.get('/professionals', getProfessionalsRanking);
 router.get('/autonomous', getAutonomousRanking);
 router.get('/dedicated', getDedicatedRanking);
@@ -65,7 +65,7 @@ const getRankings = async (): Promise<Item[]> => {
 router.get('/', async (req: Request, res: Response, next: NextFunction) => {
     try {
         const rankedItems = await getRankings();
-        res.json(rankedItems);
+        res.json({ ranking: rankedItems });
     } catch (err) {
         next(err);
     }

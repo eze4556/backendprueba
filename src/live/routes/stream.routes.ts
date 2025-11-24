@@ -15,9 +15,8 @@ const router = express.Router();
  * @access  Private (Todos los roles EXCEPTO: user)
  */
 router.post(
-  '/', 
-  Token.verifyToken, 
-  streamPermissionMiddleware as any,
+  '/',
+  Token.verifyToken,
   validateStreamData as any,
   streamLimitMiddleware as any,
   StreamController.createStream as any

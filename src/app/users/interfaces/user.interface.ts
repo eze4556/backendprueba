@@ -7,7 +7,7 @@ export interface IUser extends Document {
         password: string;
         phone?: string;
     };
-    role: 'admin' | 'professional' | 'provider' | 'user';
+    role: 'admin' | 'professional' | 'provider' | 'user' | 'super_admin';
     flags: {
         isProfessional: boolean;
         isProvider: boolean;

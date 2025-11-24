@@ -32,13 +32,13 @@ export class StreamController {
       const userRole = req.user.role || req.user.type || 'user';
 
       // Doble verificación de permisos
-      const blockedRoles = ['user', 'usuarios', 'cliente'];
-      if (blockedRoles.includes(userRole.toLowerCase())) {
-        return res.status(403).json({ 
-          error: 'Los usuarios comunes no tienen permisos para crear transmisiones',
-          message: 'Solo profesionales, proveedores, vendedores y otros roles de negocio pueden transmitir'
-        });
-      }
+        const blockedRoles = ['user', 'usuarios', 'cliente'];
+        if (blockedRoles.includes(userRole.toLowerCase()) && userRole.toLowerCase() !== 'super_admin') {
+          return res.status(403).json({ 
+            error: 'Los usuarios comunes no tienen permisos para crear transmisiones',
+            message: 'Solo profesionales, proveedores, vendedores y otros roles de negocio pueden transmitir'
+          });
+        }
 
       // Verificar si el usuario ya tiene un stream activo
       const activeStream = await Stream.findOne({

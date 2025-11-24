@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-// ImportaciÃ³n de mÃ³dulos principales de Express y utilidades
+// Importacion de modulos principales de Express y utilidades
 const express_1 = __importDefault(require("express"));
 const morgan_1 = __importDefault(require("morgan"));
 const body_parser_1 = __importDefault(require("body-parser"));
@@ -11,11 +11,11 @@ const path_1 = __importDefault(require("path"));
 const cors_1 = __importDefault(require("cors"));
 // ConfiguraciÃ³n de producciÃ³n
 const production_config_1 = require("./config/production.config");
-// Validar configuraciÃ³n en producciÃ³n
+// Validar configuracion en produccion
 if (process.env.NODE_ENV === 'production') {
     (0, production_config_1.validateProductionConfig)();
 }
-// ImportaciÃ³n de rutas de los diferentes mÃ³dulos de la aplicaciÃ³n
+// Importacion de rutas de los diferentes modulos de la aplicacion
 const users_routes_1 = __importDefault(require("./app/users/routes/users.routes"));
 const code_routes_1 = __importDefault(require("./app/codes/routes/code.routes"));
 const login_routes_1 = __importDefault(require("./app/users/routes/login.routes"));
@@ -51,11 +51,11 @@ const test_controller_1 = require("./controllers/test.controller");
 const bot_detection_middleware_1 = require("./middleware/bot-detection.middleware");
 const streamingPreferences_routes_1 = __importDefault(require("./live/routes/streamingPreferences.routes"));
 const security_advanced_middleware_1 = require("./middleware/security-advanced.middleware");
-// ImportaciÃ³n y conexiÃ³n a la base de datos
+// Importacion y conexion a la base de datos
 require("./database/database");
-// InicializaciÃ³n de la aplicaciÃ³n Express
+// Inicializacion de la aplicacion Express
 const app = (0, express_1.default)();
-// ConfiguraciÃ³n del puerto
+// Configuracion del puerto
 app.set('port', production_config_1.productionConfig.port);
 // ---------- CORS CONFIGURADO POR ENTORNO ----------
 const corsOptions = {
@@ -69,7 +69,7 @@ const corsOptions = {
 app.use((0, cors_1.default)(corsOptions));
 // Preflight para todas las rutas
 app.options('*', (0, cors_1.default)());
-// ---------- MIDDLEWARE BÃSICO ----------
+// ---------- MIDDLEWARE BASICO ----------
 app.use((0, morgan_1.default)(process.env.NODE_ENV === 'production' ? 'combined' : 'dev'));
 app.use(body_parser_1.default.json({ limit: '50mb' }));
 app.use(body_parser_1.default.urlencoded({ extended: true }));
@@ -82,11 +82,11 @@ app.use((0, security_advanced_middleware_1.rateLimitMiddleware)({
     windowMs: production_config_1.productionConfig.security.rateLimitWindowMs,
     maxRequests: production_config_1.productionConfig.security.rateLimitMaxRequests
 }));
-// 3. SanitizaciÃ³n de entrada antes de procesamiento
+// 3. Sanitizacion de entrada antes de procesamiento
 app.use(security_advanced_middleware_1.noSQLSanitizeMiddleware);
 app.use(security_advanced_middleware_1.xssSanitizeMiddleware);
 app.use((0, security_advanced_middleware_1.inputValidationMiddleware)());
-// 4. DetecciÃ³n de bots (mÃºltiples implementaciones)
+// 4. Deteccion de bots (multiples implementaciones)
 if (production_config_1.productionConfig.security.botDetectionEnabled) {
     app.use(bot_detection_middleware_1.BotDetectionMiddleware.detectBot);
     app.use(security_advanced_middleware_1.botDetectionMiddleware);
@@ -95,9 +95,9 @@ if (production_config_1.productionConfig.security.botDetectionEnabled) {
 if (production_config_1.productionConfig.security.geoBlockingEnabled) {
     app.use((0, security_advanced_middleware_1.geoBlockingMiddleware)(production_config_1.productionConfig.security.blockedCountries));
 }
-// 6. AuditorÃ­a de todas las requests
+// 6. Auditoria de todas las requests
 app.use(security_advanced_middleware_1.auditLogMiddleware);
-// ---------- RUTAS BÃSICAS ----------
+// ---------- RUTAS BASICAS ----------
 app.get('/', (_req, res) => res.status(200).send('API OK'));
 app.get('/favicon.ico', (_req, res) => res.status(204).end());
 // Health check endpoints
@@ -116,7 +116,7 @@ if (process.env.NODE_ENV === 'production') {
     });
 }
 else {
-    // Health checks bÃ¡sicos para desarrollo
+    // Health checks basicos para desarrollo
     app.get('/health', health_routes_1.healthCheck);
     app.get('/health/live', health_routes_1.livenessProbe);
     app.get('/health/ready', health_routes_1.readinessProbe);
@@ -128,7 +128,7 @@ app.use('/api/users', users_routes_1.default);
 app.use('/api/login', login_routes_1.default);
 app.use('/api/password', password_routes_1.default);
 app.use('/api/auth', token_routes_1.default); // Rutas de refresh token y logout
-app.use('/api/categorie', categorie_routes_1.default); // Ahora pÃºblico
+app.use('/api/categorie', categorie_routes_1.default); // Ahora público
 app.use('/api/cart', cart_routes_1.default); // Carrito de compras
 app.use('/api/wishlist', wishlist_routes_1.default); // Lista de deseos con alertas de precio
 app.use('/api/search', search_routes_1.default); // Búsqueda global avanzada
@@ -138,7 +138,10 @@ app.use('/api/notifications', notification_routes_1.default); // Sistema de noti
 app.use('/api/messages', messaging_routes_1.default); // Sistema de mensajerÃ­a con Socket.IO
 app.use('/api/reviews', review_routes_1.default); // Sistema de reviews y calificaciones
 app.use('/api/media', media_routes_1.default);
-app.use('/api/media-upload', media_upload_routes_1.default); // Upload con optimizaciÃ³n Sharp
+app.use('/api/media-upload', media_upload_routes_1.default); // Upload con optimizacion Sharp
+// Ruta directa para obtener todos los vehículos
+const vehicle_controller_1 = require("./app/vehicles/controllers/vehicle.controller");
+app.get('/api/vehicle', vehicle_controller_1.getAllVehicles);
 app.use('/api/vehicle', vehicle_routes_1.default);
 app.use('/api/professional', professional_routes_1.default);
 app.use('/api/productType', productType_routes_1.default);
@@ -150,7 +153,7 @@ app.use('/api/payment/webhooks', payment_webhook_controller_1.paymentWebhookRout
 app.use('/api/calculator', calculatorRoutes_1.default);
 app.use('/api/subscription', subscription_routes_1.default);
 app.use('/api/providers', provider_routes_1.default);
-app.use('/api/order', order_routes_1.default); // Sistema de Ã³rdenes completo
+app.use('/api/order', order_routes_1.default); // Sistema de ordenes completo
 app.use('/api/billing', billing_routes_1.default);
 app.use('/api/stream', stream_1.default);
 app.use('/api/streaming-preferences', streamingPreferences_routes_1.default);

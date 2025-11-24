@@ -10,7 +10,7 @@ const userSchema = new Schema<IUser>({
     },
     role: {
         type: String,
-        enum: ['admin', 'professional', 'provider', 'user'],
+        enum: ['admin', 'professional', 'provider', 'user', 'super_admin'],
         default: 'user'
     },
     flags: {

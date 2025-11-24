@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const crypto_1 = require("crypto");
 const user_models_1 = __importDefault(require("../models/user.models"));
 const password_reset_models_1 = __importDefault(require("../models/password-reset.models"));
-const bcrypt_1 = __importDefault(require("bcrypt"));
+const bcryptjs_1 = __importDefault(require("bcryptjs"));
 const nodemailer_1 = __importDefault(require("nodemailer"));
 class PasswordRecoveryService {
     constructor() {
@@ -105,7 +105,7 @@ class PasswordRecoveryService {
                 };
             }
             // Hash de la nueva contraseña
-            const hashedPassword = await bcrypt_1.default.hash(newPassword, 12);
+            const hashedPassword = await bcryptjs_1.default.hash(newPassword, 12);
             // Actualizar contraseña del usuario
             await user_models_1.default.findByIdAndUpdate(validation.userId, {
                 $set: { 'auth_data.password': hashedPassword }

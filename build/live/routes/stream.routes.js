@@ -13,7 +13,7 @@ const router = express_1.default.Router();
  * @desc    Crear una nueva sesión de streaming
  * @access  Private (Todos los roles EXCEPTO: user)
  */
-router.post('/', token_1.default.verifyToken, stream_middleware_1.streamPermissionMiddleware, stream_middleware_1.validateStreamData, stream_middleware_1.streamLimitMiddleware, stream_controller_1.StreamController.createStream);
+router.post('/', token_1.default.verifyToken, stream_middleware_1.validateStreamData, stream_middleware_1.streamLimitMiddleware, stream_controller_1.StreamController.createStream);
 /**
  * @route   POST /api/stream/:streamId/start
  * @desc    Iniciar el streaming (cambiar estado a LIVE)

@@ -89,9 +89,12 @@ class CodeMiddleware {
     await code.save();
     console.log('sendCode middleware - code saved successfully');
     
-    req.expiresIn = '5m';
-    console.log('sendCode middleware - calling next()');
-    next();
+    // Responder directamente al frontend con el código generado
+    return res.status(200).json({
+      success: true,
+      message: 'Código generado y enviado correctamente',
+      code: randomCode
+    });
   } catch (e) {
     console.error('sendCode middleware - error:', e);
     return HttpHandler.error(res, {

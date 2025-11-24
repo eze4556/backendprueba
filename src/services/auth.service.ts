@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
 import { load } from 'ts-dotenv';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import { Request } from 'express';
 
 const env = load({

@@ -4,7 +4,7 @@ import PasswordMiddleware from '../middlewares/password.middlewares';
 import HistoryMiddleware from '../../history/middlewares/history.middlewares';
 import Token from '../../../auth/token/token';
 import UserModel from '../models/user.models';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import HttpHandler from '../../../helpers/handler.helper';
 import { BAD_REQUEST, UNAUTHORIZED, INTERNAL_ERROR } from '../../../constants/codes.constanst';
 import userController from '../controllers/user.controllers';

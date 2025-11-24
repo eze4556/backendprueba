@@ -7,5 +7,6 @@ const express_1 = require("express");
 const token_1 = __importDefault(require("../auth/token/token"));
 const router = (0, express_1.Router)();
 router.post('/generate-token', token_1.default.generateToken);
+router.post('/login', token_1.default.generateToken);
 exports.default = router;
 //# sourceMappingURL=auth.routes.js.map
