@@ -2,13 +2,23 @@ import dotenv from 'dotenv';
 import path from 'path';
 
 // Cargar variables de entorno según el entorno
+// En producción (Render, etc.), las variables se configuran desde el panel de control
+// Solo cargar archivo .env si existe, sino usar variables de entorno del sistema
 const envFile = process.env.NODE_ENV === 'production' 
   ? '.env.production' 
   : process.env.NODE_ENV === 'test' 
     ? '.env.test' 
     : '.env';
 
-dotenv.config({ path: path.resolve(process.cwd(), envFile) });
+// Intentar cargar el archivo .env, pero no fallar si no existe
+// Las variables de entorno del sistema tienen prioridad
+try {
+  const envPath = path.resolve(process.cwd(), envFile);
+  dotenv.config({ path: envPath });
+} catch (error) {
+  // Ignorar errores al cargar .env, usar variables de entorno del sistema
+  console.log(`No se pudo cargar ${envFile}, usando variables de entorno del sistema`);
+}
 
 export interface ProductionConfig {
   // Servidor

@@ -7,8 +7,13 @@ import * as jwt from 'jsonwebtoken';
 import { load } from 'ts-dotenv';
 
 const env = load({
-  JWT_KEY: String,
+  JWT_KEY: {
+    type: String,
+    optional: true
+  },
 });
+
+const JWT_SECRET = env.JWT_KEY || process.env.JWT_SECRET || process.env.JWT_KEY || 'secure_secret_for_dev_only';
 
 const logger = Logger.getInstance('RoleValidation');
 
@@ -50,7 +55,7 @@ export class RoleValidator {
    */
   static getUserRoleFromToken(token: string): UserRole | null {
     try {
-      const decoded = jwt.verify(token, env.JWT_KEY) as any;
+      const decoded = jwt.verify(token, JWT_SECRET) as any;
       return decoded.role || UserRole.USER; // Por defecto USER si no tiene rol
     } catch (error) {
       logger.error('Error decodificando token para obtener rol', error);
@@ -121,7 +126,7 @@ export const extractRoleInfo = (req: RoleRequest, res: Response, next: NextFunct
       });
     }
 
-    const decoded = jwt.verify(token, env.JWT_KEY) as any;
+    const decoded = jwt.verify(token, JWT_SECRET) as any;
     const userRole = decoded.role || UserRole.USER;
     const permissions = RoleValidator.getPermissionsForRole(userRole);
 

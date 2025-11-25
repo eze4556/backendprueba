@@ -6,8 +6,13 @@ import HttpHandler from '../../helpers/handler.helper';
 import { CREATED, UNAUTHORIZED, FORBIDDEN, INTERNAL_ERROR } from '../../constants/codes.constanst';
 
 const env = load({
-  JWT_KEY: String,
+  JWT_KEY: {
+    type: String,
+    optional: true
+  },
 });
+
+const JWT_SECRET = env.JWT_KEY || process.env.JWT_SECRET || process.env.JWT_KEY || 'secure_secret_for_dev_only';
 declare module 'express-serve-static-core' {
   interface Request {
     user?: string | JwtPayload;
@@ -24,7 +29,7 @@ class Token {
     try {
       const { expiresIn } = req.body; // Cambiado de req a req.body
       const { _id, email } = req.body; // Cambiado de req a req.body
-      const token = jwt.sign({ email: email!, _id: _id! }, env.JWT_KEY, { expiresIn: expiresIn || '60d' }); // Generate token
+      const token = jwt.sign({ email: email!, _id: _id! }, JWT_SECRET, { expiresIn: expiresIn || '60d' }); // Generate token
       return HttpHandler.success(res, { message: 'Token created successfully', data: { token, expiresIn } }, CREATED);
     } catch (e) {
       return HttpHandler.error(res, {
@@ -64,7 +69,7 @@ class Token {
         });
       }
 
-      jwt.verify(token, env.JWT_KEY, (err, decoded) => {
+      jwt.verify(token, JWT_SECRET, (err, decoded) => {
         if (err) {
           return res.status(403).json({
             response: {

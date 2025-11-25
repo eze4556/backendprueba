@@ -4,15 +4,18 @@ import RefreshTokenModel from '../models/refresh-token.models';
 import { load } from 'ts-dotenv';
 
 const env = load({
-  JWT_KEY: String,
+  JWT_KEY: {
+    type: String,
+    optional: true
+  },
   JWT_REFRESH_SECRET: {
     type: String,
     optional: true
   }
 });
 
-const JWT_SECRET = env.JWT_KEY;
-const JWT_REFRESH_SECRET = env.JWT_REFRESH_SECRET || env.JWT_KEY + '_refresh';
+const JWT_SECRET = env.JWT_KEY || process.env.JWT_SECRET || process.env.JWT_KEY || 'secure_secret_for_dev_only';
+const JWT_REFRESH_SECRET = env.JWT_REFRESH_SECRET || JWT_SECRET + '_refresh';
 
 class TokenService {
   /**

@@ -4,8 +4,14 @@ import bcrypt from 'bcryptjs';
 import { Request } from 'express';
 
 const env = load({
-  JWT_KEY: String,
-  JWT_EXPIRES_IN: String,
+  JWT_KEY: {
+    type: String,
+    optional: true
+  },
+  JWT_EXPIRES_IN: {
+    type: String,
+    optional: true
+  },
 });
 
 export interface TokenPayload {
@@ -19,7 +25,7 @@ class AuthService {
   private readonly jwtExpiresIn: string;
 
   constructor() {
-    this.jwtKey = env.JWT_KEY;
+    this.jwtKey = env.JWT_KEY || process.env.JWT_SECRET || process.env.JWT_KEY || 'secure_secret_for_dev_only';
     this.jwtExpiresIn = env.JWT_EXPIRES_IN || '24h';
   }
 
